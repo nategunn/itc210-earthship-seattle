@@ -3,7 +3,8 @@
 <div id="main-content" class="main-content">
 	<h1>Page</h1>
 </div><!-- #main-content -->
-
-<?php
-get_sidebar();
-get_footer();
+<div>
+        <?php get_sidebar();?>
+</div>
+<div id='delimiter'></div>
+<?php get_footer();

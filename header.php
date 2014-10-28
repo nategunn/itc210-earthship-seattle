@@ -9,12 +9,15 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
+    <?php wp_head()?>
 </head>
 
 <body>
 	<header id="masthead" >
-		<h1>header</h1>
+		<h1><?php bloginfo('name')?></h1>
 	</header><!-- #masthead -->
-
+    <nav id="nav">
+        <?php wp_nav_menu()?>
+    </nav>
 	<div id="main" class="site-main">
