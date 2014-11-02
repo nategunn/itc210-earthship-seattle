@@ -19,6 +19,7 @@ body
 {
     text-align: center;
 }
+
 #wrapper
 {
     display: block;
@@ -26,34 +27,50 @@ body
     width:90%;
     margin:0px auto;
 }
+
 #masthead
 {
     border: 2px #a2a2a2 solid;
     background-color: #a2a2a2;
 }
+
 #nav
 {
+    /*display:inline-block;*/
+    padding: 10px, 20px;
     background-color: #696969;
 }
+
+nav ul li
+{
+    display:inline-block;
+    padding:  10px, 20px;
+}
+
 #main-content
 {
     width: 75%;
     border: 2px #a2a2a2 solid;
     float: left;
 }
+
 #sidebar
 {
     width: 23%;
     border: 2px #a2a2a2 solid;
-    float: right; }
+    float: right;
+}
+
 #delimiter
 {
     clear: both;
 }
+
 #site-footer
 {
     border: 2px #a2a2a2 solid;
 }
+
 .title
 {
     font-size: 11pt;
