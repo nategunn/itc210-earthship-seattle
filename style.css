@@ -14,51 +14,83 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/*RESETS*/
 
-body
-{
-    text-align: center;
+body, body *{
+    margin:0;
+    padding:0;
 }
+
+a img {/*remove blue border from linked images in ie*/
+    border: none;
+}
+
 
 #wrapper
 {
     display: block;
     border: 1px #a2a2a2 solid;
-    width:90%;
-    margin:0px auto;
+    width:980px;
+    margin:auto;
 }
 
 #masthead
 {
+    height:100px;
     border: 2px #a2a2a2 solid;
     background-color: #a2a2a2;
+    padding: 0 20px;
 }
-
+#search{
+    display:block;
+    float:right;
+}
 #nav
 {
     /*display:inline-block;*/
+    height: 40px;
+    line-height: 40px;
     padding: 10px, 20px;
-    background-color: #696969;
+    background-color: #BCBCBC;
 }
 
-nav ul li
-{
-    display:inline-block;
-    padding:  10px, 20px;
+#nav li{
+    float:left;
+    list-style:none;
+}
+
+#nav a{
+    background-color:#BCBCBC;
+    color:#000;
+    padding: 0 20px;
+    display:block;
 }
 
 #main-content
 {
-    width: 75%;
+    width: 700px;
     border: 2px #a2a2a2 solid;
     float: left;
+    padding: 0 20px;
 }
 
 #sidebar
 {
-    width: 23%;
+    width: 220px;
     border: 2px #a2a2a2 solid;
     float: right;
+}
+#sidebar h3{
+    background-color:#000;
+    width:192px;
+    padding-left:10px;
+}
+#sidebar ul{
+    margin-bottom:20px;
+    padding-left:0px;
+}
+#sidebar li{
+    list-style:none;
 }
 
 #delimiter
@@ -69,6 +101,7 @@ nav ul li
 #site-footer
 {
     border: 2px #a2a2a2 solid;
+    padding: 0 20px;
 }
 
 .title

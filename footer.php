@@ -7,6 +7,6 @@
 			<h1>Footer</h1>	
 		</footer>
 	</div><!-- #page -->
-
+</div><!-- #wrapper -->
 </body>
 </html>
