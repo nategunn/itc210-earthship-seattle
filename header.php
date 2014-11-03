@@ -16,7 +16,7 @@
     <div id="wrapper">
 	<header id="masthead" >
 		<h1><?php bloginfo('name')?></h1>
-            <h4 id="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></h4>
+            
 	</header><!-- #masthead -->
      <nav id="nav">
         <?php wp_nav_menu( array( 
@@ -24,6 +24,7 @@
             'menu' => 'Main Menu' ,
             'container'  => 'ul', 
         ));?>
+        <h4 id="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></h4>
     </nav>
 
 
