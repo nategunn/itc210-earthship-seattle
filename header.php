@@ -12,7 +12,7 @@
     <?php wp_head()?>
 </head>
 
-<body>
+<body id="top">
     <div id="wrapper">
 	<header id="masthead" >
 		<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
@@ -21,7 +21,7 @@
      <nav id="nav">
         <?php wp_nav_menu( array( 
             'theme_location' => 'main-menu' ,
-            'menu' => 'Main Menu' ,
+            'menu' => 'nav-main' ,
             'container'  => 'ul', 
         ));?>
         <h4 id="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></h4>
