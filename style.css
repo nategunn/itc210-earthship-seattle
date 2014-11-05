@@ -74,6 +74,14 @@ a img {/*remove blue border from linked images in ie*/
     float: left;
     padding: 0 20px;
 }
+
+.single{
+    width: 700px;
+    border: 2px #a2a2a2 solid;
+    float: left;
+    padding: 10px 20px;    
+}
+
 .post-box{
     margin:10px 0;
 }
@@ -95,7 +103,9 @@ a img {/*remove blue border from linked images in ie*/
     list-style:none;
     padding-left:10px;
 }
-
+.commentlist li{
+    list-style-type:none;
+}
 #delimiter
 {
     clear: both;
