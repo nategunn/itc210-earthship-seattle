@@ -77,23 +77,23 @@ a img {/*remove blue border from linked images in ie*/
 .post-box{
     margin:10px 0;
 }
-#sidebar
+#primary
 {
     width: 220px;
     border: 2px #a2a2a2 solid;
     float: right;
 }
-#sidebar h3{
-    background-color:#000;
+#primary h3{
     width:192px;
     padding-left:10px;
 }
-#sidebar ul{
+#primary ul{
     margin-bottom:20px;
     padding-left:0px;
 }
-#sidebar li{
+#primary li{
     list-style:none;
+    padding-left:10px;
 }
 
 #delimiter

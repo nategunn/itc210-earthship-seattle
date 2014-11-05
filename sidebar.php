@@ -1,5 +1,23 @@
-<div id="sidebar">
-    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
+<div id="primary">
+    <?php if ( is_active_sidebar( 'primary' ) ) : ?>  
 
-    <?php endif; ?>
+		<?php dynamic_sidebar( 'primary' ); ?>
+
+	<?php else : ?>
+        <!-- Begin Categories -->       
+		<h3>Categories</h3>
+		<ul>
+			<?php wp_list_categories('title_li='); ?>
+		</ul>
+    	<!-- End Categories -->
+
+        <!-- Begin Meta -->
+        <h3>Meta</h3>
+        <ul>
+        <?php wp_register(); ?>
+        <li><?php wp_loginout(); ?></li>
+        <?php wp_meta(); ?>
+        </ul>
+    	<!-- End Meta -->
+    <?php endif; ?>	
 </div>
