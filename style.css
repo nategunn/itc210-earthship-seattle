@@ -14,7 +14,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/*RESETS*/
 
 body, body *{
     margin:0;
@@ -25,6 +24,9 @@ a img {/*remove blue border from linked images in ie*/
     border: none;
 }
 
+p, ol, ul, dl{
+    margin-bottom:10px;
+}
 
 #wrapper
 {
@@ -41,11 +43,46 @@ a img {/*remove blue border from linked images in ie*/
     background-color: #a2a2a2;
     padding: 0 20px;
 }
-#search{
+
+#search
+{
     display:block;
     float:right;
     padding-right:20px;
 }
+
+#main-content
+{
+    width: 700px;
+    border: 2px #a2a2a2 solid;
+    float: left;
+    padding: 0 20px;
+}
+
+.post-box /*this is the container for blog entries*/
+{
+    margin:10px 0;
+}
+
+#delimiter
+{
+    clear: both;
+}
+
+#site-footer
+{
+    border: 2px #a2a2a2 solid;
+    padding: 0 20px;
+}
+
+.title
+{
+    font-size: 11pt;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+/*/////////////NAV STYLES///////////*/
 #nav
 {
     /*display:inline-block;*/
@@ -67,24 +104,25 @@ a img {/*remove blue border from linked images in ie*/
     display:block;
 }
 
-#main-content
-{
-    width: 700px;
-    border: 2px #a2a2a2 solid;
-    float: left;
-    padding: 0 20px;
-}
 
-.single{
+/*///////////SINGLE.PHP STYLES/////////*/
+.single
+{
     width: 700px;
     border: 2px #a2a2a2 solid;
     float: left;
     padding: 10px 20px;    
 }
 
-.post-box{
-    margin:10px 0;
+.commentlist li /*this is the list of comments on a blog post*/
+{
+    list-style-type:none;
 }
+
+
+
+
+/*///////////PRIMARY SIDEBAR////////*/
 #primary
 {
     width: 220px;
@@ -103,9 +141,7 @@ a img {/*remove blue border from linked images in ie*/
     list-style:none;
     padding-left:10px;
 }
-.commentlist li{
-    list-style-type:none;
-}
+
 #delimiter
 {
     clear: both;
@@ -117,9 +153,3 @@ a img {/*remove blue border from linked images in ie*/
     padding: 0 20px;
 }
 
-.title
-{
-    font-size: 11pt;
-    font-family: verdana;
-    font-weight: bold;
-}
