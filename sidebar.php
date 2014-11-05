@@ -4,6 +4,11 @@
 		<?php dynamic_sidebar( 'primary' ); ?>
 
 	<?php else : ?>
+
+	<?php /*?> 
+The code below is what will diplay when no widgets are active. 
+<?php */?>
+
         <!-- Begin Categories -->       
 		<h3>Categories</h3>
 		<ul>
