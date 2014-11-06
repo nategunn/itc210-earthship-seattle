@@ -22,7 +22,7 @@ function register_my_menus() {
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-		  'main-menu' => 'nav-main'
+		  'main-menu' => 'Main Menu' //Main Menu is the name of the registered location as it appears in the dashboard
 
 			 )
 	);
