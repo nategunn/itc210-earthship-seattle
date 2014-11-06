@@ -15,16 +15,27 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 
-body, body *{
+body, body *
+{
     margin:0;
     padding:0;
 }
 
-a img {/*remove blue border from linked images in ie*/
+a img 
+{/*remove blue border from linked images in ie*/
     border: none;
 }
 
-p, ol, ul, dl{
+body
+{ /*global font styles go on the body tag*/
+    font-family: Arial, Geneva, sans-serif;
+    font-size:100%;
+    line-height:1.5;
+    color: #000;
+}
+
+p, ol, ul, dl
+{
     margin-bottom:10px;
 }
 
@@ -129,15 +140,18 @@ p, ol, ul, dl{
     border: 2px #a2a2a2 solid;
     float: right;
 }
-#primary h3{
+#primary h3
+{
     width:192px;
     padding-left:10px;
 }
-#primary ul{
+#primary ul
+{
     margin-bottom:20px;
     padding-left:0px;
 }
-#primary li{
+#primary li
+{
     list-style:none;
     padding-left:10px;
 }
@@ -153,3 +167,33 @@ p, ol, ul, dl{
     padding: 0 20px;
 }
 
+/*////////////A TAGS///////////////////*/
+
+a:link,
+a:visited 
+{
+    text-decoration:none;
+    color:#545353;   
+}
+
+
+a:hover,
+a:focus 
+{
+    text-decoration:underline;
+    color: #0065ff;
+}
+
+.postmetadata a:link,
+.postmetadata a:visited
+{
+    text-decoration:underline;
+    color:#545353;
+}
+
+.postmetadata a:hover,
+.postmetadata a:focus 
+{
+    text-decoration:underline;
+    color: #0065ff;
+}
