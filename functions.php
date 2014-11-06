@@ -3,12 +3,13 @@
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
 
+
+
 //Register custom menus
 function register_my_menus() {
   register_nav_menus(
     array( 
-		  'main-menu' => __( 'Main Menu' ), 
-		  'utility-menu' => __( 'Utility Menu' )
+		  'main-menu' => __( 'nav-main' ) 
 		  )
   );
   
@@ -16,17 +17,20 @@ function register_my_menus() {
 
 }
 
+
 // Add custom menus to Dashboard when theme is active   
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-		  'main-menu' => 'Main Menu',
-		  'utility_menu' => 'Utility Menu'
+		  'main-menu' => 'nav-main'
+
 			 )
 	);
 }    
 
 add_action( 'widgets_init', 'my_register_sidebars' );
+
+
 
 function my_register_sidebars() {
 
