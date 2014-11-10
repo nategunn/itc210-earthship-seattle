@@ -17,6 +17,18 @@ function register_my_menus() {
 
 }
 
+//add support for custom headers
+$args = array(
+    'flex-width'    => true,
+    'width'         => 177,
+    'flex-height'   => true,
+    'height'        => 100,
+    'default-image' => get_template_directory_uri() . '/images/logo.jpg',
+    'uploads'       => true,
+);
+
+add_theme_support( 'custom-header', $args );
+
 
 // Add custom menus to Dashboard when theme is active   
 if ( function_exists( 'register_nav_menus' ) ) {
