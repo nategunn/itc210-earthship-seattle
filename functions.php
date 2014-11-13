@@ -39,26 +39,37 @@ function my_register_sidebars() {
 		array(
 			'id' => 'primary',
 			'name' => __( 'Primary Sidebar' ),
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget' => '</li>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'
 		)
 	);
 	
 	
-	/* Register the footer widget area. */
+	/* Register the mid-page widget area. */
 	register_sidebar(
 		array(
-			'id' => 'foot',
-			'name' => __( 'Footer Widget Area' ),
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget' => '</li>',
+			'id' => 'mid-page',
+			'name' => __( 'Mid-Page Widget Area' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'
 		)
 	);
 	
+	/* Register the lower-page widget area. */
+	register_sidebar(
+		array(
+			'id' => 'lower-page',
+			'name' => __( 'Lower-Page Widget Area' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
 }
 
 ?>
