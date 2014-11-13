@@ -4,6 +4,19 @@ add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
 
 
+//add support for custom headers
+$args = array(
+    'flex-width'    => true,
+    'width'         => 177,
+    'flex-height'   => true,
+    'height'        => 100,
+    'default-image' => get_template_directory_uri() . '/images/logo.jpg',
+    'uploads'       => true,
+);
+
+add_theme_support( 'custom-header', $args );
+
+
 
 //Register custom menus
 function register_my_menus() {
@@ -16,18 +29,6 @@ function register_my_menus() {
   add_action( 'init', 'register_my_menus' );
 
 }
-
-//add support for custom headers
-$args = array(
-    'flex-width'    => true,
-    'width'         => 177,
-    'flex-height'   => true,
-    'height'        => 100,
-    'default-image' => get_template_directory_uri() . '/images/logo.jpg',
-    'uploads'       => true,
-);
-
-add_theme_support( 'custom-header', $args );
 
 
 // Add custom menus to Dashboard when theme is active   
