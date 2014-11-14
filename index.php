@@ -21,7 +21,7 @@
             <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
 		</nav>
 		
-		this is some cool stuff
+	
 
 
 
