@@ -21,9 +21,6 @@
             <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
 		</nav>
 		
-		This space intentionally left blank.
-
-
 
 </div><!-- #main-content -->
 <div>
