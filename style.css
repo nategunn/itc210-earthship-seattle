@@ -135,6 +135,30 @@ p, ol, ul, dl
 }
 
 
+/*///////////MID SIDEBAR////////*/
+#mid
+{
+    display:block;
+    width: 220px;
+    border: 2px #a2a2a2 solid;
+}
+#mid h3
+{
+    width:192px;
+    padding-left:10px;
+}
+#mid ul
+{
+    margin-bottom:20px;
+    padding-left:0px;
+}
+#mid li
+{
+    list-style:none;
+    padding-left:10px;
+}
+
+
 
 
 /*///////////PRIMARY SIDEBAR////////*/

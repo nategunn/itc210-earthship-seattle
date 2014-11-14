@@ -9,5 +9,6 @@
 		</footer>
 	</div><!-- #page -->
 </div><!-- #wrapper -->
+        <?php wp_footer(); ?>
 </body>
 </html>
