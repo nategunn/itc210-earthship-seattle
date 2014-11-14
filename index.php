@@ -11,7 +11,7 @@
             <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
          	<span class="comments">with <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span>
         </h4>
-		<?php the_content('More &raquo;'); ?>
+		<?php the_content('More &rAquo;'); ?>
      	<?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
         </div>
     <?php endwhile; ?>
@@ -21,7 +21,7 @@
             <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
 		</nav>
 		
-		this is some cool stuff
+		This space intentionally left blank.
 
 
 
