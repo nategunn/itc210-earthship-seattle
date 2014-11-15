@@ -10,6 +10,13 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <?php wp_head()?>
+    
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'> <!-- Serif: PT Serif -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'> <!-- Sans: PT Sans -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'> <!-- Mono: PT Mono  | font-family: 'PT Mono', ;-->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'> <!-- Sans: PT Sans Caption -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'> <!-- Serif: PT Serif Caption  | font-family: 'PT Serif Caption', serif; ;-->
+	
 </head>
 
 <body id="top">

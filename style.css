@@ -32,10 +32,20 @@ a img
 
 body
 { /*global font styles go on the body tag*/
-    font-family: Arial, Geneva, sans-serif;
+    font-family: 'PT Sans', Arial, Geneva, sans-serif;
     font-size:100%;
-    line-height:1.5;
+    line-height:1.45;
     color: #000;
+}
+
+h1, h2, h3 {
+  font-family: 'PT Serif', serif;
+}
+
+caption {
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
 }
 
 p, ol, ul, dl
