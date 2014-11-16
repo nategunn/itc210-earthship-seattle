@@ -14,7 +14,7 @@ The code below is what will diplay when no widgets are active.
 		<ul>
 			<?php wp_list_categories('title_li='); ?>
 		</ul>
-    	<!-- End Categories -->
+    	<!-- End Categories  -->
 
         <!-- Begin Meta -->
         <h3>Meta</h3>

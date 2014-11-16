@@ -56,7 +56,6 @@ p, ol, ul, dl
 #wrapper
 {
     display: block;
-    border: 1px #a2a2a2 solid;
     width:980px;
     margin:auto;
 }
@@ -81,6 +80,11 @@ p, ol, ul, dl
     width: 700px;
     border: 2px #a2a2a2 solid;
     float: left;
+    padding: 0 20px;
+}
+
+#main-content-fp{
+    width: 980px;
     padding: 0 20px;
 }
 
@@ -146,16 +150,27 @@ p, ol, ul, dl
 
 
 /*///////////MID SIDEBAR////////*/
+
+#mid-div{
+    height:250px;
+    margin-bottom:20px;
+}
 #mid
 {
     display:block;
-    width: 220px;
-    border: 2px #a2a2a2 solid;
+    width: 100%;
+    
+    overflow:auto;
+}
+#mid div{
+    height:230px;
+    width:300px;
+    background-color:#BCBCBC;
+    float:left;
 }
 #mid h3
 {
     width:192px;
-    padding-left:10px;
 }
 #mid ul
 {
@@ -165,11 +180,49 @@ p, ol, ul, dl
 #mid li
 {
     list-style:none;
-    padding-left:10px;
+}
+#mid .widget{
+    float:left;
 }
 
+#mid #text-2,
+#mid #text-3 {
+    margin-right:20px;
+}
+/*///////////LOWER SIDEBAR////////*/
+#lower-div{
+    height:130px;
 
-
+}
+#lower
+{
+    display:block;
+    width: 100%;
+    overflow:auto;
+}
+#lower div
+{
+    height:120px;
+    width:220px;
+    background-color:#BCBCBC;
+    float:left;
+}
+#lower h3
+{
+    width:220px;
+}
+#lower ul
+{
+    margin-bottom:20px;
+    padding-left:0px;
+}
+#lower li
+{
+    list-style:none;
+}
+#lower .widget{
+    float:left;
+}
 
 /*///////////PRIMARY SIDEBAR////////*/
 #primary
@@ -204,7 +257,12 @@ p, ol, ul, dl
     border: 2px #a2a2a2 solid;
     padding: 0 20px;
 }
-
+#lower #text-5,
+#lower #text-6,
+#lower #text-7 
+{
+    margin-right:20px;
+}
 /*////////////A TAGS///////////////////*/
 
 a:link,
