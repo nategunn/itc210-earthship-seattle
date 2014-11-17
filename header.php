@@ -50,7 +50,7 @@
         <h1>
                 <img src="<?php echo(get_header_image('/images/logo.jpg'));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
                 <a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
-                <span id="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></span>
+
         </h1>	
 
 	</header><!-- #masthead -->
@@ -60,7 +60,7 @@
             'menu' => 'nav-main' ,
             'container'  => 'ul', 
         ));?>
-
+         <div id="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></div>
     </nav>
 
 
