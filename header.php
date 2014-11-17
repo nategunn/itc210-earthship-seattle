@@ -11,22 +11,47 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <?php wp_head()?>
     
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'> <!-- Serif: PT Serif -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'> <!-- Sans: PT Sans -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'> <!-- Mono: PT Mono  | font-family: 'PT Mono', ;-->
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'> <!-- Sans: PT Sans Caption -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'> <!-- Serif: PT Serif Caption  | font-family: 'PT Serif Caption', serif; ;-->
+    <!-- serifs -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'>  
+    
+    <!-- sans-serifs -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- for social media icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
 </head>
 
 <body id="top">
     <div id="wrapper">
 	<header id="masthead" >
+	    
+	    <div class="social-media-icons">
+		<span class="fa-lg">
+		
+		<a href="https://twitter.com/Earthship_SEA" target="_blank">
+		    <i class="fa fa-twitter-square fa-1x" ></i>
+		</a>
+		
+		<a href="https://www.facebook.com/EarthshipSeattle" target="_blank">
+		    <i class="fa fa-facebook-square fa-1x"></i>
+		</a>
+		
+		<a href="http://earthship-seattle.tumblr.com/" target="_blank">
+		    <i class="fa fa-tumblr-square fa-1x"></i>
+		</a> 
+		
+		</span>
+	    </div> <!-- end social-media-icons -->
+	    
         <h1>
                 <img src="<?php echo(get_header_image('/images/logo.jpg'));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
                 <a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
                 <span id="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></span>
-        </h1>
+        </h1>	
 
 	</header><!-- #masthead -->
      <nav id="nav">

@@ -19,6 +19,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/*/////FOR DEVELOPMENT ONLY//////*/
+div, i {
+    /*border: 1px solid red;*/
+}
+/*/////END FOR DEVELOPMENT ONLY/////*/
+
+}
 body, body *
 {
     margin:0;
@@ -53,11 +61,39 @@ p, ol, ul, dl
     margin-bottom:10px;
 }
 
+/*/////SOCIAL MEDIA ICONS/////*/
+.social-media-icons {
+  float:right;
+  /*width:auto;*/
+}
+
+i {
+  margin-left: 5px;
+  float:right;
+}
+
+.social-media-icons a:link,
+.social-media-icons a:visited {
+  text-decoration: none;
+  color:#FFF;
+  -webkit-transition: color .35s ease-in-out;
+  -moz-transition: color .35s ease-in-out;
+  -ms-transition: color .35s ease-in-out; 
+  transition: color .35s ease-in-out;
+}
+
+.social-media-icons a:hover {
+  text-decoration: none;
+  color:#000;
+}
+/*/////END SOCIAL MEDIA ICONS/////*/
+
 #wrapper
 {
     display: block;
     width:980px;
     margin:auto;
+    background-image: url("images/bg-980px.png");
 }
 
 #masthead
