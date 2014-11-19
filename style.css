@@ -34,6 +34,7 @@ a img {
   /*remove blue border from linked images in ie*/
   border: none;
 }
+
 body {
   /*global font styles go on the body tag*/
   font-family: 'PT Sans', Arial, Geneva, sans-serif;
