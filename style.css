@@ -178,13 +178,17 @@ i {
 #mid li {
   list-style: none;
 }
-#mid .widget {
-  float: left;
+#mid div{
+  width:calc(33%-20px);
+  margin:0 10px;
 }
-#mid #text-2,
-#mid #text-3 {
-  margin-right: 20px;
+#mid div:first-child{
+  margin-left:0;
 }
+#mid div:last-child{
+  margin-right:0;
+}
+
 /*///////////LOWER SIDEBAR////////*/
 #lower-div {
   height: 130px;
@@ -210,8 +214,15 @@ i {
 #lower li {
   list-style: none;
 }
-#lower .widget {
-  float: left;
+#lower div{
+  width:calc(25%-20px);
+  margin:0 10px;
+}
+#lower div:first-child{
+  margin-left:0;
+}
+#lower div:last-child{
+  margin-right:0;
 }
 /*///////////PRIMARY SIDEBAR////////*/
 #primary {
@@ -237,11 +248,6 @@ i {
 #site-footer {
   border: 2px #a2a2a2 solid;
   padding: 0 20px;
-}
-#lower #text-5,
-#lower #text-6,
-#lower #text-7 {
-  margin-right: 20px;
 }
 /*////////////A TAGS///////////////////*/
 a:link,
