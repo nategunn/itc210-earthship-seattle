@@ -160,16 +160,22 @@ i {
 #mid {
   display: block;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 #mid div {
   height: 230px;
-  width: 300px;
+  width:calc(32.9% - 10px);
+  margin:0 10px;
   background-color: #BCBCBC;
   float: left;
 }
+#mid div:first-child{
+  margin-left:0;
+}
+#mid div:last-child{
+  margin-right:0;
+}
 #mid h3 {
-  width: 192px;
 }
 #mid ul {
   margin-bottom: 20px;
@@ -178,16 +184,8 @@ i {
 #mid li {
   list-style: none;
 }
-#mid div{
-  width:calc(33%-20px);
-  margin:0 10px;
-}
-#mid div:first-child{
-  margin-left:0;
-}
-#mid div:last-child{
-  margin-right:0;
-}
+
+
 
 /*///////////LOWER SIDEBAR////////*/
 #lower-div {
@@ -196,16 +194,20 @@ i {
 #lower {
   display: block;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 #lower div {
   height: 120px;
-  width: 220px;
+  width:calc(25% - 15px);
+  margin:0 10px;
   background-color: #BCBCBC;
   float: left;
 }
-#lower h3 {
-  width: 220px;
+#lower div:first-child{
+  margin-left:0;
+}
+#lower div:last-child{
+  margin-right:0;
 }
 #lower ul {
   margin-bottom: 20px;
@@ -214,15 +216,8 @@ i {
 #lower li {
   list-style: none;
 }
-#lower div{
-  width:calc(25%-20px);
-  margin:0 10px;
-}
-#lower div:first-child{
-  margin-left:0;
-}
-#lower div:last-child{
-  margin-right:0;
+#lower .textwidget{
+  height:75%;
 }
 /*///////////PRIMARY SIDEBAR////////*/
 #primary {
