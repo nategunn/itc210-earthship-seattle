@@ -34,7 +34,6 @@ a img {
   /*remove blue border from linked images in ie*/
   border: none;
 }
-
 body {
   /*global font styles go on the body tag*/
   font-family: 'PT Sans', Arial, Geneva, sans-serif;
@@ -268,7 +267,7 @@ a:focus {
 /* RESPONSIVE STYLES */
 /* Desktop */
 /* Tablet */
-@media all and (min-width: 610px) and (max-width: 779px) {
+@media all and (min-width: 481px) and (max-width: 800px) {
   body,
   #main-content,
   #main-content-fp,
@@ -288,7 +287,7 @@ a:focus {
   }
 }
 /* Phone */
-@media all and (max-width: 609px) {
+@media all and (max-width: 480px) {
   body,
   #main-content,
   #main-content-fp,
