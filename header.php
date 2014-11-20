@@ -25,7 +25,7 @@
 	
 </head>
 
-<body id="top">
+<body id="top"<?php body_class(); ?>>
     <div id="wrapper">
 	<header id="masthead" >
 	    
@@ -64,5 +64,5 @@
     </nav>
 
 
-	<div id="main" class="site-main">
+	<div id="middle">
 

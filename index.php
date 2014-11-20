@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="main-content" class="main-content">
+<div id="main-content" class="index">
 
     <?php while (have_posts()) : the_post(); ?>
     	<div class="post-box">
