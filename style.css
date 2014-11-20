@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig
 Author URI:
 Description:
-Version: 1.0
+Version: 141120a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
@@ -36,7 +36,7 @@ a img {
 }
 body {
   /*global font styles go on the body tag*/
-  font-family: 'PT Sans', Arial, Geneva, sans-serif;
+  font-family: 'PT Sans', Helvetica, Geneva, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.45;
   color: #000;
@@ -46,6 +46,30 @@ h2,
 h3 {
   font-family: 'PT Serif', serif;
 }
+
+h1 {
+  font-family: 'PT Mono';
+}
+
+h2 {
+  font-size: 2em; /* 32/16 */
+  margin-top:20px;
+}
+
+h3 {
+  font-size: calc(1em * (30/16));
+}
+
+.xbig-p {
+  /* 25px/16px = 1.5625 */
+  /* multiply by 1em to set unit type */
+  font-size: calc(1em * (25/16));
+}
+
+.big-p {
+  font-size: calc(1em * (23/16));
+}
+
 caption {
   font-family: 'PT Sans Caption', sans-serif;
 }
@@ -54,6 +78,14 @@ ol,
 ul,
 dl {
   margin-bottom: 10px;
+}
+
+.big-right {
+  width: calc(100% * (620 / 940));
+  text-align:right;
+  float:right;
+  position:relative;
+  /*display:block;*/
 }
 /*/////SOCIAL MEDIA ICONS/////*/
 .social-media-icons {
@@ -84,20 +116,28 @@ i {
   margin: auto;
   background-image: url("images/bg-980px.png");
 }
+
+.wrapper940 {
+  max-width: 940px;
+  margin: auto;
+}
+
+}
 #masthead {
   height: 100px;
   border: 2px #a2a2a2 solid;
-  background-color: #a2a2a2;
+  background-color: #ACB68A;
   padding: 0 20px;
 }
-#search {
-  display: block;
-  float: right;
-  padding-right: 20px;
+
+header {
+  background-color: #ACB68A;
 }
+
 #middle{
   padding: 0 20px;
   overflow:hidden;
+  clear:both;
 }
 #main-content {
   width: 700px;
@@ -106,8 +146,8 @@ i {
   padding: 0 20px;
 }
 #main-content-fp {
-  width: 980px;
-  padding: 0 20px;
+  width: 940px;
+  padding: 0;
 }
 .post-box {
   margin: 10px 0;
@@ -125,26 +165,63 @@ i {
   font-weight: bold;
 }
 /*/////////////NAV STYLES///////////*/
-#nav {
+
+#nav-wide {
+  background-color:hotpink;  
+}
+
+}
+nav {
   /*display:inline-block;*/
   height: 40px;
   line-height: 40px;
   padding: 10px, 20px;
-  background-color: #BCBCBC;
+  background-color: #100f0d;
+  margin:auto;
 }
-#nav li {
+
+nav ul {
+  margin:auto;
+}
+
+nav li {
   float: left;
+  display:block;
   list-style: none;
+  /*width:8em;*/
+  
 }
-#nav li ul {
+nav li ul {
   display: none;
 }
-#nav a {
-  background-color: #BCBCBC;
-  color: #000;
+nav a {
+  /*background-color: #100f0d;*/
+  color: #FFF;
   padding: 0 20px;
   display: block;
+  /*font-size:1.25em;*/
 }
+
+}
+#search {
+  /*display: block;*/
+  float: right;
+  /*padding-right: 20px;*/
+ 
+}
+
+input#search {
+   height:20px;
+  
+}
+
+/*///// FRONT PAGE STYLES /////*/
+#hero-front-page {
+  /*background-image: url("/images/G2_Global_model-Earthship-1158x400px.jpg");*/
+  /*background-repeat: no-repeat;*/
+}
+/*///// END FRONT PAGE STYLES /////*/
+
 /*///////////SINGLE.PHP STYLES/////////*/
 .single {
   width: 700px;
@@ -278,10 +355,10 @@ a:focus {
   #masthead,
   #site-footer,
   #wrapper,
-  #nav {
+  nav {
     width: 100%;
   }
-  #nav li {
+  nav li {
     width: auto;
   }
   #search {
@@ -303,7 +380,7 @@ a:focus {
   h1 img {
     display: none;
   }
-  #nav {
+  nav {
     width: 100%;
     min-height: 60px;
     padding-top: 10px;
@@ -311,30 +388,30 @@ a:focus {
     background-color: #a2a2a2;
     /*shows the image for the menu and gives it a height*/
   }
-  #nav ul {
+  nav ul {
     width: 60px;
     height: 60px;
     padding: 5px 0;
     position: absolute;
     /*gives the list items a width and height */
   }
-  #nav li {
+  nav li {
     height: 60;
     display: none;
     /* hide all <li> items */
   }
-  #nav .current {
+  nav .current {
     display: block;
     /* show only current <li> item */
   }
-  #nav a {
+  nav a {
     text-align: center;
   }
   /* on nav hover */
-  #nav :hover {
+  nav :hover {
     background-color: #FFFFFF;
   }
-  #nav ul:hover li {
+  nav ul:hover li {
     width: 300%;
     display: block;
     clear: both;

@@ -26,10 +26,11 @@
 </head>
 
 <body id="top"<?php body_class(); ?>>
-    <div id="wrapper">
-	<header id="masthead" >
+    <header> <!-- has no width, extends left and right forever -->
+    
+	<div id="masthead" class="wrapper940">
 	    
-	    <div class="social-media-icons">
+	    <div class="social-media-icons wrapper940">
 		<span class="fa-lg">
 		
 		<a href="https://twitter.com/Earthship_SEA" target="_blank">
@@ -47,22 +48,27 @@
 		</span>
 	    </div> <!-- end social-media-icons -->
 	    
-        <h1>
-                <img src="<?php echo(get_header_image('/images/logo.jpg'));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-                <a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
+	    <h1>
+		    <img src="<?php echo(get_header_image('/images/logo.jpg'));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+		    <a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>   
+	    </h1>	
 
-        </h1>	
+	</div><!-- #masthead -->
+	
+    </header>
+    
+	<div id="nav-wide"> <!-- has no width, extends left and right forever -->
+	    <nav class="wrapper940">
+		<?php wp_nav_menu( array( 
+		    'theme_location' => 'main-menu' ,
+		    'menu' => 'nav-main' ,
+		    'container'  => 'ul', 
+		));?>
+		 <div id="search" class="wrapper940"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></div>
+	    </nav>
+	</div> <!-- end nav-wide -->
+    
 
-	</header><!-- #masthead -->
-     <nav id="nav">
-        <?php wp_nav_menu( array( 
-            'theme_location' => 'main-menu' ,
-            'menu' => 'nav-main' ,
-            'container'  => 'ul', 
-        ));?>
-         <div id="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></div>
-    </nav>
-
-
+    <div id="wrapper">
 	<div id="middle">
 
