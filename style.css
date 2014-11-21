@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig
 Author URI:
 Description:
-Version: 141121a
+Version: 141121b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -28,6 +28,9 @@ i {
 }
 
 nav { outline: 1px solid orange; }
+
+p { outline: 1px solid purple; }
+
 /*/////END FOR DEVELOPMENT ONLY/////*/
 
 /*///// RESETS /////*/
@@ -52,10 +55,22 @@ body {
   color: #000;
 }
 
+#wrapper {
+  display: block;
+  width: 980px;
+  margin: auto;
+  background-image: url("images/bg-980px.png");
+}
+
+.wrapper940 {
+  max-width: 940px;
+  margin: auto;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
-  color: #FFF;
+  color:#000;
 }
 
 a:hover,
@@ -72,6 +87,7 @@ h1,
 h2,
 h3 {
   font-family: 'PT Serif', serif;
+  color:#000;
 }
 
 h2 {
@@ -82,6 +98,19 @@ h2 {
 h3 {
   font-size: calc(1em * (30/16));
 }
+
+h2 a:link,
+h2 a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+h2 a:hover,
+h2 a:focus {
+  text-decoration: underline;
+  color: #000;
+}
+
 
 caption {
   font-family: 'PT Sans Caption', sans-serif;
@@ -101,6 +130,7 @@ dl {
   float: right;
   /*width:auto;*/
 }
+
 i {
   margin-left: 5px;
   float: right;
@@ -119,26 +149,18 @@ i {
   color: #000;
 }
 /*/////END SOCIAL MEDIA ICONS/////*/
-#wrapper {
-  display: block;
-  width: 980px;
-  margin: auto;
-  background-image: url("images/bg-980px.png");
+
+/*///// HEADER /////*/
+
+header {
+  background-color: #ACB68A;
 }
 
-.wrapper940 {
-  max-width: 940px;
-  margin: auto;
-}
-
-}
 #masthead {
   border: 2px #a2a2a2 solid;
   background-color: #ACB68A;
   padding: 0 20px;
 }
-
-/*///// HEADER /////*/
 
 .logo-header {
   float: left;
@@ -161,9 +183,11 @@ header a:hover {
   clear: both;
 }
 
-header {
-  background-color: #ACB68A;
+header h1 {
+  color:#FFF;
 }
+
+/*///// END HEADER /////*/
 
 #middle{
   padding: 0 20px;
@@ -171,18 +195,26 @@ header {
   clear:both;
 }
 #main-content {
-  width: 700px;
+  max-width: 620px;
+  width: calc(100% * (620/940));
   border: 2px #a2a2a2 solid;
   float: left;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
 }
 #main-content-fp {
   width: 940px;
 
 }
 .post-box {
-  margin: 10px 0;
+  /*margin: 10px 0;*/
 }
+
+.post-box p {
+  width: calc(100% * (380/620));
+  float:left;
+
+}
+
 .delimiter {
   clear: both;
 }
@@ -190,17 +222,16 @@ header {
   border: 2px #a2a2a2 solid;
   padding: 0 20px;
 }
-.title {
-  font-size: 11pt;
-  font-family: verdana;
-  font-weight: bold;
-}
+/*.title {*/
+/*  font-size: 11pt;*/
+/*  font-family: verdana;*/
+/*  font-weight: bold;*/
+/*}*/
 /*/////////////NAV STYLES///////////*/
 
 #nav-wide {
   background-color: #100f0d;
 }
-
 
 nav {
   height: 40px;
@@ -225,14 +256,17 @@ nav li ul {
 }
 
 nav a:link,
-nav a :visited {
+nav a:visited {
   padding: 0 20px;
   display: inline-block;
   /*font-size:1.25em;*/
+  color:#FFF;
 }
 
-nav a:hover {
-  background-color:#57642f;
+nav a:hover,
+nav a:focus {
+  background-color:#333333;
+  color:#FFF;
 }
 
 /*nav ul li:first-child a {*/
@@ -284,6 +318,21 @@ input {
   
 }
 /*///// END FRONT PAGE STYLES /////*/
+
+/*///// INDEX.PHP STYLES ///*/
+.wp-caption,
+.size-full {
+  float:right;
+  clear:both;
+  max-width:220px;
+}
+
+caption {
+  width:100%;
+}
+
+
+/*///// END INDEX.PHP STYLES /////*/
 
 /*///////////SINGLE.PHP STYLES/////////*/
 .single {
