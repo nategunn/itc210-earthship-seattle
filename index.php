@@ -21,6 +21,9 @@
 		    <?php the_content('More &rAquo;'); ?>
 	    <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
         </div>
+	
+	<hr>
+	    
     <?php endwhile; ?>
 
 		<nav class="post-nav">
