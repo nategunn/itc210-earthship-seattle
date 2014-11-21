@@ -276,10 +276,12 @@ input {
   font-size: calc(1em * (23/16));
 }
 
-#hero-front-page {
+#hero-front-page  {
   /*background-image: url("/images/G2_Global_model-Earthship-1158x400px.jpg");*/
   /*background-repeat: no-repeat;*/
   margin:auto;
+  background-size: cover;
+  
 }
 /*///// END FRONT PAGE STYLES /////*/
 
@@ -305,8 +307,11 @@ input {
 }
 #mid div {
   height: 230px;
-  width:calc(32.9% - 10px);
-  margin:0 10px;
+  /*width:calc(32.9% - 10px);*/
+  /*width:calc(100% * ((300/940) - (10/940)) );*/
+  width:calc(100% * (300/940));
+  /*margin:0 10px;*/
+  margin:0 calc(100% * (10/940));
   background-color: #BCBCBC;
   float: left;
 }

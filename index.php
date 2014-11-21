@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+<div id="hero-front-page">
+    <img src="<?php bloginfo('template_url'); ?>/images/hands-tires-1979x280px-maxblack.jpg" alt="earthship hands and tires"/>
+</div>
+
+<div id="wrapper">
+<div id="middle">
+ 
 <div id="main-content" class="index">
 
     <?php while (have_posts()) : the_post(); ?>

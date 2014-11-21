@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<div id="wrapper">
+<div id="middle">
+
 <div id="main-content" class="page">
 
 

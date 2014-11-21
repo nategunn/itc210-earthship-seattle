@@ -69,6 +69,6 @@
 	</div> <!-- end nav-wide -->
     
 
-    <div id="wrapper">
+    <!--<div id="wrapper">
 	<div id="middle">
-
+-->
