@@ -57,7 +57,7 @@ body {
 
 #wrapper {
   display: block;
-  width: 980px;
+  max-width: 980px;
   margin: auto;
   background-image: url("images/bg-980px.png");
 }
@@ -323,7 +323,6 @@ input {
 .wp-caption,
 .size-full {
   float:right;
-  clear:both;
   max-width:220px;
 }
 
