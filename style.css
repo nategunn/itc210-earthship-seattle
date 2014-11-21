@@ -4,15 +4,16 @@ Theme URI:
 Author: Dan Mattwig
 Author URI:
 Description:
-Version: 141120a
+Version: 141121a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
+fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style,
+featured-images, flexible-header, full-width-template, microformats, post-formats,
+rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
 Text Domain: earthship
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -25,16 +26,24 @@ div,
 i {
   outline: 1px solid red;
 }
+
+nav { outline: 1px solid orange; }
 /*/////END FOR DEVELOPMENT ONLY/////*/
+
+/*///// RESETS /////*/
 body,
 body * {
   margin: 0;
   padding: 0;
 }
+
 a img {
   /*remove blue border from linked images in ie*/
   border: none;
 }
+/*///// END RESETS /////*/
+
+/*///// GLOBAL STYLES /////*/
 body {
   /*global font styles go on the body tag*/
   font-family: 'PT Sans', Helvetica, Geneva, Arial, sans-serif;
@@ -42,14 +51,27 @@ body {
   line-height: 1.45;
   color: #000;
 }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+
+}
+
+header h1 {
+  font-family: 'PT Mono';
+}
+
 h1,
 h2,
 h3 {
   font-family: 'PT Serif', serif;
-}
-
-h1 {
-  font-family: 'PT Mono';
 }
 
 h2 {
@@ -61,34 +83,19 @@ h3 {
   font-size: calc(1em * (30/16));
 }
 
-.xbig-p {
-  /* 25px/16px = 1.5625 */
-  /* multiply by 1em to set unit type */
-  font-size: calc(1em * (25/16));
-}
-
-.big-p {
-  font-size: calc(1em * (23/16));
-}
-
 caption {
   font-family: 'PT Sans Caption', sans-serif;
 }
+
 p,
 ol,
 ul,
 dl {
   margin-bottom: 10px;
 }
+/*///// END GLOBAL STYLES /////*/
 
-.big-right {
-  width: calc(100% * (620 / 940));
-  text-align:right;
-  float:right;
-  position:relative;
-  /*display:block;*/
-  /*clear:both;*/
-}
+
 /*/////SOCIAL MEDIA ICONS/////*/
 .social-media-icons {
   float: right;
@@ -135,11 +142,15 @@ i {
 
 .logo-header {
   float: left;
+  margin-right:20px;
 }
 
 #site-title {
-  width: 150px;
   display:inline;
+}
+
+header a:hover {
+  text-decoration:none;
 }
 
 .clear-fix::after {
@@ -187,16 +198,14 @@ header {
 /*/////////////NAV STYLES///////////*/
 
 #nav-wide {
-  background-color:hotpink;  
+  background-color: #100f0d;
 }
 
-}
+
 nav {
-  /*display:inline-block;*/
   height: 40px;
   line-height: 40px;
-  padding: 10px, 20px;
-  background-color: #100f0d;
+  background-color:#100f0d;
   margin:auto;
 }
 
@@ -208,19 +217,33 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  /*width:8em;*/
-  
+  font-size: calc(1em * (18/16));
 }
+
 nav li ul {
   display: none;
 }
-nav a {
-  /*background-color: #100f0d;*/
-  color: #FFF;
+
+nav a:link,
+nav a :visited {
   padding: 0 20px;
   display: inline-block;
   /*font-size:1.25em;*/
 }
+
+nav a:hover {
+  background-color:#57642f;
+}
+
+/*nav ul li:first-child a {*/
+/*  padding:0;  */
+/*}*/
+  
+/*nav ul li:first-child a:hover {*/
+/*  margin-left:20px;  */
+/*}*/
+  
+
 
 .search {
   /*display: block;*/
@@ -229,15 +252,34 @@ nav a {
  
 }
 
-input#search {
+input {
    height:20px;
-  
 }
 
 /*///// FRONT PAGE STYLES /////*/
+.xbig-p {
+  /* 25px/16px = 1.5625 */
+  /* multiply by 1em to set unit type */
+  font-size: calc(1em * (25/16));
+}
+
+.big-right {
+  width: calc(100% * (620 / 940));
+  text-align:right;
+  float:right;
+  position:relative;
+  /*display:block;*/
+  /*clear:both;*/
+}
+
+.big-p {
+  font-size: calc(1em * (23/16));
+}
+
 #hero-front-page {
   /*background-image: url("/images/G2_Global_model-Earthship-1158x400px.jpg");*/
   /*background-repeat: no-repeat;*/
+  margin:auto;
 }
 /*///// END FRONT PAGE STYLES /////*/
 
@@ -283,8 +325,6 @@ input#search {
 #mid li {
   list-style: none;
 }
-
-
 
 /*///////////LOWER SIDEBAR////////*/
 #lower-div {
@@ -345,13 +385,13 @@ input#search {
   padding: 0 20px;
 }
 /*////////////A TAGS///////////////////*/
-a:link,
-a:visited {
+footer a:link,
+footer a:visited {
   text-decoration: none;
   color: #545353;
 }
-a:hover,
-a:focus {
+footer a:hover,
+footer a:focus {
   text-decoration: underline;
   color: #0065ff;
 }

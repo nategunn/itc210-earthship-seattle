@@ -6,11 +6,15 @@ Template Name: Front Page
 
 <?php get_header(); ?>
 
-<div id="main-content-fp" class="front-page">
+
     
     <div id="hero-front-page">
         <img src="<?php bloginfo('template_url'); ?>/images/G2_Global_model-Earthship-1158x400px.jpg" alt="earthship hero-image"/>
     </div>
+ 
+ 
+ <div id="main-content-fp" class="front-page">
+
     
     <h2>Vision</h2>
         <p class="xbig-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu sit amet, consectetur adipiscing elit.</p>

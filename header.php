@@ -49,7 +49,7 @@
 	    </div> <!-- end social-media-icons -->
 	    
 	    <div class="clear-fix">
-		    <img class="logo-header" src="<?php echo(get_header_image('/images/logo.jpg'));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+		    <img class="logo-header" src="<?php echo(get_header_image("<?php bloginfo('template_url'); ?>/images/logo.png"));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 		    <a href="<?php echo get_option('home'); ?>/"><h1 id="site-title">Earthship<br>Seattle</h1></a>
 	    </div>	
 
