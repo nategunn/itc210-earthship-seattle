@@ -473,11 +473,43 @@ footer{
 #site-footer li a:hover{
 	color: #90C695;
 }
-
-
-
-
-
+/********* button styled links on left side *********/	
+p.bt_1, p.bt_2, p.bt_3 {
+	font-size: 1em;
+	margin-bottom: 20px;
+	padding: .625em .313em;
+}
+	
+.bt_1 {
+	background-color: #A3A29E;
+	text-align: center;
+}
+	
+.bt_2 {
+	background-color: #837E7A;
+	text-align: center;
+}
+	
+.bt_3 {
+	background-color: #605B55;
+	text-align: center;
+}
+	
+.bt_1 a, .bt_2 a, .bt_3 a{
+	color: #fff;
+	text-decoration: none;
+}
+	
+p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
+	background-color: #90C695;
+}
+	
+.copy{
+	color: #fff;
+	float: right;
+	padding-bottom: 20px;
+	clear: both;
+}
 /* RESPONSIVE STYLES */
 /* Desktop */
 /* Tablet */
