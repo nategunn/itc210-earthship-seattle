@@ -48,23 +48,23 @@
 		</span>
 	    </div> <!-- end social-media-icons -->
 	    
-	    <h1>
-		    <img src="<?php echo(get_header_image('/images/logo.jpg'));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-		    <a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>   
-	    </h1>	
+	    <div class="clear-fix">
+		    <img class="logo-header" src="<?php echo(get_header_image('/images/logo.jpg'));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+		    <a href="<?php echo get_option('home'); ?>/"><h1 id="site-title">Earthship<br>Seattle</h1></a>
+	    </div>	
 
 	</div><!-- #masthead -->
 	
     </header>
     
 	<div id="nav-wide"> <!-- has no width, extends left and right forever -->
-	    <nav class="wrapper940">
+	    <nav class="wrapper940 clear-fix">
 		<?php wp_nav_menu( array( 
 		    'theme_location' => 'main-menu' ,
 		    'menu' => 'nav-main' ,
 		    'container'  => 'ul', 
 		));?>
-		 <div id="search" class="wrapper940"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></div>
+		 <span class="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></span>
 	    </nav>
 	</div> <!-- end nav-wide -->
     

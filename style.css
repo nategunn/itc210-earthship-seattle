@@ -19,10 +19,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
 /*/////FOR DEVELOPMENT ONLY//////*/
 div,
 i {
-  /*border: 1px solid red;*/
+  outline: 1px solid red;
 }
 /*/////END FOR DEVELOPMENT ONLY/////*/
 body,
@@ -86,6 +88,7 @@ dl {
   float:right;
   position:relative;
   /*display:block;*/
+  /*clear:both;*/
 }
 /*/////SOCIAL MEDIA ICONS/////*/
 .social-media-icons {
@@ -124,10 +127,28 @@ i {
 
 }
 #masthead {
-  height: 100px;
   border: 2px #a2a2a2 solid;
   background-color: #ACB68A;
   padding: 0 20px;
+}
+
+/*///// HEADER /////*/
+
+.logo-header {
+  float: left;
+}
+
+#site-title {
+  width: 150px;
+  display:inline;
+}
+
+.clear-fix::after {
+  content: " ";
+  height: 0;
+  width: 0;
+  display: block;
+  clear: both;
 }
 
 header {
@@ -152,7 +173,7 @@ header {
 .post-box {
   margin: 10px 0;
 }
-#delimiter {
+.delimiter {
   clear: both;
 }
 #site-footer {
@@ -182,11 +203,11 @@ nav {
 
 nav ul {
   margin:auto;
+  display: inline;
 }
 
 nav li {
-  float: left;
-  display:block;
+  display: inline;
   list-style: none;
   /*width:8em;*/
   
@@ -198,12 +219,11 @@ nav a {
   /*background-color: #100f0d;*/
   color: #FFF;
   padding: 0 20px;
-  display: block;
+  display: inline-block;
   /*font-size:1.25em;*/
 }
 
-}
-#search {
+.search {
   /*display: block;*/
   float: right;
   /*padding-right: 20px;*/
@@ -270,6 +290,7 @@ input#search {
 /*///////////LOWER SIDEBAR////////*/
 #lower-div {
   height: 130px;
+  clear:both;
 }
 #lower {
   display: block;
