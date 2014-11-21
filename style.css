@@ -20,7 +20,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   box-sizing: border-box;
 }
 
-
 /*/////FOR DEVELOPMENT ONLY//////*/
 div,
 i {
@@ -366,6 +365,74 @@ a:focus {
   text-decoration: underline;
   color: #0065ff;
 }
+
+/* Footer Styles */
+
+.row:after,.clearfix:after{clear:both}
+
+.footer-container{
+	width: 100%;
+	background-color: #333;
+}
+
+footer{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	background-color: #333;
+	font-family: 'PT Sans', sans-serif;
+	padding-top: 40px;
+}
+
+.footer-nav{
+	width: 100%;
+	max-width: 960px;
+	margin:0 auto;		
+}
+
+.c1{
+	width: 16.66%;
+	float: left;
+	padding-bottom: 20px;
+}
+
+.c2{
+	width: 11.9057143%;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+#site-footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}		
+		
+#site-footer li {
+	padding-bottom: 10px;
+	padding-left: 20px;
+	font-size:.8em;
+	text-align: left;
+}
+	
+#site-footer li:first-child{
+	font-size: 1.1em;
+}
+	
+#site-footer li a{
+	color: #fff;
+	text-decoration: none;
+}
+		
+#site-footer li a:hover{
+	color: #90C695;
+}
+
+
+
+
+
 /* RESPONSIVE STYLES */
 /* Desktop */
 /* Tablet */
