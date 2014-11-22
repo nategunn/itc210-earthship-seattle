@@ -122,6 +122,10 @@ ul,
 dl {
   margin-bottom: 10px;
 }
+
+#delimiter {
+  clear: both;
+}
 /*///// END GLOBAL STYLES /////*/
 
 
@@ -431,30 +435,30 @@ hr {
   height:75%;
 }
 /*///////////PRIMARY SIDEBAR////////*/
+
 #primary {
-  width: 220px;
+  /*width: calc(100% * (300/940);*/
+  width:300px;
   border: 2px #a2a2a2 solid;
   float: right;
 }
-#primary h3 {
+#primary h3 {*/
   width: 192px;
   padding-left: 10px;
 }
+
 #primary ul {
   margin-bottom: 20px;
   padding-left: 0px;
 }
+
 #primary li {
   list-style: none;
   padding-left: 10px;
 }
-#delimiter {
-  clear: both;
-}
-#site-footer {
-  border: 2px #a2a2a2 solid;
-  padding: 0 20px;
-}
+
+/*///// END PRIMARY SIDEBAR /////*/
+
 /*////////////A TAGS///////////////////*/
 footer a:link,
 footer a:visited {
@@ -508,6 +512,12 @@ footer{
 	padding-left: 10px;
 	padding-bottom: 20px;
 }
+
+#site-footer {
+  border: 2px #a2a2a2 solid;
+  padding: 0 20px;
+}
+
 #site-footer ul {
 	list-style-type: none;
 	margin: 0;
@@ -529,6 +539,7 @@ footer{
 #site-footer li a:hover{
 	color: #90C695;
 }
+
 /********* button styled links on left side *********/	
 p.bt_1, p.bt_2, p.bt_3 {
 	font-size: 1em;
@@ -630,6 +641,17 @@ and (max-device-width: 900px) {
     float: right;
     padding-right: 10px;
   }
+  
+/*///// PRIMARY SIDEBAR /////*/
+
+ #primary {
+  width: 220px;
+  border: 2px #a2a2a2 solid;
+  float: right;
+} 
+ 
+/*///// END PRIMARY SIDEBAR /////*/
+  
  /********* footer styles *********/
   .footer-nav{
 	width: 100%;
