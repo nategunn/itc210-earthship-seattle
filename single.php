@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<div id="wrapper">
+<div id="middle">
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div id="content" class="single">
     <strong class="breadcrumb"><?php if (function_exists('bcn_display')) { bcn_display(); } ?></strong>
