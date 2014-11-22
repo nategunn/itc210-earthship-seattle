@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig
 Author URI:
 Description:
-Version: 141121b
+Version: 141121c
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -138,7 +138,7 @@ i {
 .social-media-icons a:link,
 .social-media-icons a:visited {
   text-decoration: none;
-  color: #FFF;
+  color: #000;
   -webkit-transition: color 0.35s ease-in-out;
   -moz-transition: color 0.35s ease-in-out;
   -ms-transition: color 0.35s ease-in-out;
@@ -146,7 +146,7 @@ i {
 }
 .social-media-icons a:hover {
   text-decoration: none;
-  color: #000;
+  color: #FFF;
 }
 /*/////END SOCIAL MEDIA ICONS/////*/
 
@@ -154,6 +154,7 @@ i {
 
 header {
   background-color: #ACB68A;
+  color:#000;
 }
 
 #masthead {
@@ -181,10 +182,6 @@ header a:hover {
   width: 0;
   display: block;
   clear: both;
-}
-
-header h1 {
-  color:#FFF;
 }
 
 /*///// END HEADER /////*/
@@ -311,13 +308,16 @@ input {
 }
 
 #hero-front-page  {
-  background-image: url("<?php bloginfo('template_url'); ?>/images/G2_1600x650px.png" alt="earthship hero-image");
+  background-image:url("images/G2_1920x675px.jpg");
+  min-height:575px;
   background-repeat: no-repeat;
-  margin:auto;
+  -webkit-background-size: cover;*/
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-color:hotpink;
-  background-position: center top 0;
+  background-color:#100f0d;
 }
+
 /*///// END FRONT PAGE STYLES /////*/
 
 /*///// INDEX.PHP STYLES ///*/
@@ -334,6 +334,19 @@ caption {
 hr {
   height: 2px;
   color:#333333;
+}
+
+.hero-index-page  {
+  background-image:url("images/hands-tires-1979x280px-maxblack.jpg");
+  height:0;
+  padding-bottom:280px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;*/
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#100f0d;
+  
 }
 
 /*///// END INDEX.PHP STYLES /////*/
