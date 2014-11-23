@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
-<div id="middle">
+<!--<div id="wrapper">-->
+<div id="middle" class="wrapper940">
 
 <div id="main-content" class="page">
 

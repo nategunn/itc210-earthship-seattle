@@ -59,16 +59,21 @@ body {
   color: #000;
 }
 
-#wrapper {
-  display: block;
-  max-width: 980px;
-  margin: auto;
-  background-image: url("images/bg-980px.png");
-}
+/*#wrapper {*/
+/*  display: block;*/
+/*  max-width: 980px;*/
+/*  margin: auto;*/
+/*  background-image: url("images/bg-980px-grid.png");*/
+/*}*/
 
 .wrapper940 {
   max-width: 940px;
   margin: auto;
+}
+
+#middle {
+   background-image: url("images/bg-980px-grid.png");
+   background-position:center;
 }
 
 a:link,
@@ -161,13 +166,14 @@ i {
 /*///// HEADER /////*/
 
 header {
-  background-color: #ACB68A;
+  /*background-color: #ACB68A;*/
+  /*background-color:#333333;*/
   color:#000;
 }
 
 #masthead {
   border: 2px #a2a2a2 solid;
-  background-color: #ACB68A;
+  /*background-color: #ACB68A;*/
   padding: 0 0;
 }
 
@@ -178,6 +184,7 @@ header {
 
 #site-title {
   display:inline;
+  line-height:100px;
 }
 
 header a:hover {
@@ -195,10 +202,12 @@ header a:hover {
 /*///// END HEADER /////*/
 
 #middle{
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   overflow:hidden;
   clear:both;
+  outline:1px solid blue;
 }
+
 #main-content {
   max-width: 620px;
   width: calc(100% * (620/940));
@@ -206,6 +215,7 @@ header a:hover {
   float: left;
   /*padding: 0 20px;*/
 }
+
 #main-content-fp {
   width: 940px;
 
@@ -607,13 +617,51 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
     min-height:275px;
   }
   
-  /***** PRIMARY SIDEBAR ******/
+  #wrapper {
+  display: block;
+  max-width: 800px;
+  margin: auto;
+  }
+  
+  #middle {
+  background-image: url("images/bg-800px-grid.png");
+  background-position:center;
+  max-width:780px;
+  }
+  
+  #main-content {
+  max-width: 540px;
+  width: calc(100% * (540/940));
+  outline: 2px #a2a2a2 solid;
+  float: left;
+  }
+  
+  #main-content p {
+  max-width: 340px;
+  width: calc(100% * (300/540));
+  outline: 2px #a2a2a2 solid;
+  float: left;
+  }
+  
+  .post-box p {
+  max-width: 340px;
+  width: calc(100% * (300/540));
+  float:left;
+  }
+  
+  /*.wp-caption p {*/
+  /*    width: 100%;*/
+  /*}*/
+
+
+/***** PRIMARY SIDEBAR ******/
    #primary {
     width: 220px;
     border: 2px #a2a2a2 solid;
     float: right;
   } 
   /****** END PRIMARY SIDEBAR *****/
+
 }
 
 @media all and (max-width: 640px) {

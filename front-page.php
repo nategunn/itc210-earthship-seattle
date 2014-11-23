@@ -8,8 +8,8 @@ Template Name: Front Page
   
 <div id="hero-front-page"></div>
     
-<div id="wrapper">
-<div id="middle">
+<!--<div id="wrapper">-->
+<div id="middle" class="wrapper940">
  
  
  <div id="main-content-fp" class="front-page">
