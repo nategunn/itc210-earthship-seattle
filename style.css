@@ -44,6 +44,10 @@ a img {
   /*remove blue border from linked images in ie*/
   border: none;
 }
+
+img {
+  max-width:100%;
+}
 /*///// END RESETS /////*/
 
 /*///// GLOBAL STYLES /////*/
@@ -312,8 +316,10 @@ input {
 }
 
 #hero-front-page  {
-  background-image:url("images/G2_1920x675px.jpg");
-  min-height:575px;
+  background-image:url("images/Global_model_Earthship-1920x675px.jpg");
+  /*min-height:575px;*/
+  min-height:675px;
+  max-width:1920px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;*/
   -moz-background-size: cover;
@@ -574,7 +580,63 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
 
 
 /* RESPONSIVE STYLES */
-/* Desktop */
+@media all and (max-width: 1600px) {
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-1600x550px.png");
+    min-height:550px;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-1280x450px.jpg");
+    min-height:450px;
+  }
+}
+
+@media all and (max-width: 980px) {
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-980x350px.jpg");
+    min-height:350px;
+  }
+}
+
+@media all and (max-width: 800px) { 
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-800x275px.jpg");
+    min-height:275px;
+  }
+  
+  /***** PRIMARY SIDEBAR ******/
+   #primary {
+    width: 220px;
+    border: 2px #a2a2a2 solid;
+    float: right;
+  } 
+  /****** END PRIMARY SIDEBAR *****/
+}
+
+@media all and (max-width: 640px) {
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-640x220px.jpg");
+    min-height:220px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-480x175px.jpg");
+    min-height:175px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-320x140px.jpg");
+    min-height:140px;
+  }
+}
+
 /******** footer desktop styles width 1 *********/
 @media only screen
 and (min-device-width: 901px){	
@@ -591,8 +653,9 @@ and (min-device-width: 901px){
 	padding-left: .625em;
 	}
 }
+
 /******** footer desktop styles width 2 *********/
-@media only screen 
+@media only screen
 and (min-device-width: 801px) 
 and (max-device-width: 900px) {	
 .footer-nav{
@@ -622,6 +685,7 @@ and (max-device-width: 900px) {
 	clear: both;
 	}
 }
+
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
   body,
@@ -641,19 +705,10 @@ and (max-device-width: 900px) {
     float: right;
     padding-right: 10px;
   }
-  
-/*///// PRIMARY SIDEBAR /////*/
-
- #primary {
-  width: 220px;
-  border: 2px #a2a2a2 solid;
-  float: right;
-} 
- 
-/*///// END PRIMARY SIDEBAR /////*/
+}
   
  /********* footer styles *********/
-  .footer-nav{
+.footer-nav{
 	width: 100%;
 	max-width: 800px;
 	margin:0 auto;		
@@ -678,6 +733,7 @@ p.bt_1, p.bt_2, p.bt_3 {
 	clear: both;
 	}  
 }
+
 /* Phone */
 @media all and (max-width: 480px) {
   body,
@@ -726,9 +782,10 @@ p.bt_1, p.bt_2, p.bt_3 {
     width: 300%;
     display: block;
     clear: both;
-  }
+}
+
  /********* phone footer styles ********/
- .footer-nav{
+.footer-nav{
 	width: 100%;
 	max-width: 500px;
 	margin:0 auto;		
@@ -753,6 +810,7 @@ p.bt_1, p.bt_2, p.bt_3 {
 	clear: both;
 	}
 }
+
 @media all and (max-device-width: 399px) {
 .c1, .c2{
 		width: 90%;
