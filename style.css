@@ -1,10 +1,10 @@
 /*
 Theme Name: earthship
 Theme URI:
-Author: Dan Mattwig
+Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141121c
+Version: 141124a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -20,19 +20,6 @@ Text Domain: earthship
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/*/////FOR DEVELOPMENT ONLY//////*/
-
-/*div,
-i {
-  outline: 1px solid red;
-}
-
-nav { outline: 1px solid orange; }
-
-p { outline: 1px solid purple; }*/
-
-/*/////END FOR DEVELOPMENT ONLY/////*/
 
 /*///// RESETS /////*/
 body,
@@ -325,18 +312,7 @@ header a:hover {
   font-size: calc(1em * (23/16));
 }
 
-#hero-front-page  {
-  background-image:url("images/Global_model_Earthship-1920x675px.jpg");
-  /*min-height:575px;*/
-  min-height:675px;
-  max-width:1920px;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;*/
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color:#100f0d;
-}
+
 
 /*///// END FRONT PAGE STYLES /////*/
 
@@ -611,33 +587,54 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
 	clear: both;
 }
 
+#hero-front-page  {
+  background-image:url("images/Global_model_Earthship-1920x675px.jpg");
+  /*min-height:575px;*/
+  /*min-height:675px;*/
+  /*max-width:1920px;*/
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#100f0d;
+  background-position:center;
+  background-size: 100% 100%;
+  height: 0px;
+  padding-bottom: calc(100% * (675/1920));
+}
+
 
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-1600x550px.png");
-    min-height:550px;
+    /*min-height:550px;*/
+    padding-bottom: calc(100% * (550/1600));
   }
 }
 
 @media all and (max-width: 1280px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-1280x450px.jpg");
-    min-height:450px;
+    /*min-height:450px;*/
+    padding-bottom: calc(100% * (450/1280));
   }
 }
 
 @media all and (max-width: 980px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-980x350px.jpg");
-    min-height:350px;
+    /*min-height:350px;*/
+    padding-bottom: calc(100% * (350/980));
   }
 }
 
 @media all and (max-width: 800px) { 
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-800x275px.jpg");
-    min-height:275px;
+    /*min-height:275px;*/
+    padding-bottom: calc(100% * (275/800));
   }
   
 /*  #wrapper {
@@ -729,21 +726,24 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
 @media all and (max-width: 640px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-640x220px.jpg");
-    min-height:220px;
+    /*min-height:220px;*/
+    padding-bottom: calc(100% * (220/640));
   }
 }
 
 @media all and (max-width: 480px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-480x175px.jpg");
-    min-height:175px;
+    /*min-height:175px;*/
+    padding-bottom: calc(100% * (175/480));
   }
 }
 
 @media all and (max-width: 320px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-320x140px.jpg");
-    min-height:140px;
+    /*min-height:140px;*/
+    padding-bottom: calc(100% * (140/320));
   }
 }
 
