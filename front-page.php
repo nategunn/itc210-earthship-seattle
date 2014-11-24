@@ -45,4 +45,4 @@ Template Name: Front Page
 </div><!-- #main-content -->
 
 <div id='delimiter'></div>
-<?php get_footer();
+<?php get_footer(); 
