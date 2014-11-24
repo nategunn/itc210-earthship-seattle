@@ -497,9 +497,32 @@ footer a:focus {
   color: #0065ff;
 }
 
+.postmetadata {
+  margin-bottom:15px;
+}
+
 /* Footer Styles */
 
-.row:after,.clearfix:after{clear:both}
+#footer-wide {
+  background-color:hotpink;
+}
+
+#copy-right-info {
+  color:#FFF;
+}
+
+#copy-right-info a:link,
+#copy-right-info a:visited {
+  color:#FFF;
+}
+
+#copy-right-info a:hover,
+#copy-right-info a:focus {
+  color:#FFF;
+  text-decoration:underline;
+}
+
+.row:after,.clearfix:after{clear:both};
 .footer-container{
 	width: 100%;
 	background-color: #333;
@@ -531,7 +554,7 @@ footer{
 
 #site-footer {
   /*border: 2px #a2a2a2 solid;*/
-  padding: 0 20px;
+  /*padding: 0 20px;*/
 }
 
 #site-footer ul {
@@ -617,11 +640,11 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
     min-height:275px;
   }
   
-  #wrapper {
+/*  #wrapper {
   display: block;
   max-width: 800px;
   margin: auto;
-  }
+  }*/
   
   #middle {
   background-image: url("images/bg-800px-grid.png");
@@ -657,7 +680,49 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
     width: 220px;
     /*border: 2px #a2a2a2 solid;*/
     float: right;
-  } 
+  }
+  
+  #lower {
+    clear:both;
+    display:block;
+  }
+  
+  #lower-div {
+    
+  }
+  
+  /* Stack Lower Front-Page Sidebar */
+/*  #lower div:nth-of-type(1) {
+    max-width:380px;
+    width: calc(100% * (380/780));
+    float:left;
+    display:block;
+    background-color:cyan;
+    display:block;
+  }*/
+  
+/*  #lower div:nth-of-type(2) {
+    max-width:380px;
+    width: calc(100% * (380/780));
+    float:right;
+    background-color:magenta; 
+    display:block;
+    margin:0;
+  }*/
+  
+/* #lower div:nth-child(3)  {
+    width: calc(100% * (380/780));
+    float:left;
+    background-color:yellow;
+    margin:20px 0;
+  }
+
+  #lower div:last-child {
+    width: calc(100% * (380/780));
+    float:right;
+    background-color:black;
+    margin:20px 0;
+  }*/
 
 }
 

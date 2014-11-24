@@ -1,5 +1,6 @@
-</div><!-- #middle -->
+</div><!-- #middle -->    
 
+<div id="footer-wide">
 <footer id="site-footer" class="wrapper940">
 
 	<div class="footer-nav">
@@ -55,11 +56,11 @@
 		</ul>
 	</div>
 	</div><!-- end footer-nav -->		
-	<p><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#top"> TOP OF PAGE </a></p>	
+	<p id="copy-right-info" class="delimiter"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#top"> TOP OF PAGE </a></p>	
 </footer>
 
+</div> <!-- end footer wide -->
 
-<?php wp_footer(); ?>
 <script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>

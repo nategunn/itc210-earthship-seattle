@@ -38,11 +38,11 @@ Template Name: Front Page
             <p class="big-p">Nam pharetra nulla. venenatis sed, volutpat eget lacus. Duis dictum metus felis, sed eleifend erat volutpat.</p>
     </div> <!-- end big-right -->
     
-    <div id="lower-div">
+    <div id="lower-div" class="clear-fix">
         <?php get_sidebar('lower');?>
     </div>
 
 </div><!-- #main-content -->
 
-<div id='delimiter'></div>
-<?php get_footer(); 
+<!--<div id='delimiter'></div>-->
+<?php get_footer();
