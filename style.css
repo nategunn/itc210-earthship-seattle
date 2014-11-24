@@ -22,14 +22,15 @@ Text Domain: earthship
 }
 
 /*/////FOR DEVELOPMENT ONLY//////*/
-div,
+
+/*div,
 i {
   outline: 1px solid red;
 }
 
 nav { outline: 1px solid orange; }
 
-p { outline: 1px solid purple; }
+p { outline: 1px solid purple; }*/
 
 /*/////END FOR DEVELOPMENT ONLY/////*/
 
@@ -135,6 +136,19 @@ dl {
 #delimiter {
   clear: both;
 }
+
+.delimiter {
+  clear: both;
+}
+
+.clear-fix::after {
+  content: " ";
+  height: 0;
+  width: 0;
+  display: block;
+  clear: both;
+}
+
 /*///// END GLOBAL STYLES /////*/
 
 
@@ -159,7 +173,7 @@ i {
 }
 .social-media-icons a:hover {
   text-decoration: none;
-  color: #FFF;
+  color: #333333;
 }
 /*/////END SOCIAL MEDIA ICONS/////*/
 
@@ -189,14 +203,6 @@ header {
 
 header a:hover {
   text-decoration:none;
-}
-
-.clear-fix::after {
-  content: " ";
-  height: 0;
-  width: 0;
-  display: block;
-  clear: both;
 }
 
 /*///// END HEADER /////*/
@@ -230,9 +236,6 @@ header a:hover {
 
 }
 
-.delimiter {
-  clear: both;
-}
 #site-footer {
   border: 2px #a2a2a2 solid;
   padding: 0 20px;
@@ -242,67 +245,64 @@ header a:hover {
 /*  font-family: verdana;*/
 /*  font-weight: bold;*/
 /*}*/
-/*/////////////NAV STYLES///////////*/
+
+/*/////////////NAV-MAIN STYLES///////////*/
 
 #nav-wide {
   background-color: #100f0d;
 }
 
-nav {
+#nav-main {
   height: 40px;
   line-height: 40px;
   background-color:#100f0d;
   margin:auto;
 }
 
-nav ul {
+#nav-main ul {
   margin:auto;
   display: inline;
 }
 
-nav li {
+#nav-main li {
   display: inline;
   list-style: none;
   font-size: calc(1em * (18/16));
 }
 
-nav li ul {
+#nav-main li ul {
   display: none;
 }
 
-nav a:link,
-nav a:visited {
+#nav-main a:link,
+#nav-main a:visited {
   padding: 0 20px;
   display: inline-block;
   /*font-size:1.25em;*/
   color:#FFF;
 }
 
-nav a:hover,
-nav a:focus {
+#nav-main a:hover,
+#nav-main a:focus {
   background-color:#333333;
   color:#FFF;
 }
 
-/*nav ul li:first-child a {*/
+/*#nav-main ul li:first-child a {*/
 /*  padding:0;  */
 /*}*/
   
-/*nav ul li:first-child a:hover {*/
+/*#nav-main ul li:first-child a:hover {*/
 /*  margin-left:20px;  */
 /*}*/
-  
+/*///// END NAV-MAIN STYLES /////*/
 
-
-.search {
+.search input {
   /*display: block;*/
   float: right;
   /*padding-right: 20px;*/
+  height:20px;
  
-}
-
-input {
-   height:20px;
 }
 
 /*///// FRONT PAGE STYLES /////*/
@@ -742,10 +742,10 @@ and (max-device-width: 900px) {
   #masthead,
   #site-footer,
   #wrapper,
-  nav {
+  #nav-main {
     width: 100%;
   }
-  nav li {
+  #nav-main li {
     width: auto;
   }
   #search {
@@ -795,7 +795,7 @@ p.bt_1, p.bt_2, p.bt_3 {
   h1 img {
     display: none;
   }
-  nav {
+  #nav-main {
     width: 100%;
     min-height: 60px;
     padding-top: 10px;
@@ -803,30 +803,30 @@ p.bt_1, p.bt_2, p.bt_3 {
     background-color: #a2a2a2;
     /*shows the image for the menu and gives it a height*/
   }
-  nav ul {
+  #nav-main ul {
     width: 60px;
     height: 60px;
     padding: 5px 0;
     position: absolute;
     /*gives the list items a width and height */
   }
-  nav li {
+  #nav-main li {
     height: 60;
     display: none;
     /* hide all <li> items */
   }
-  nav .current {
+  #nav-main .current {
     display: block;
     /* show only current <li> item */
   }
-  nav a {
+  #nav-main a {
     text-align: center;
   }
   /* on nav hover */
-  nav :hover {
+  #nav-main :hover {
     background-color: #FFFFFF;
   }
-  nav ul:hover li {
+  #nav-main ul:hover li {
     width: 300%;
     display: block;
     clear: both;
