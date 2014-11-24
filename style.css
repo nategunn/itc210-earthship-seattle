@@ -186,7 +186,7 @@ header {
 }
 
 #masthead {
-  border: 2px #a2a2a2 solid;
+  /*border: 2px #a2a2a2 solid;*/
   /*background-color: #ACB68A;*/
   padding: 0 0;
 }
@@ -211,13 +211,13 @@ header a:hover {
   /*padding: 0 20px;*/
   overflow:hidden;
   clear:both;
-  outline:1px solid blue;
+  /*outline:1px solid blue;*/
 }
 
 #main-content {
   max-width: 620px;
   width: calc(100% * (620/940));
-  border: 2px #a2a2a2 solid;
+  /*border: 2px #a2a2a2 solid;*/
   float: left;
   /*padding: 0 20px;*/
 }
@@ -237,7 +237,7 @@ header a:hover {
 }
 
 #site-footer {
-  border: 2px #a2a2a2 solid;
+  /*border: 2px #a2a2a2 solid;*/
   padding: 0 20px;
 }
 /*.title {*/
@@ -374,7 +374,7 @@ hr {
 /*///////////SINGLE.PHP STYLES/////////*/
 .single {
   width: 700px;
-  border: 2px #a2a2a2 solid;
+  /*border: 2px #a2a2a2 solid;*/
   float: left;
   padding: 10px 20px;
 }
@@ -455,7 +455,7 @@ hr {
 #primary {
   /*width: calc(100% * (300/940);*/
   width:300px;
-  border: 2px #a2a2a2 solid;
+  /*border: 2px #a2a2a2 solid;*/
   float: right;
 }
 #primary h3 {*/
@@ -530,7 +530,7 @@ footer{
 }
 
 #site-footer {
-  border: 2px #a2a2a2 solid;
+  /*border: 2px #a2a2a2 solid;*/
   padding: 0 20px;
 }
 
@@ -657,7 +657,7 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
 /***** PRIMARY SIDEBAR ******/
    #primary {
     width: 220px;
-    border: 2px #a2a2a2 solid;
+    /*border: 2px #a2a2a2 solid;*/
     float: right;
   } 
   /****** END PRIMARY SIDEBAR *****/
