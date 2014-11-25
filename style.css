@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141124a
+Version: 141124b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -421,7 +421,7 @@ hr {
   border: 2px #a2a2a2 solid;
   float: right;
 }
-#primary h3 {*/
+#primary h3 {
   width: 192px;
   padding-left: 10px;
 }
@@ -465,7 +465,7 @@ footer a:focus {
 }
 
 /* Footer Styles */
-<<<<<<< HEAD
+
 .footer-container{
   width: 100%;
   background-color: #333;
@@ -483,7 +483,7 @@ footer a:focus {
   max-width: 960px;
   margin:0 auto;  
   padding-top: 40px;
-=======
+}
 
 #copy-right-info {
   color:#FFF;
@@ -515,7 +515,7 @@ footer a:focus {
 	max-width: 960px;
 	margin:0 auto;	
   padding-top: 40px;	
->>>>>>> origin/master
+
 }
 .c1{
   width: 16.66%;
@@ -523,15 +523,15 @@ footer a:focus {
   padding-bottom: 20px;
 }
 .c2{
-<<<<<<< HEAD
+
   width: 11.9057143%;
   float: left;
   padding-bottom: 20px;
-=======
+
 	width: 11.9057143%;
 	float: left;
 	padding-bottom: 20px;
->>>>>>> origin/master
+
 }
 #site-footer ul {
   list-style-type: none;
@@ -556,11 +556,8 @@ footer a:focus {
   color: #90C695;
 }
 
-<<<<<<< HEAD
-/********* button styled links on left side *********/  
-=======
 /********* button styled links on left side *********/	
->>>>>>> origin/master
+
 #site-footer .pseudo-button{
   font-size: 1em;
   margin-bottom: 20px;
@@ -585,14 +582,14 @@ footer a:focus {
 #site-footer .pseudo-button:hover {
   background-color: #90C695;
 } 
-<<<<<<< HEAD
+
 #site-footer .copy{
   color: #fff;
   float: right;
   padding-bottom: 20px;
   clear: both;
 }
-=======
+
 .copy{
 	color: #fff;
 	float: right;
@@ -618,7 +615,7 @@ footer a:focus {
 }
 
 
->>>>>>> origin/master
+
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
   #hero-front-page  {
