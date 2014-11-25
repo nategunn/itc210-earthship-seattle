@@ -2,7 +2,7 @@
 
 <<<<<<< HEAD
 		</div><!-- #middle -->
-	<div class="footer-container clear-fix">
+
 		<footer id="site-footer" >
 		
 			<div class="footer-nav clear-fix">
@@ -60,8 +60,8 @@
 			</div><!-- end footer-nav -->		
 			<p><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#"> TOP OF PAGE </a></p>	
 		</footer>
-	<!--</div>--><!-- #page -->
-</div><!-- close footer-container -->
+	</div><!-- #page -->
+
         <?php wp_footer(); ?>
         <script src="//localhost:35729/livereload.js"></script>
 =======
