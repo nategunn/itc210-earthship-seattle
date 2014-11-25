@@ -22,7 +22,6 @@ Template Name: Front Page
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-            <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
         </div>
 
@@ -38,11 +37,11 @@ Template Name: Front Page
             <p class="big-p">Nam pharetra nulla. venenatis sed, volutpat eget lacus. Duis dictum metus felis, sed eleifend erat volutpat.</p>
     </div> <!-- end big-right -->
     
-    <div id="lower-div">
+    <div id="lower-div" class="clear-fix">
         <?php get_sidebar('lower');?>
     </div>
 
 </div><!-- #main-content -->
 
-<div id='delimiter'></div>
+<!--<div id='delimiter'></div>-->
 <?php get_footer();

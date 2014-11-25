@@ -1,10 +1,10 @@
 /*
 Theme Name: earthship
 Theme URI:
-Author: Dan Mattwig
+Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141121c
+Version: 141124a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -20,18 +20,6 @@ Text Domain: earthship
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/*/////FOR DEVELOPMENT ONLY//////*/
-div,
-i {
-  outline: 1px solid red;
-}
-
-nav { outline: 1px solid orange; }
-
-p { outline: 1px solid purple; }
-
-/*/////END FOR DEVELOPMENT ONLY/////*/
 
 /*///// RESETS /////*/
 body,
@@ -58,13 +46,6 @@ body {
   line-height: 1.45;
   color: #000;
 }
-
-/*#wrapper {*/
-/*  display: block;*/
-/*  max-width: 980px;*/
-/*  margin: auto;*/
-/*  background-image: url("images/bg-980px-grid.png");*/
-/*}*/
 
 .wrapper940 {
   max-width: 940px;
@@ -135,6 +116,19 @@ dl {
 #delimiter {
   clear: both;
 }
+
+.delimiter {
+  clear: both;
+}
+
+.clear-fix::after {
+  content: " ";
+  height: 0;
+  width: 0;
+  display: block;
+  clear: both;
+}
+
 /*///// END GLOBAL STYLES /////*/
 
 
@@ -159,7 +153,7 @@ i {
 }
 .social-media-icons a:hover {
   text-decoration: none;
-  color: #FFF;
+  color: #333333;
 }
 /*/////END SOCIAL MEDIA ICONS/////*/
 
@@ -172,7 +166,6 @@ header {
 }
 
 #masthead {
-  border: 2px #a2a2a2 solid;
   /*background-color: #ACB68A;*/
   padding: 0 0;
 }
@@ -191,29 +184,17 @@ header a:hover {
   text-decoration:none;
 }
 
-.clear-fix::after {
-  content: " ";
-  height: 0;
-  width: 0;
-  display: block;
-  clear: both;
-}
-
 /*///// END HEADER /////*/
 
 #middle{
-  /*padding: 0 20px;*/
   overflow:hidden;
   clear:both;
-  outline:1px solid blue;
 }
 
 #main-content {
   max-width: 620px;
   width: calc(100% * (620/940));
-  border: 2px #a2a2a2 solid;
   float: left;
-  /*padding: 0 20px;*/
 }
 
 #main-content-fp {
@@ -230,86 +211,79 @@ header a:hover {
 
 }
 
-.delimiter {
-  clear: both;
-}
 #site-footer {
-  border: 2px #a2a2a2 solid;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
 }
+
 /*.title {*/
 /*  font-size: 11pt;*/
 /*  font-family: verdana;*/
 /*  font-weight: bold;*/
 /*}*/
-/*/////////////NAV STYLES///////////*/
+
+/*/////////////NAV-MAIN STYLES///////////*/
 
 #nav-wide {
   background-color: #100f0d;
 }
 
-nav {
+#nav-main {
   height: 40px;
   line-height: 40px;
   background-color:#100f0d;
   margin:auto;
 }
 
-nav ul {
+#nav-main ul {
   margin:auto;
   display: inline;
 }
 
-nav li {
+#nav-main li {
   display: inline;
   list-style: none;
   font-size: calc(1em * (18/16));
 }
 
-nav li ul {
+#nav-main li ul {
   display: none;
 }
 
-nav a:link,
-nav a:visited {
+#nav-main a:link,
+#nav-main a:visited {
   padding: 0 20px;
   display: inline-block;
   /*font-size:1.25em;*/
   color:#FFF;
 }
 
-nav a:hover,
-nav a:focus {
+#nav-main a:hover,
+#nav-main a:focus {
   background-color:#333333;
   color:#FFF;
 }
 
-/*nav ul li:first-child a {*/
+/*#nav-main ul li:first-child a {*/
 /*  padding:0;  */
 /*}*/
   
-/*nav ul li:first-child a:hover {*/
+/*#nav-main ul li:first-child a:hover {*/
 /*  margin-left:20px;  */
 /*}*/
-  
 
+/*///// END NAV-MAIN STYLES /////*/
 
-.search {
+.search input {
   /*display: block;*/
   float: right;
   /*padding-right: 20px;*/
- 
-}
-
-input {
-   height:20px;
+  height:34px;
 }
 
 /*///// FRONT PAGE STYLES /////*/
 .xbig-p {
-  /* 25px/16px = 1.5625 */
   /* multiply by 1em to set unit type */
-  font-size: calc(1em * (25/16));
+  font-size: calc(1em * (25/16)); /* 25px/16px = 1.5625 */
 }
 
 .big-right {
@@ -323,19 +297,6 @@ input {
 
 .big-p {
   font-size: calc(1em * (23/16));
-}
-
-#hero-front-page  {
-  background-image:url("images/Global_model_Earthship-1920x675px.jpg");
-  /*min-height:575px;*/
-  min-height:675px;
-  max-width:1920px;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;*/
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color:#100f0d;
 }
 
 /*///// END FRONT PAGE STYLES /////*/
@@ -358,15 +319,18 @@ hr {
 
 .hero-index-page  {
   background-image:url("images/hands-tires-1979x280px-maxblack.jpg");
-  height:0;
-  padding-bottom:280px;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;*/
+  background-color:#100f0d;
+  height:0;
+  /*padding-bottom:280px;*/
+  padding-bottom: calc(100% * (280/1979));
+  
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-color:#100f0d;
+  background-size: cover;*/
   
+  background-size: 100% 100%; 
 }
 
 /*///// END INDEX.PHP STYLES /////*/
@@ -374,7 +338,6 @@ hr {
 /*///////////SINGLE.PHP STYLES/////////*/
 .single {
   width: 700px;
-  border: 2px #a2a2a2 solid;
   float: left;
   padding: 10px 20px;
 }
@@ -450,7 +413,7 @@ hr {
 #lower .textwidget{
   height:75%;
 }
-/*///////////PRIMARY SIDEBAR////////*/
+/*///////////SIDEBAR-PRIMARY SIDEBAR////////*/
 
 #primary {
   /*width: calc(100% * (300/940);*/
@@ -473,9 +436,9 @@ hr {
   padding-left: 10px;
 }
 
-/*///// END PRIMARY SIDEBAR /////*/
+/*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
 
-/*////////////A TAGS///////////////////*/
+/*///// FOOTER A TAGS /////*/
 footer a:link,
 footer a:visited {
   text-decoration: none;
@@ -497,7 +460,12 @@ footer a:focus {
   color: #0065ff;
 }
 
+.postmetadata {
+  margin-bottom:15px;
+}
+
 /* Footer Styles */
+<<<<<<< HEAD
 .footer-container{
   width: 100%;
   background-color: #333;
@@ -515,6 +483,39 @@ footer a:focus {
   max-width: 960px;
   margin:0 auto;  
   padding-top: 40px;
+=======
+
+#copy-right-info {
+  color:#FFF;
+}
+
+#copy-right-info a:link,
+#copy-right-info a:visited {
+  color:#FFF;
+}
+
+#copy-right-info a:hover,
+#copy-right-info a:focus {
+  color:#FFF;
+  text-decoration:underline;
+}
+
+#site-footer{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	background-color: #333;
+	font-family: 'PT Sans', sans-serif;
+	padding-top: 40px;
+   /*border: 2px #a2a2a2 solid;*/
+  /*padding: 0 20px;*/
+}
+.footer-nav{
+	width: 100%;
+	max-width: 960px;
+	margin:0 auto;	
+  padding-top: 40px;	
+>>>>>>> origin/master
 }
 .c1{
   width: 16.66%;
@@ -522,16 +523,16 @@ footer a:focus {
   padding-bottom: 20px;
 }
 .c2{
+<<<<<<< HEAD
   width: 11.9057143%;
   float: left;
   padding-bottom: 20px;
+=======
+	width: 11.9057143%;
+	float: left;
+	padding-bottom: 20px;
+>>>>>>> origin/master
 }
-
-#site-footer {
-  border: 2px #a2a2a2 solid;
-  padding: 0 20px;
-}
-
 #site-footer ul {
   list-style-type: none;
   margin: 0;
@@ -555,7 +556,11 @@ footer a:focus {
   color: #90C695;
 }
 
+<<<<<<< HEAD
 /********* button styled links on left side *********/  
+=======
+/********* button styled links on left side *********/	
+>>>>>>> origin/master
 #site-footer .pseudo-button{
   font-size: 1em;
   margin-bottom: 20px;
@@ -580,44 +585,81 @@ footer a:focus {
 #site-footer .pseudo-button:hover {
   background-color: #90C695;
 } 
+<<<<<<< HEAD
 #site-footer .copy{
   color: #fff;
   float: right;
   padding-bottom: 20px;
   clear: both;
 }
+=======
+.copy{
+	color: #fff;
+	float: right;
+	padding-bottom: 20px;
+	clear: both;
+}
+
+#hero-front-page  {
+  background-image:url("images/Global_model_Earthship-1920x675px.jpg");
+  /*min-height:575px;*/
+  /*min-height:675px;*/
+  /*max-width:1920px;*/
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#100f0d;
+  background-position:center;
+  /*background-size: 100% 100%;*/
+  height: 0px;
+  padding-bottom: calc(100% * (675/1920));
+}
+
+
+>>>>>>> origin/master
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-1600x550px.png");
-    min-height:550px;
+    /*min-height:550px;*/
+    padding-bottom: calc(100% * (550/1600));
   }
 }
 
 @media all and (max-width: 1280px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-1280x450px.jpg");
-    min-height:450px;
+    /*min-height:450px;*/
+    padding-bottom: calc(100% * (450/1280));
   }
 }
 
 @media all and (max-width: 980px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-980x350px.jpg");
-    min-height:350px;
+    /*min-height:350px;*/
+    padding-bottom: calc(100% * (350/980));
   }
+  
+  .hero-index-page {
+    background-image:url("images/hands-tires-980x200px-maxblack.jpg");
+    padding-bottom: calc(100% * (200/980));
+  }
+  
 }
 
 @media all and (max-width: 800px) { 
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-800x275px.jpg");
-    min-height:275px;
+    /*min-height:275px;*/
+    padding-bottom: calc(100% * (275/800));
   }
   
-  #wrapper {
-  display: block;
-  max-width: 800px;
-  margin: auto;
+  .hero-index-page {
+    background-image:url("images/hands-tires-800x200px-maxblack.jpg");
+    padding-bottom: calc(100% * (200/800));
   }
   
   #middle {
@@ -629,14 +671,14 @@ footer a:focus {
   #main-content {
   max-width: 540px;
   width: calc(100% * (540/940));
-  outline: 2px #a2a2a2 solid;
+  /*outline: 2px #a2a2a2 solid;*/
   float: left;
   }
   
   #main-content p {
   max-width: 340px;
   width: calc(100% * (300/540));
-  outline: 2px #a2a2a2 solid;
+  /*outline: 2px #a2a2a2 solid;*/
   float: left;
   }
   
@@ -650,35 +692,82 @@ footer a:focus {
   /*    width: 100%;*/
   /*}*/
 
-
-/***** PRIMARY SIDEBAR ******/
    #primary {
     width: 220px;
     border: 2px #a2a2a2 solid;
     float: right;
-  } 
-  /****** END PRIMARY SIDEBAR *****/
+  }
+  
+  #lower {
+    clear:both;
+    display:block;
+  }
+  
+  #lower-div {
+    
+  }
+  
+  /* Stack Lower Front-Page Sidebar */
+/*  #lower div:nth-of-type(1) {
+    max-width:380px;
+    width: calc(100% * (380/780));
+    float:left;
+    display:block;
+    background-color:cyan;
+    display:block;
+  }*/
+  
+/*  #lower div:nth-of-type(2) {
+    max-width:380px;
+    width: calc(100% * (380/780));
+    float:right;
+    background-color:magenta; 
+    display:block;
+    margin:0;
+  }*/
+  
+/* #lower div:nth-child(3)  {
+    width: calc(100% * (380/780));
+    float:left;
+    background-color:yellow;
+    margin:20px 0;
+  }
+
+  #lower div:last-child {
+    width: calc(100% * (380/780));
+    float:right;
+    background-color:black;
+    margin:20px 0;
+  }*/
 
 }
 
 @media all and (max-width: 640px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-640x220px.jpg");
-    min-height:220px;
+    /*min-height:220px;*/
+    padding-bottom: calc(100% * (220/640));
   }
 }
 
 @media all and (max-width: 480px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-480x175px.jpg");
-    min-height:175px;
+    /*min-height:175px;*/
+    padding-bottom: calc(100% * (175/480));
+  }
+  
+  .hero-index-page {
+    background-image:url("images/hands-tires-480x150px-maxblack.jpg");
+    padding-bottom: calc(100% * (150/480));
   }
 }
 
 @media all and (max-width: 320px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-320x140px.jpg");
-    min-height:140px;
+    /*min-height:140px;*/
+    padding-bottom: calc(100% * (140/320));
   }
 }
 
@@ -736,10 +825,10 @@ footer a:focus {
   #masthead,
   #site-footer,
   #wrapper,
-  nav {
+  #nav-main {
     width: 100%;
   }
-  nav li {
+  #nav-main li {
     width: auto;
   }
   #search {
@@ -761,12 +850,12 @@ footer a:focus {
 	float: left;
 	padding-left: .625em;
 	}	
-p.bt_1, p.bt_2, p.bt_3 {
+#site-footer .pseudo-button{
 	font-size: .8em;
 	margin-bottom: 10px;
 	padding: 10px;
 	}	
-#site-footer li {
+#site-footer li{
 	padding-left: none;
 	}	
 .copy{
@@ -789,7 +878,7 @@ p.bt_1, p.bt_2, p.bt_3 {
   h1 img {
     display: none;
   }
-  nav {
+  #nav-main {
     width: 100%;
     min-height: 60px;
     padding-top: 10px;
@@ -797,30 +886,30 @@ p.bt_1, p.bt_2, p.bt_3 {
     background-color: #a2a2a2;
     /*shows the image for the menu and gives it a height*/
   }
-  nav ul {
+  #nav-main ul {
     width: 60px;
     height: 60px;
     padding: 5px 0;
     position: absolute;
     /*gives the list items a width and height */
   }
-  nav li {
+  #nav-main li {
     height: 60;
     display: none;
     /* hide all <li> items */
   }
-  nav .current {
+  #nav-main .current {
     display: block;
     /* show only current <li> item */
   }
-  nav a {
+  #nav-main a {
     text-align: center;
   }
   /* on nav hover */
-  nav :hover {
+  #nav-main :hover {
     background-color: #FFFFFF;
   }
-  nav ul:hover li {
+  #nav-main ul:hover li {
     width: 300%;
     display: block;
     clear: both;
@@ -838,7 +927,7 @@ p.bt_1, p.bt_2, p.bt_3 {
 	float: left;
 	padding: .625em;
 	}	
-p.bt_1, p.bt_2, p.bt_3 {
+#site-footer .pseudo-button {
 	font-size: .8em;
 	margin-bottom: 10px;
 	padding: .625em;
@@ -861,7 +950,7 @@ p.bt_1, p.bt_2, p.bt_3 {
 		padding: .625em;
 		margin: 0 auto;
 	}	
-p.bt_1, p.bt_2, p.bt_3 {
+#site-footer .pseudo-button {
 	font-size: 1em;
 	margin-bottom: 10px;
 	padding: .625em;

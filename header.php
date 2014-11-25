@@ -60,7 +60,7 @@
     </header>
     
 	<div id="nav-wide"> <!-- has no width, extends left and right forever -->
-	    <nav class="wrapper940 clear-fix">
+	    <nav id="nav-main" class="wrapper940 clear-fix">
 		<?php wp_nav_menu( array( 
 		    'theme_location' => 'main-menu' ,
 		    'menu' => 'nav-main' ,
