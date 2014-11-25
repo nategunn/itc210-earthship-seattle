@@ -816,23 +816,33 @@ footer a:focus {
 
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
-  body,
-  #main-content,
-  #main-content-fp,
-  #masthead,
-  #site-footer,
-  #wrapper,
-  #nav-main {
-    width: 100%;
-  }
-  #nav-main li {
-    width: auto;
-  }
-  #search {
-    width: 100%;
-    float: right;
-    padding-right: 10px;
-  }
+    body,
+    #main-content,
+    #main-content-fp,
+    #masthead,
+    #site-footer,
+    #wrapper{
+        width: 100%;
+    }
+    nav {
+        height: auto;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    nav li {
+        width:calc(100%/7);
+        float: left;
+        position: relative;
+    }
+    #nav-main a:link {
+        text-align: left;
+        font-size: 2.75vw;
+        padding-left: 10px;
+        width: 100%;
+    }
 }
   
  /********* footer styles *********/
@@ -860,57 +870,58 @@ footer a:focus {
 	padding-right: .625em;
 	clear: both;
 	}  
-}
+
 
 /* Phone */
 @media all and (max-width: 480px) {
-  body,
-  #main-content,
-  #main-content-fp,
-  #masthead,
-  #site-footer,
-  #wrapper {
-    width: 100%;
-  }
-  h1 img {
-    display: none;
-  }
-  #nav-main {
-    width: 100%;
-    min-height: 60px;
-    padding-top: 10px;
-    background: url(images/menu-icon.png) no-repeat 10px 11px;
-    background-color: #a2a2a2;
-    /*shows the image for the menu and gives it a height*/
-  }
-  #nav-main ul {
-    width: 60px;
-    height: 60px;
-    padding: 5px 0;
-    position: absolute;
-    /*gives the list items a width and height */
-  }
-  #nav-main li {
-    height: 60;
-    display: none;
-    /* hide all <li> items */
-  }
-  #nav-main .current {
-    display: block;
-    /* show only current <li> item */
-  }
-  #nav-main a {
-    text-align: center;
-  }
-  /* on nav hover */
-  #nav-main :hover {
-    background-color: #FFFFFF;
-  }
-  #nav-main ul:hover li {
-    width: 300%;
-    display: block;
-    clear: both;
-}
+    body,
+    #main-content,
+    #main-content-fp,
+    #masthead,
+    #site-footer,
+    #wrapper {
+        width: 100%;
+    }
+    #nav-main{
+        height: 80px;
+    }
+    #nav-main li {
+        display: none;
+        height: auto;
+    }
+    #nav-main ul {
+        width: 15%;
+        height: 40px;
+        padding: 5px 0;
+        margin-top: 34px;
+        margin-right: 20px;
+        float:right;
+        background: url("images/mobile-menu-icon.png")repeat-x ;
+    }
+
+    #nav-main ul:hover li{
+        display: block;
+        position: relative;
+        width: 220px;
+        right: 150px;
+        bottom: 6px;
+        background-color: #100f0d
+    }
+
+    #nav-main ul:hover a {
+        width: 100%
+    }
+
+    .search input {
+        float: left;
+        margin-left: 10px;
+        margin-top: 34px;
+        width:70%;
+    }
+
+    .logo-header{
+        display: none;
+    }
 
  /********* phone footer styles ********/
 .footer-nav{
