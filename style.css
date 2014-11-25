@@ -47,13 +47,6 @@ body {
   color: #000;
 }
 
-/*#wrapper {*/
-/*  display: block;*/
-/*  max-width: 980px;*/
-/*  margin: auto;*/
-/*  background-image: url("images/bg-980px-grid.png");*/
-/*}*/
-
 .wrapper940 {
   max-width: 940px;
   margin: auto;
@@ -173,7 +166,6 @@ header {
 }
 
 #masthead {
-  /*border: 2px #a2a2a2 solid;*/
   /*background-color: #ACB68A;*/
   padding: 0 0;
 }
@@ -195,18 +187,14 @@ header a:hover {
 /*///// END HEADER /////*/
 
 #middle{
-  /*padding: 0 20px;*/
   overflow:hidden;
   clear:both;
-  /*outline:1px solid blue;*/
 }
 
 #main-content {
   max-width: 620px;
   width: calc(100% * (620/940));
-  /*border: 2px #a2a2a2 solid;*/
   float: left;
-  /*padding: 0 20px;*/
 }
 
 #main-content-fp {
@@ -224,9 +212,9 @@ header a:hover {
 }
 
 #site-footer {
-  /*border: 2px #a2a2a2 solid;*/
-  padding: 0 20px;
+  /*padding: 0 20px;*/
 }
+
 /*.title {*/
 /*  font-size: 11pt;*/
 /*  font-family: verdana;*/
@@ -282,6 +270,7 @@ header a:hover {
 /*#nav-main ul li:first-child a:hover {*/
 /*  margin-left:20px;  */
 /*}*/
+
 /*///// END NAV-MAIN STYLES /////*/
 
 .search input {
@@ -289,14 +278,12 @@ header a:hover {
   float: right;
   /*padding-right: 20px;*/
   height:34px;
- 
 }
 
 /*///// FRONT PAGE STYLES /////*/
 .xbig-p {
-  /* 25px/16px = 1.5625 */
   /* multiply by 1em to set unit type */
-  font-size: calc(1em * (25/16));
+  font-size: calc(1em * (25/16)); /* 25px/16px = 1.5625 */
 }
 
 .big-right {
@@ -311,8 +298,6 @@ header a:hover {
 .big-p {
   font-size: calc(1em * (23/16));
 }
-
-
 
 /*///// END FRONT PAGE STYLES /////*/
 
@@ -334,15 +319,18 @@ hr {
 
 .hero-index-page  {
   background-image:url("images/hands-tires-1979x280px-maxblack.jpg");
-  height:0;
-  padding-bottom:280px;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;*/
+  background-color:#100f0d;
+  height:0;
+  /*padding-bottom:280px;*/
+  padding-bottom: calc(100% * (280/1979));
+  
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-color:#100f0d;
+  background-size: cover;*/
   
+  background-size: 100% 100%; 
 }
 
 /*///// END INDEX.PHP STYLES /////*/
@@ -350,7 +338,6 @@ hr {
 /*///////////SINGLE.PHP STYLES/////////*/
 .single {
   width: 700px;
-  /*border: 2px #a2a2a2 solid;*/
   float: left;
   padding: 10px 20px;
 }
@@ -431,7 +418,7 @@ hr {
 #primary {
   /*width: calc(100% * (300/940);*/
   width:300px;
-  /*border: 2px #a2a2a2 solid;*/
+  border: 2px #a2a2a2 solid;
   float: right;
 }
 #primary h3 {*/
@@ -451,7 +438,7 @@ hr {
 
 /*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
 
-/*////////////A TAGS///////////////////*/
+/*///// FOOTER A TAGS /////*/
 footer a:link,
 footer a:visited {
   text-decoration: none;
@@ -599,7 +586,7 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
   background-size: cover;
   background-color:#100f0d;
   background-position:center;
-  background-size: 100% 100%;
+  /*background-size: 100% 100%;*/
   height: 0px;
   padding-bottom: calc(100% * (675/1920));
 }
@@ -628,6 +615,12 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
     /*min-height:350px;*/
     padding-bottom: calc(100% * (350/980));
   }
+  
+  .hero-index-page {
+    background-image:url("images/hands-tires-980x200px-maxblack.jpg");
+    padding-bottom: calc(100% * (200/980));
+  }
+  
 }
 
 @media all and (max-width: 800px) { 
@@ -637,11 +630,10 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
     padding-bottom: calc(100% * (275/800));
   }
   
-/*  #wrapper {
-  display: block;
-  max-width: 800px;
-  margin: auto;
-  }*/
+  .hero-index-page {
+    background-image:url("images/hands-tires-800x200px-maxblack.jpg");
+    padding-bottom: calc(100% * (200/800));
+  }
   
   #middle {
   background-image: url("images/bg-800px-grid.png");
@@ -675,7 +667,7 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
 
    #primary {
     width: 220px;
-    /*border: 2px #a2a2a2 solid;*/
+    border: 2px #a2a2a2 solid;
     float: right;
   }
   
@@ -736,6 +728,11 @@ p.bt_1:hover, p.bt_2:hover, p.bt_3:hover {
     background-image:url("images/Global_model_Earthship-480x175px.jpg");
     /*min-height:175px;*/
     padding-bottom: calc(100% * (175/480));
+  }
+  
+  .hero-index-page {
+    background-image:url("images/hands-tires-480x150px-maxblack.jpg");
+    padding-bottom: calc(100% * (150/480));
   }
 }
 
