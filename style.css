@@ -157,7 +157,7 @@ i {
 }
 .social-media-icons a:hover {
   text-decoration: none;
-  color: #333333;
+  color: #a3a29e;
 }
 /*/////END SOCIAL MEDIA ICONS/////*/
 
@@ -351,7 +351,7 @@ hr {
 }
 /*///////////MID SIDEBAR////////*/
 #mid-div {
-  height: 250px;
+  /*height: 250px;*/
   margin-bottom: 20px;
 }
 #mid {
@@ -747,6 +747,17 @@ footer a:focus {
     margin-left: 0;
   }
   
+  #mid div {
+  /*height: 230px;*/
+  /*width:calc(32.9% - 10px);*/
+  /*width:calc(100% * ((300/940) - (10/940)) );*/
+  /*width:calc(100% * (300/940));*/
+  /*margin:0 10px;*/
+  /*margin:0 calc(100% * (10/940));*/
+  /*background-color: #BCBCBC;*/
+  /*float: left;*/
+}
+  
 }
 
 @media all and (max-width: 640px) {
@@ -754,6 +765,18 @@ footer a:focus {
     background-image:url("images/Global_model_Earthship-640x220px.jpg");
     /*min-height:220px;*/
     padding-bottom: calc(100% * (220/640));
+  }
+  
+   #mid-div .widget {
+    width:calc(100% * (290/940));
+    margin:0 calc(100% * (17.5/940));
+
+  }
+  
+  #mid div {
+  /*height: 230px;*/
+   /*height: 0;*/
+   /*padding-bottom: calc(100% * (230 / (640/940)));*/
   }
 }
 
@@ -770,8 +793,9 @@ footer a:focus {
   }
   
   #lower-div .widget {
-    max-width: 460px;
+    /*max-width: 460px;*/
     /*width: calc(100% * (460/480));*/
+    max-width: 100%;
     width:100%;
     display: inline-block;
     margin-bottom: 15px;
@@ -780,6 +804,37 @@ footer a:focus {
   #lower-div .widget:nth-child(even) {
     margin-left: 0;
   }
+  
+  #mid-div .widget {
+    max-width: 100%;
+    /*width: calc(100% * (460/480));*/
+    width:100%;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 0;
+    
+  }
+  
+    /*///// FRONT PAGE STYLES /////*/
+  .xbig-p {
+    /* multiply by 1em to set unit type */
+    /*font-size: calc(1em * (25/16));*/ /* 25px/16px = 1.5625 */
+  }
+  
+  .big-right {
+    width: 100%;
+    text-align:left;
+    float:left;
+    position:relative;
+    /*display:block;*/
+    /*clear:both;*/
+  }
+  
+  .big-p {
+    /*font-size: calc(1em * (23/16));*/
+  }
+  
+  /*///// END FRONT PAGE STYLES /////*/
 }
 
 @media all and (max-width: 320px) {
