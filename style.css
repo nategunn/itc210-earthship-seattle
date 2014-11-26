@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141126c
+Version: 141126d
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -55,6 +55,7 @@ body {
 #middle {
    background-image: url("images/bg-980px-grid.png");
    background-position:center;
+   margin-bottom:20px;
 }
 
 a:link,
@@ -82,7 +83,7 @@ h3 {
 
 h2 {
   font-size: 2em; /* 32/16 */
-  margin-top:20px;
+  /*margin-top:20px;*/
 }
 
 h3 {
@@ -394,7 +395,7 @@ hr {
   display: block;
   width: 100%;
   overflow: hidden;
-  margin-bottom:10px;
+  /*margin-bottom:10px;*/
 }
 #lower div {
   /*height: 120px;*/
@@ -446,7 +447,7 @@ hr {
 #primary {
   /*width: calc(100% * (300/940);*/
   width:300px;
-  border: 2px #a2a2a2 solid;
+  border: 2px #333333 solid;
   float: right;
 }
 #primary h3 {
@@ -720,7 +721,7 @@ footer a:focus {
 
    #primary {
     width: 220px;
-    border: 2px #a2a2a2 solid;
+    border: 2px #333333 solid;
     float: right;
   }
   
@@ -822,6 +823,7 @@ footer a:focus {
   /*///// FRONT PAGE STYLES /////*/
   #main-content-fp h2 {
     font-size: calc(1em * (26/16));
+    padding-top:20px;
   }
   
   #main-content-fp h3 {
@@ -845,6 +847,36 @@ footer a:focus {
     font-size: calc(1em * (19/16));
   }
   /*///// END FRONT PAGE STYLES /////*/
+  
+  /***** INDEX PAGE STYLES *****/
+  #main-content {
+  max-width: 100%;
+  width: calc(100% * (460/480));
+  }
+  
+  #main-content p {
+  max-width: 100%;
+  width: calc(100% * (460/480));
+  }
+  
+  .post-box {
+
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  
+  .wp-caption,
+  .size-full {
+    width: 100%;
+    float: left;
+  }
+
+   #primary {
+    width: 100%;
+    border: none;
+    border-bottom: 2px #333333 solid;
+  }
+  /***** END INDEX PAGE STYLES *****/
 }
 
 @media all and (max-width: 320px) {
