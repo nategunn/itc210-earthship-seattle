@@ -83,6 +83,6 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
+	
 }
 
-?>

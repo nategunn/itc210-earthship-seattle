@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141124b
+Version: 141126a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -129,6 +129,10 @@ dl {
   clear: both;
 }
 
+.breadcrumbs {
+  margin: 15px 0px;
+}
+
 /*///// END GLOBAL STYLES /////*/
 
 
@@ -226,6 +230,7 @@ header a:hover {
 #nav-wide {
   background-color: #100f0d;
 }
+
 
 #nav-main {
   height: 40px;
@@ -382,20 +387,21 @@ hr {
 
 /*///////////LOWER SIDEBAR////////*/
 #lower-div {
-  height: 130px;
+  /*height: 130px;*/
   clear:both;
 }
 #lower {
   display: block;
   width: 100%;
   overflow: hidden;
+  margin-bottom:10px;
 }
 #lower div {
-  height: 120px;
-  width:calc(25% - 15px);
-  margin:0 10px;
-  background-color: #BCBCBC;
-  float: left;
+  /*height: 120px;*/
+  /*width:calc(25% - 15px);*/
+  /*margin:0 10px;*/
+  /*background-color: #BCBCBC;*/
+  /*float: left;*/
 }
 #lower div:first-child{
   margin-left:0;
@@ -411,8 +417,36 @@ hr {
   list-style: none;
 }
 #lower .textwidget{
-  height:75%;
+  /*height:75%;*/
 }
+
+/* .widget is each of the four lower boxes */
+#lower-div .widget {
+   height: 120px;
+   max-width: 380px;
+   width: calc(100% * (220/940));
+   display: inline-block;
+   margin-bottom: 15px;
+   float:left;
+   background-color: #BCBCBC;
+   /*background-color: #D94040;*/
+}
+
+/*#lower-div .widget:nth-child(2),*/
+/*#lower-div .widget:nth-child(3),*/
+/*#lower-div .widget:nth-child(4) {*/
+/*    margin-left: calc(100% * (20/940));*/
+/*}*/
+
+#lower-div .widget:nth-child(even) {
+    margin-left:calc(100% * (20/940));
+    float:left;
+}
+
+#lower-div .widget:nth-child(3) {
+    margin-left: calc(100% * (20/940));
+}
+  
 /*///////////SIDEBAR-PRIMARY SIDEBAR////////*/
 
 #primary {
@@ -647,7 +681,8 @@ footer a:focus {
   
 }
 
-@media all and (max-width: 800px) { 
+@media all and (max-width: 800px) {
+  
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-800x275px.jpg");
     /*min-height:275px;*/
@@ -700,43 +735,24 @@ footer a:focus {
     display:block;
   }
   
-  #lower-div {
-    
+  /* .widget is each of the four lower boxes */
+  #lower-div .widget {
+    max-width: 380px;
+    width: calc(100% * (380/780));
+    display: inline-block;
+    margin-bottom: 15px;
+    float:left;  
   }
   
-  /* Stack Lower Front-Page Sidebar */
-/*  #lower div:nth-of-type(1) {
-    max-width:380px;
-    width: calc(100% * (380/780));
+  #lower-div .widget:nth-child(even) {
+    margin-left:calc(100% * (20/780));
     float:left;
-    display:block;
-    background-color:cyan;
-    display:block;
-  }*/
-  
-/*  #lower div:nth-of-type(2) {
-    max-width:380px;
-    width: calc(100% * (380/780));
-    float:right;
-    background-color:magenta; 
-    display:block;
-    margin:0;
-  }*/
-  
-/* #lower div:nth-child(3)  {
-    width: calc(100% * (380/780));
-    float:left;
-    background-color:yellow;
-    margin:20px 0;
   }
-
-  #lower div:last-child {
-    width: calc(100% * (380/780));
-    float:right;
-    background-color:black;
-    margin:20px 0;
-  }*/
-
+  
+  #lower-div .widget:nth-child(3) {
+    margin-left: 0;
+  }
+  
 }
 
 @media all and (max-width: 640px) {
@@ -758,6 +774,23 @@ footer a:focus {
     background-image:url("images/hands-tires-480x150px-maxblack.jpg");
     padding-bottom: calc(100% * (150/480));
   }
+  
+  #lower-div .widget {
+    max-width: 460px;
+    /*width: calc(100% * (460/480));*/
+    width:100%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  /*#lower-div .widget:nth-child(even) {*/
+  /*  margin-left:10px;*/
+  /*  float:none;*/
+  /*}*/
+  /**/
+  /*#lower-div .widget:nth-child(3) {*/
+  /*  margin-left: 10px;*/
+  /*}*/
 }
 
 @media all and (max-width: 320px) {
@@ -922,6 +955,10 @@ footer a:focus {
     .logo-header{
         display: none;
     }
+
+/***** lower dynamic sidebar (four boxes) *****/
+
+/***** lower dynamic sidebar (four boxes) *****/
 
  /********* phone footer styles ********/
 .footer-nav{

@@ -2,6 +2,13 @@
 
 <!--<div id="wrapper">-->
 <div id="middle" class="wrapper940">
+    
+    <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+	<?php if(function_exists('bcn_display'))
+	{
+	    bcn_display();
+	}?>
+    </div>
 
 <div id="main-content" class="page">
 
