@@ -23,7 +23,9 @@
     <!-- for social media icons -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
-    <!--<meta name="viewport" content="initial-scale=1">-->
+    <meta name="viewport" content="initial-scale=1">
+    
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 	
 </head>
 
