@@ -360,7 +360,7 @@ hr {
   overflow: hidden;
 }
 #mid div {
-  height: 230px;
+  
   /*width:calc(32.9% - 10px);*/
   /*width:calc(100% * ((300/940) - (10/940)) );*/
   width:calc(100% * (300/940));
