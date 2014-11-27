@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141126f
+Version: 141127
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -56,6 +56,8 @@ body {
    background-image: url("images/bg-980px-grid.png");
    background-position:center;
    margin-bottom:20px;
+   overflow:hidden;
+   clear:both;
 }
 
 a:link,
@@ -84,10 +86,6 @@ h3 {
 h2 {
   font-size: 2em; /* 32/16 */
 }
-
-/*h3 {*/
-/*  clear:both;*/
-/*}*/
 
 article {
   clear:both;
@@ -136,9 +134,7 @@ dl {
 .breadcrumbs {
   margin: 15px 0px;
 }
-
 /*///// END GLOBAL STYLES /////*/
-
 
 /*/////SOCIAL MEDIA ICONS/////*/
 .social-media-icons {
@@ -150,6 +146,7 @@ i {
   margin-left: 5px;
   float: right;
 }
+
 .social-media-icons a:link,
 .social-media-icons a:visited {
   text-decoration: none;
@@ -159,6 +156,7 @@ i {
   -ms-transition: color 0.35s ease-in-out;
   transition: color 0.35s ease-in-out;
 }
+
 .social-media-icons a:hover {
   text-decoration: none;
   color: #a3a29e;
@@ -166,15 +164,11 @@ i {
 /*/////END SOCIAL MEDIA ICONS/////*/
 
 /*///// HEADER /////*/
-
 header {
-  /*background-color: #ACB68A;*/
-  /*background-color:#333333;*/
   color:#000;
 }
 
 #masthead {
-  /*background-color: #ACB68A;*/
   padding: 0 0;
 }
 
@@ -183,59 +177,17 @@ header {
   margin-right:20px;
 }
 
-#site-title {
-  display:inline;
-  line-height:100px;
-}
-
 header a:hover {
   text-decoration:none;
 }
 
+#site-title {
+  display:inline;
+  line-height:100px;
+}
 /*///// END HEADER /////*/
 
-#middle{
-  overflow:hidden;
-  clear:both;
-}
-
-#main-content {
-  max-width: 620px;
-  width: calc(100% * (620/940));
-  float: left;
-}
-
-#main-content h2 {
-  padding-bottom:2px;
-}
-
-#main-content-fp {
-  width: 940px;
-  margin-top:20px;
-
-}
-.post-box {
-  /*margin: 10px 0;*/
-}
-
-.post-box p {
-  /*width: calc(100% * (380/620));*/
-  /*float:left;*/
-}
-
-.post-box img {
-  float:right;
-  width:220px;
-  margin-left:20px;
-
-}
-
-.post-box .wp-caption {
-  margin-left:10px;
-}
-
 /*/////////////NAV-MAIN STYLES///////////*/
-
 #nav-wide {
   background-color: #100f0d;
 }
@@ -295,6 +247,11 @@ header a:hover {
 }
 
 /*///// FRONT PAGE STYLES /////*/
+#main-content-fp {
+  width: 940px;
+  margin-top:20px;
+}
+
 .xbig-p {
   /* multiply by 1em to set unit type */
   font-size: calc(1em * (25/16)); /* 25px/16px = 1.5625 */
@@ -351,17 +308,47 @@ hr {
   background-size: 100% 100%; 
 }
 
+.post-box {
+  /*margin: 10px 0;*/
+}
+
+.post-box p {
+  /*width: calc(100% * (380/620));*/
+  /*float:left;*/
+}
+
+.post-box img {
+  float:right;
+  width:220px;
+  margin-left:20px;
+}
+
+.post-box .wp-caption {
+  margin-left:10px;
+}
+
+#main-content {
+  max-width: 620px;
+  width: calc(100% * (620/940));
+  float: left;
+}
+
+#main-content h2 {
+  padding-bottom:2px;
+}
 /*///// END INDEX.PHP STYLES /////*/
 
-/*///////////SINGLE.PHP STYLES/////////*/
+/*///// SINGLE.PHP STYLES /////*/
 .single {
-  width: 700px;
+  /*width: 700px;*/
   float: left;
   padding: 10px 20px;
 }
 .commentlist li {
   list-style-type: none;
 }
+/*///// END SINGLE.PHP /////*/
+
 /*///////////MID SIDEBAR////////*/
 #mid-div {
   /*height: 250px;*/
@@ -455,7 +442,6 @@ hr {
 }
   
 /*///////////SIDEBAR-PRIMARY SIDEBAR////////*/
-
 #primary {
   width: calc(100% * (300/940));
   /*width:300px;*/
@@ -466,7 +452,6 @@ hr {
   /*width: 192px;*/
   padding-left: 10px;
   font-size: calc(1em * (24/16));
-
 }
 
 #primary ul {
@@ -478,7 +463,10 @@ hr {
   list-style: none;
   padding-left: 10px;
       font-size: calc(1em * (18/16));
+}
 
+a.pis-title-link {
+    font-size: 1em;
 }
 
 /*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
@@ -768,8 +756,7 @@ footer a:focus {
   
   .post-box .wp-caption {
   margin-left:0px;
-}
-
+  }
   
 }
 
@@ -1088,11 +1075,11 @@ footer a:focus {
 
 @media all and (max-device-width: 399px) {
 .c1, .c2{
-		width: 90%;
-		max-width: 399px;
-		float: none;
-		padding: .625em;
-		margin: 0 auto;
+        width: 90%;
+        max-width: 399px;
+        float: none;
+        padding: .625em;
+        margin: 0 auto;
 	}	
 #site-footer .pseudo-button {
 	font-size: 1em;
