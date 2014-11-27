@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141126e
+Version: 141126f
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -83,11 +83,14 @@ h3 {
 
 h2 {
   font-size: 2em; /* 32/16 */
-  /*margin-top:20px;*/
 }
 
-h3 {
-  font-size: calc(1em * (30/16));
+/*h3 {*/
+/*  clear:both;*/
+/*}*/
+
+article {
+  clear:both;
 }
 
 h2 a:link,
@@ -202,8 +205,13 @@ header a:hover {
   float: left;
 }
 
+#main-content h2 {
+  padding-bottom:2px;
+}
+
 #main-content-fp {
   width: 940px;
+  margin-top:20px;
 
 }
 .post-box {
@@ -299,6 +307,10 @@ header a:hover {
   position:relative;
   /*display:block;*/
   /*clear:both;*/
+}
+
+.big-right h3 {
+    font-size: calc(1em * (30/16));
 }
 
 .big-p {
@@ -445,24 +457,28 @@ hr {
 /*///////////SIDEBAR-PRIMARY SIDEBAR////////*/
 
 #primary {
-  /*width: calc(100% * (300/940);*/
-  width:300px;
+  width: calc(100% * (300/940));
+  /*width:300px;*/
   border: 2px #333333 solid;
   float: right;
 }
 #primary h3 {
-  width: 192px;
+  /*width: 192px;*/
   padding-left: 10px;
+  font-size: calc(1em * (24/16));
+
 }
 
 #primary ul {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-left: 0px;
 }
 
 #primary li {
   list-style: none;
   padding-left: 10px;
+      font-size: calc(1em * (18/16));
+
 }
 
 /*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
@@ -700,27 +716,34 @@ footer a:focus {
   width: calc(100% * (540/940));
   /*outline: 2px #a2a2a2 solid;*/
   float: left;
+  display:inline-block;
   }
   
   #main-content p {
-  max-width: 340px;
-  width: calc(100% * (300/540));
+  max-width: 540px;
+  width: 100%;
   /*outline: 2px #a2a2a2 solid;*/
   float: left;
   }
   
   .post-box p {
-  max-width: 340px;
-  width: calc(100% * (300/540));
+  max-width: 540px;
+  width: 540px;
   float:left;
   }
   
+  /*.post-box {*/
+  /*  width:540px;*/
+  /*}*/
+  
   /*.wp-caption p {*/
-  /*    width: 100%;*/
+  /*    width: 100%;
+  calc(100% * (540/940));*/
   /*}*/
 
-   #primary {
-    width: 220px;
+  #primary {
+    max-width: 220px;
+    width: calc(100% * (220/940));
     border: 2px #333333 solid;
     float: right;
   }
@@ -757,7 +780,11 @@ footer a:focus {
   /*margin:0 calc(100% * (10/940));*/
   /*background-color: #BCBCBC;*/
   /*float: left;*/
-}
+  }
+  
+  article {
+    
+  }
   
 }
 
@@ -879,11 +906,11 @@ footer a:focus {
   /***** END INDEX PAGE STYLES *****/
   
   .breadcrumbs {
-    margin: 15px 10px;
+    margin: 15px 0px;
   }
   
   #middle h1 {
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     padding-bottom:15px;
   }
 }
