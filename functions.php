@@ -91,3 +91,6 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
 add_theme_support( 'post-thumbnails', array( 'page' ) );          // Pages only
 add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and Movies
+
+/*Add a custom size for images displayed in the mid-page widget area. */
+add_image_size( 'mid-thumbnail', 300, 200 );
