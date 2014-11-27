@@ -219,20 +219,20 @@ header a:hover {
 }
 
 .post-box p {
-  width: calc(100% * (380/620));
-  float:left;
+  /*width: calc(100% * (380/620));*/
+  /*float:left;*/
+}
+
+.post-box img {
+  float:right;
+  width:220px;
+  margin-left:20px;
 
 }
 
-#site-footer {
-  /*padding: 0 20px;*/
+.post-box .wp-caption {
+  margin-left:10px;
 }
-
-/*.title {*/
-/*  font-size: 11pt;*/
-/*  font-family: verdana;*/
-/*  font-weight: bold;*/
-/*}*/
 
 /*/////////////NAV-MAIN STYLES///////////*/
 
@@ -696,7 +696,6 @@ footer a:focus {
   
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-800x275px.jpg");
-    /*min-height:275px;*/
     padding-bottom: calc(100% * (275/800));
   }
   
@@ -713,37 +712,27 @@ footer a:focus {
   
   #main-content {
   max-width: 540px;
-  width: calc(100% * (540/940));
-  /*outline: 2px #a2a2a2 solid;*/
-  float: left;
+  /*width: calc(100% * (540/940));*/
+  /*float: left;*/
   display:inline-block;
   }
   
   #main-content p {
   max-width: 540px;
   width: 100%;
-  /*outline: 2px #a2a2a2 solid;*/
   float: left;
+  /*display:inline-block;*/
   }
   
   .post-box p {
   max-width: 540px;
-  width: 540px;
+  /*width: 540px;*/
   float:left;
   }
-  
-  /*.post-box {*/
-  /*  width:540px;*/
-  /*}*/
-  
-  /*.wp-caption p {*/
-  /*    width: 100%;
-  calc(100% * (540/940));*/
-  /*}*/
 
   #primary {
     max-width: 220px;
-    width: calc(100% * (220/940));
+    /*width: calc(100% * (220/940));*/
     border: 2px #333333 solid;
     float: right;
   }
@@ -771,20 +760,16 @@ footer a:focus {
     margin-left: 0;
   }
   
-  #mid div {
-  /*height: 230px;*/
-  /*width:calc(32.9% - 10px);*/
-  /*width:calc(100% * ((300/940) - (10/940)) );*/
-  /*width:calc(100% * (300/940));*/
-  /*margin:0 10px;*/
-  /*margin:0 calc(100% * (10/940));*/
-  /*background-color: #BCBCBC;*/
-  /*float: left;*/
+  .wp-caption,
+  .size-full {
+  float:left;
+  max-width:220px;
   }
   
-  article {
-    
-  }
+  .post-box .wp-caption {
+  margin-left:0px;
+}
+
   
 }
 
@@ -798,20 +783,13 @@ footer a:focus {
    #mid-div .widget {
     width:calc(100% * (290/940));
     margin:0 calc(100% * (17.5/940));
+  }
 
-  }
-  
-  #mid div {
-  /*height: 230px;*/
-   /*height: 0;*/
-   /*padding-bottom: calc(100% * (230 / (640/940)));*/
-  }
 }
 
 @media all and (max-width: 480px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-480x175px.jpg");
-    /*min-height:175px;*/
     padding-bottom: calc(100% * (175/480));
   }
   
@@ -840,14 +818,21 @@ footer a:focus {
     display: inline-block;
     margin-bottom: 15px;
     margin-left: 0;
-    
   }
   
   header h1 {
     font-size: 1.5em;
   }
   
-  /*///// FRONT PAGE STYLES /////*/
+  .breadcrumbs {
+    margin: 15px 10px;
+  }
+  
+  #middle h1 {
+    padding-bottom:15px;
+  }
+  
+  /***** FRONT PAGE STYLES *****/
   #main-content-fp h2 {
     font-size: calc(1em * (26/16));
     padding-top:20px;
@@ -873,12 +858,13 @@ footer a:focus {
   .big-p {
     font-size: calc(1em * (19/16));
   }
-  /*///// END FRONT PAGE STYLES /////*/
+  /***** END FRONT PAGE STYLES *****/
   
   /***** INDEX PAGE STYLES *****/
   #main-content {
   max-width: 100%;
   width: calc(100% * (460/480));
+  margin-left:10px;
   }
   
   #main-content p {
@@ -887,32 +873,26 @@ footer a:focus {
   }
   
   .post-box {
-
-    margin-left: 10px;
     margin-right:10px;
   }
   
-  .wp-caption,
-  .size-full {
+  .wp-caption {
     width: 100%;
     float: left;
   }
 
-   #primary {
+  #primary {
+    max-width:480px;
     width: 100%;
     border: none;
     border-bottom: 2px #333333 solid;
+    /*display: inline;*/
+  }
+  
+  .page #primary {
+    border-top: 2px #333333 solid;
   }
   /***** END INDEX PAGE STYLES *****/
-  
-  .breadcrumbs {
-    margin: 15px 0px;
-  }
-  
-  #middle h1 {
-    /*padding-left: 10px;*/
-    padding-bottom:15px;
-  }
 }
 
 @media all and (max-width: 320px) {
@@ -971,14 +951,14 @@ footer a:focus {
 
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
-    body,
-    #main-content,
-    #main-content-fp,
-    #masthead,
-    #site-footer,
-    #wrapper{
-        width: 100%;
-    }
+    /*body,*/
+    /*#main-content,*/ /* these rules cause layout issues */
+    /*#main-content-fp,*/
+    /*#masthead,*/
+    /*#site-footer,*/
+    /*#wrapper{*/
+    /*    width: 100%;*/
+    /*}*/
     nav {
         height: auto;
     }
@@ -1037,6 +1017,7 @@ footer a:focus {
     #wrapper {
         width: 100%;
     }
+    
     #nav-main{
         height: 80px;
     }
@@ -1075,12 +1056,8 @@ footer a:focus {
     }
 
     .logo-header{
-        display: none;
+        /*display: none;*/
     }
-
-/***** lower dynamic sidebar (four boxes) *****/
-
-/***** lower dynamic sidebar (four boxes) *****/
 
  /********* phone footer styles ********/
 .footer-nav{

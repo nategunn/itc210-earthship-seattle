@@ -86,3 +86,8 @@ function my_register_sidebars() {
 	
 }
 
+/* Adding Theme Support - Post Thumbnails */
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
+add_theme_support( 'post-thumbnails', array( 'page' ) );          // Pages only
+add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and Movies
