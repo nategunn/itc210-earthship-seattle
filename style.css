@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141128a
+Version: 141128b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -694,29 +694,29 @@ footer a:focus {
   }
   
   #middle {
-  background-image: url("images/bg-800px-grid.png");
-  background-position:center;
-  max-width:780px;
+    background-image: url("images/bg-800px-grid.png");
+    background-position:center;
+    max-width:780px;
   }
   
   #main-content {
-  max-width: 540px;
-  /*width: calc(100% * (540/940));*/
-  /*float: left;*/
-  display:inline-block;
+    max-width: 540px;
+    /*width: calc(100% * (540/940));*/
+    /*float: left;*/
+    display:inline-block;
   }
   
   #main-content p {
-  max-width: 540px;
-  width: 100%;
-  float: left;
-  /*display:inline-block;*/
+    max-width: 540px;
+    width: 100%;
+    float: left;
+    /*display:inline-block;*/
   }
   
   .post-box p {
-  max-width: 540px;
-  /*width: 540px;*/
-  float:left;
+    max-width: 540px;
+    /*width: 540px;*/
+    float:left;
   }
 
   #primary {
@@ -751,26 +751,25 @@ footer a:focus {
   
   .wp-caption,
   .size-full {
-  float:left;
-  max-width:220px;
+    float:left;
+    max-width:220px;
   }
   
   .post-box .wp-caption {
-  margin-left:0px;
+    margin-left:0px;
   }
   
   .search input {
-  float: right;
-  margin-top:-34px;
-}
+    float: right;
+    margin-top:-34px;
+  }
 
-#nav-main li {
-  display: inline;
-  list-style: none;
-  font-size: calc(1em * (14/16));
-}
+  #nav-main li {
+    display: inline;
+    list-style: none;
+    font-size: calc(1em * (15/16));
+  }
 
-  
 }
 
 @media all and (max-width: 640px) {
@@ -787,7 +786,63 @@ footer a:focus {
   
   #nav-main li {
   font-size: calc(1em * (11/16));
-}
+  }
+
+  #nav-main{
+        /*height: 80px;*/
+        padding-top:3px;
+    }
+    
+    #nav-main li {
+        display: none;
+        height: auto;
+    }
+    
+    #nav-main ul {
+        width: 15%;
+        height: 34px;
+        /*padding: 5px 0;*/
+        /*margin-top: 34px;*/
+        margin-right: 20px;
+        float:right;
+        /*background: url("images/mobile-menu-icon.png")repeat-x ;*/
+        position:relative;
+    }
+  
+    #nav-main ul:before {
+        position:absolute;
+        font-family: FontAwesome;
+        top:0px;
+        left:20px;
+        color:#FFF;
+        content: "\f0c9";
+        /*content: "\2630";*/ /* UTF-8 */
+        font-size:2.15em;
+    }
+
+    #nav-main ul:hover li{
+        display: block;
+        position: relative;
+        width: 220px;
+        right: 150px;
+        bottom: 6px;
+        background-color: #100f0d
+    }
+
+    #nav-main ul:hover a {
+        width: 100%
+    }
+
+    .search input {
+        float: left;
+        /*margin-left: 10px;*/
+        /*margin-top: 34px;*/
+        width:50%;
+    }
+    
+      .search input {
+      margin-top:0;
+    }
 
 }
 
@@ -1069,46 +1124,34 @@ footer a:focus {
     
     #nav-main{
         /*height: 80px;*/
-        padding-top:3px;
+        /*padding-top:3px;*/
     }
-    #nav-main li {
+    /*#nav-main li {
         display: none;
         height: auto;
-    }
+    }*/
     #nav-main ul {
-        width: 15%;
-        height: 34px;
+        /*width: 15%;
+        height: 34px;*/
         /*padding: 5px 0;*/
         /*margin-top: 34px;*/
-        margin-right: 20px;
-        float:right;
+        /*margin-right: 20px;
+        float:right;*/
         /*background: url("images/mobile-menu-icon.png")repeat-x ;*/
-        position:relative;
-    }
-  
-    #nav-main ul:before {
-        position:absolute;
-        font-family: FontAwesome;
-        top:0px;
-        left:20px;
-        color:#FFF;
-        content: "\f0c9";
-        /*content: "\2630";*/ /* UTF-8 */
-        font-size:2.15em;
     }
 
-    #nav-main ul:hover li{
+    /*#nav-main ul:hover li{
         display: block;
         position: relative;
         width: 220px;
         right: 150px;
         bottom: 6px;
         background-color: #100f0d
-    }
+    }*/
 
-    #nav-main ul:hover a {
+    /*#nav-main ul:hover a {
         width: 100%
-    }
+    }*/
 
     .search input {
         float: left;
