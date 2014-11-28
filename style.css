@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141127
+Version: 141128a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -244,6 +244,7 @@ header a:hover {
   float: right;
   /*padding-right: 20px;*/
   height:34px;
+  margin-top:-34px;
 }
 
 /*///// FRONT PAGE STYLES /////*/
@@ -758,6 +759,18 @@ footer a:focus {
   margin-left:0px;
   }
   
+  .search input {
+  float: right;
+  margin-top:-34px;
+}
+
+#nav-main li {
+  display: inline;
+  list-style: none;
+  font-size: calc(1em * (14/16));
+}
+
+  
 }
 
 @media all and (max-width: 640px) {
@@ -772,8 +785,16 @@ footer a:focus {
     margin:0 calc(100% * (17.5/940));
   }
   
-  header h1 {
-    font-size: 1.45em;
+  #nav-main li {
+  font-size: calc(1em * (11/16));
+}
+
+}
+
+@media all and (max-width: 495px) {
+  .logo-header {
+      float: left;
+      margin-right: 8px;
   }
 
 }
@@ -848,6 +869,10 @@ footer a:focus {
   /***** END FRONT PAGE STYLES *****/
   
   /***** INDEX PAGE STYLES *****/
+  header h1 {
+    font-size: 1.5em;
+  }
+  
   #main-content {
   max-width: 100%;
   width: calc(100% * (460/480));
@@ -880,24 +905,31 @@ footer a:focus {
     border-top: 2px #333333 solid;
   }
   /***** END INDEX PAGE STYLES *****/
+  
+  .search input {
+  float: right;
+  margin-top:0;
+}
 }
 
 @media all and (max-width: 420px) {
   .logo-header {
-    max-width: 75px;
+    max-width: 70px;
     display:inline-block;
   }
   
   #site-title {
-    font-size: 1.15em;
-    display:inline-block;
-    line-height:75px;
+    font-size: 1.2em;
+    /*display:inline-block;*/
+    line-height:70px;
   }
   
   .logo-header {
     float: left;
     margin-right: 0;
-}
+  }
+
+
 }
 
 @media all and (max-width: 320px) {
@@ -975,7 +1007,7 @@ footer a:focus {
     /*#wrapper{*/
     /*    width: 100%;*/
     /*}*/
-    nav {
+    /*nav {
         height: auto;
     }
     nav ul {
@@ -993,7 +1025,8 @@ footer a:focus {
         font-size: 2.75vw;
         padding-left: 10px;
         width: 100%;
-    }
+    }*/
+    
 }
   
  /********* footer styles *********/
@@ -1035,7 +1068,8 @@ footer a:focus {
     }
     
     #nav-main{
-        height: 80px;
+        /*height: 80px;*/
+        padding-top:3px;
     }
     #nav-main li {
         display: none;
@@ -1043,12 +1077,24 @@ footer a:focus {
     }
     #nav-main ul {
         width: 15%;
-        height: 40px;
-        padding: 5px 0;
-        margin-top: 34px;
+        height: 34px;
+        /*padding: 5px 0;*/
+        /*margin-top: 34px;*/
         margin-right: 20px;
         float:right;
-        background: url("images/mobile-menu-icon.png")repeat-x ;
+        /*background: url("images/mobile-menu-icon.png")repeat-x ;*/
+        position:relative;
+    }
+  
+    #nav-main ul:before {
+        position:absolute;
+        font-family: FontAwesome;
+        top:0px;
+        left:20px;
+        color:#FFF;
+        content: "\f0c9";
+        /*content: "\2630";*/ /* UTF-8 */
+        font-size:2.15em;
     }
 
     #nav-main ul:hover li{
@@ -1066,10 +1112,14 @@ footer a:focus {
 
     .search input {
         float: left;
-        margin-left: 10px;
-        margin-top: 34px;
+        /*margin-left: 10px;*/
+        /*margin-top: 34px;*/
         width:70%;
     }
+    
+   /* .search {
+              font-size:2em;
+    }*/
 
     .logo-header{
         /*display: none;*/

@@ -61,7 +61,7 @@
 		</a>
 	    </div>
 	    
-	    <!-- From GT Web 170 site: Begin Logo -->
+	    <!-- From Giddy Throng Web 170 site: Begin Logo -->
                   <?php /* <h1>
                       <a href="<?php echo get_option('home'); ?>/"><span><?php bloginfo('name'); ?></span>
                           <img src="<?php bloginfo('template_url'); ?>/images/logo-4-280x35px-white.png" width="280" height="35" id="logo" alt="<?php bloginfo('name'); ?>" />
