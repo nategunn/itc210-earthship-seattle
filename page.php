@@ -1,19 +1,18 @@
 <?php get_header(); ?>
 
-<!--<div id="wrapper">-->
 <div id="middle" class="wrapper940">
     
     <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+        // for Breadcrumb NavXT
 	<?php if(function_exists('bcn_display'))
 	{
 	    bcn_display();
 	}?>
     </div>
 
-<div id="main-content" class="page">
+    <div id="main-content" class="page">
 
-
-
+    
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -26,7 +25,6 @@
     <?php endwhile; ?>
    
     <?php endif; ?> 
-
 
 
 </div><!-- #main-content -->

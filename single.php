@@ -1,12 +1,20 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
-<div id="middle">
+<div id="middle" class="wrapper940">
+    
+<div class="breadcrumbs">
+	<?php if (function_exists('bcn_display')) { bcn_display(); } ?>
+</div>
 
+<div id="main-content" class="single">
+    
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div id="content" class="single">
-    <strong class="breadcrumb"><?php if (function_exists('bcn_display')) { bcn_display(); } ?></strong>
-        <h2><?php the_title(); ?></h2>
+
+
+    
+    
+    
+    <h2><?php the_title(); ?></h2>
         
     <?php the_content('More &raquo;'); ?>     
     <p class="postmetadata">
