@@ -771,6 +771,10 @@ footer a:focus {
     width:calc(100% * (290/940));
     margin:0 calc(100% * (17.5/940));
   }
+  
+  header h1 {
+    font-size: 1.45em;
+  }
 
 }
 
@@ -805,10 +809,6 @@ footer a:focus {
     display: inline-block;
     margin-bottom: 15px;
     margin-left: 0;
-  }
-  
-  header h1 {
-    font-size: 1.5em;
   }
   
   .breadcrumbs {
@@ -882,11 +882,40 @@ footer a:focus {
   /***** END INDEX PAGE STYLES *****/
 }
 
+@media all and (max-width: 420px) {
+  .logo-header {
+    max-width: 75px;
+    display:inline-block;
+  }
+  
+  #site-title {
+    font-size: 1.15em;
+    display:inline-block;
+    line-height:75px;
+  }
+  
+  .logo-header {
+    float: left;
+    margin-right: 0;
+}
+}
+
 @media all and (max-width: 320px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-320x140px.jpg");
     /*min-height:140px;*/
     padding-bottom: calc(100% * (140/320));
+  }
+  
+  .logo-header {
+    max-width: 60px;
+    display:inline-block;
+  }
+  
+  #site-title {
+    font-size: 1em;
+    display:inline-block;
+    line-height:60px;
   }
 }
 

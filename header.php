@@ -7,6 +7,8 @@
 <!--<![endif]-->
 <head>
    <!-- <title><?php// wp_title('&laquo;',true,'right'); bloginfo('name'); ?></title>-->
+   
+   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <?php wp_head()?>
