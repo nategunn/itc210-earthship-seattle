@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141128b
+Version: 141128c
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -138,6 +138,13 @@ dl {
 textarea#comment {
       width:calc(100% * (380/620));
 }
+
+/* creates standard square input boxes */
+input[type=search] {
+        -webkit-appearance: textfield; 
+        /*width:108px;
+        height:20px;*/
+}
   
 /*///// END GLOBAL STYLES /////*/
 
@@ -250,6 +257,7 @@ header a:hover {
   /*padding-right: 20px;*/
   height:34px;
   margin-top:-34px;
+
 }
 
 /*///// FRONT PAGE STYLES /////*/
@@ -781,7 +789,20 @@ footer a:focus {
   #nav-main li {
     display: inline;
     list-style: none;
-    font-size: calc(1em * (15/16));
+    font-size: calc(1em * (14/16));
+  }
+  
+  .logo-header {
+    max-width: 100px;
+    display:inline-block;
+    float: left;
+    /*margin-right: 8px;*/
+  }
+  
+  #site-title {
+    font-size: 1.7em;
+    /*display:inline-block;*/
+    line-height:100px;
   }
 
 }
@@ -852,14 +873,24 @@ footer a:focus {
         /*margin-left: 10px;*/
         /*margin-top: 34px;*/
         width:50%;
-    }
-    
-    .search input {
-      margin-top:0;
+        margin-top:0;
     }
     
     textarea#comment {
       width:100%;
+  }
+  
+  .logo-header {
+    max-width: 90px;
+    display:inline-block;
+    float: left;
+    margin-right: 8px;
+  }
+  
+  #site-title {
+    font-size: 1.5em;
+    /*display:inline-block;*/
+    line-height:90px;
   }
 }
 
@@ -942,7 +973,7 @@ footer a:focus {
   
   /***** INDEX PAGE STYLES *****/
   header h1 {
-    font-size: 1.5em;
+    /*font-size: 1em;*/
   }
   
   #main-content {
@@ -979,29 +1010,37 @@ footer a:focus {
   /***** END INDEX PAGE STYLES *****/
   
   .search input {
-  float: right;
-  margin-top:0;
-}
+    float: right;
+    margin-top:0;
+  }
+
+  #site-title {
+    font-size: 1.5em;
+    /*display:inline-block;*/
+    line-height:85px;
+  }
+  
+  .logo-header {
+    max-width: 85px;
+    float: left;
+    margin-right: 8px;
+  }
 }
 
 @media all and (max-width: 420px) {
   .logo-header {
     max-width: 70px;
     display:inline-block;
+    float: left;
+    margin-right: 6;
   }
   
   #site-title {
-    font-size: 1.2em;
+    font-size: 1.1em;
     /*display:inline-block;*/
     line-height:70px;
   }
   
-  .logo-header {
-    float: left;
-    margin-right: 0;
-  }
-
-
 }
 
 @media all and (max-width: 320px) {
@@ -1014,10 +1053,11 @@ footer a:focus {
   .logo-header {
     max-width: 60px;
     display:inline-block;
+    margin-right:5;
   }
   
   #site-title {
-    font-size: 1em;
+    font-size: .9em;
     display:inline-block;
     line-height:60px;
   }
