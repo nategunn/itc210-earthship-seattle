@@ -3,7 +3,7 @@
 <div id="middle" class="wrapper940">
     
     <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-        // for Breadcrumb NavXT
+        <!-- for Breadcrumb NavXT -->
 	<?php if(function_exists('bcn_display'))
 	{
 	    bcn_display();
