@@ -523,13 +523,13 @@ footer a:focus {
 #site-footer{
   margin: 0 auto;
   width: 100%;
-  max-width: 960px;
+  max-width: 940px;
   background-color: #333;
   font-family: 'PT Sans', sans-serif;
 }
 .footer-nav{
   width: 100%;
-  max-width: 960px;
+  max-width: 940px;
   margin:0 auto;  
   padding-top: 40px;
 }
@@ -549,37 +549,18 @@ footer a:focus {
   text-decoration:underline;
 }
 
-#site-footer{
-	margin: 0 auto;
-	width: 100%;
-	max-width: 960px;
-	background-color: #333;
-	font-family: 'PT Sans', sans-serif;
-	padding-top: 40px;
-   /*border: 2px #a2a2a2 solid;*/
-  /*padding: 0 20px;*/
-}
-.footer-nav{
-	width: 100%;
-	max-width: 960px;
-	margin:0 auto;	
-  padding-top: 40px;	
-
-}
-.c1{
-  width: 16.66%;
+.footer-col{
+  width: 12.50%;
   float: left;
   padding-bottom: 20px;
+  padding-left: 2.5em
 }
-.c2{
-
-  width: 11.9057143%;
-  float: left;
-  padding-bottom: 20px;
-
-	width: 11.9057143%;
-	float: left;
-	padding-bottom: 20px;
+.footer-col:first-child {
+  padding-left: 0px;
+}
+.footer-col:last-child{
+  padding-right: 0px;
+  text-align: right;
 
 }
 #site-footer ul {
@@ -638,14 +619,6 @@ footer a:focus {
   padding-bottom: 20px;
   clear: both;
 }
-
-.copy{
-	color: #fff;
-	float: right;
-	padding-bottom: 20px;
-	clear: both;
-}
-
 #hero-front-page  {
   background-image:url("images/Global_model_Earthship-1920x675px.jpg");
   /*min-height:575px;*/
@@ -1064,7 +1037,7 @@ footer a:focus {
 }
 
 /******** footer desktop styles width 1 *********/
-@media only screen and (min-device-width: 901px){	
+/*@media only screen and (min-device-width: 901px){	
 .footer-nav{
 	width: 100%;
 	max-width: 901px;
@@ -1077,10 +1050,10 @@ footer a:focus {
 .c1{
 	padding-left: .625em;
 	}
-}
+}*/
 
 /******** footer desktop styles width 2 *********/
-@media only screen and (min-device-width: 801px) and (max-device-width: 900px) {	
+/*@media only screen and (min-device-width: 801px) and (max-device-width: 900px) {	
 .footer-nav{
 	width: 100%;
 	max-width: 900px;
@@ -1107,7 +1080,7 @@ footer a:focus {
 	padding-right: .625em;
 	clear: both;
 	}
-}
+}*/
 
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
@@ -1142,30 +1115,35 @@ footer a:focus {
 }
   
  /********* footer styles *********/
-.footer-nav{
-	width: 100%;
-	max-width: 800px;
-	margin:0 auto;		
-	}	
-.c1, .c2{
-	width: 33.33%;
-	max-width: 266.66666px;
-	float: left;
-	padding-left: .625em;
-	}	
-#site-footer .pseudo-button{
-	font-size: .8em;
-	margin-bottom: 10px;
-	padding: 10px;
-	}	
-#site-footer li{
-	padding-left: none;
-	}	
-.copy{
-	float:right;
-	padding-right: .625em;
-	clear: both;
-	}  
+/* footer styles */
+  #site-footer{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: #333;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .footer-nav{
+    width: 100%;
+    max-width: 800px;
+    margin:0 auto;  
+    padding-top: 40px;
+  }
+
+  .footer-col{
+    width: 25%;
+    max-width: 200px;
+    float: left;
+    padding-bottom: 20px;
+    padding-left: 2em
+  }
+  .footer-col:first-child {
+    padding-left: .625em;
+  }
+  .footer-col:last-child. .footer-col:nth-child(4){
+    padding-right: 0px;
+    text-align: right;
+  }
 
 
 /* Phone */
@@ -1226,52 +1204,31 @@ footer a:focus {
     }
 
  /********* phone footer styles ********/
-.footer-nav{
-	width: 100%;
-	max-width: 500px;
-	margin:0 auto;		
-	}	
-.c1, .c2{
-	width: 50%;
-	max-width: 300px;
-	float: left;
-	padding: .625em;
-	}	
-#site-footer .pseudo-button {
-	font-size: .8em;
-	margin-bottom: 10px;
-	padding: .625em;
-	}	
-#site-footer li {
-	padding-left: none;
-	}	
-.copy{
-	float: right;
-	padding-right: .625em;
-	clear: both;
-	}
-}
+  .footer-nav{
+  width: 100%;
+  max-width: 500px;
+  margin:0 auto;    
+  } 
+.footer-col{
+  display: none;
+  } 
 
-@media all and (max-device-width: 399px) {
-.c1, .c2{
-        width: 90%;
-        max-width: 399px;
-        float: none;
-        padding: .625em;
-        margin: 0 auto;
-	}	
+  .footer-col:first-child{
+    display: block;
+    width: 98%;
+    max-width: 480px;
+    margin:0 auto;
+    float:none;
+    padding-left: 0px;
+  }
 #site-footer .pseudo-button {
-	font-size: 1em;
-	margin-bottom: 10px;
-	padding: .625em;
-	}	
-#site-footer li {
-	padding-left: none;
-	text-align: center;
-	}	
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  padding: .625em 0em;
+  } 
 .copy{
-	float:none;
-	padding-left: .625em;
-	clear: both;
-	}
+  float: right;
+  padding-left: .625em;
+  clear: both;
+  }
 }
