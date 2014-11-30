@@ -762,7 +762,7 @@ footer a:focus {
   #nav-main li {
     display: inline;
     list-style: none;
-    font-size: calc(1em * (14/16));
+    font-size: calc(1em * (13/16));
   }
   
   .logo-header {
@@ -988,7 +988,7 @@ footer a:focus {
   }
 
   #site-title {
-    font-size: 1.5em;
+    font-size: 1.45em;
     /*display:inline-block;*/
     line-height:85px;
   }
@@ -1000,16 +1000,16 @@ footer a:focus {
   }
 }
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 430px) {
   .logo-header {
     max-width: 70px;
     display:inline-block;
     float: left;
-    margin-right: 6;
+    margin-right: 3px;
   }
   
   #site-title {
-    font-size: 1.1em;
+    font-size: .9em;
     /*display:inline-block;*/
     line-height:70px;
   }
@@ -1026,7 +1026,7 @@ footer a:focus {
   .logo-header {
     max-width: 60px;
     display:inline-block;
-    margin-right:5;
+    margin-right:5px;
   }
   
   #site-title {
