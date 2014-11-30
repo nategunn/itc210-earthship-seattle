@@ -256,7 +256,7 @@ header a:hover {
   float: right;
   /*padding-right: 20px;*/
   height:34px;
-  margin-top:-38px;
+  margin-top:-37px;
 
 }
 
@@ -756,7 +756,7 @@ footer a:focus {
   
   .search input {
     float: right;
-    margin-top:-34px;
+    margin-top:-37px;
   }
 
   #nav-main li {
@@ -843,8 +843,8 @@ footer a:focus {
 
     .search input {
         float: left;
-        /*margin-left: 10px;*/
-        /*margin-top: 34px;*/
+        /*margin-left: 10px;
+        margin-top: 34px;*/
         width:50%;
         margin-top:0;
     }
