@@ -2,7 +2,6 @@
 
 <div class="hero-index-page"></div>
 
-<!--<div id="wrapper">-->
 <div id="middle" class="wrapper940">
     
     <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">

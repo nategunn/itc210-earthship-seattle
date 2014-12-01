@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141128c
+Version: 141201a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -103,7 +103,6 @@ h2 a:focus {
   color: #000;
 }
 
-
 caption {
   font-family: 'PT Sans Caption', sans-serif;
 }
@@ -148,7 +147,7 @@ input[type=search] {
   
 /*///// END GLOBAL STYLES /////*/
 
-/*/////SOCIAL MEDIA ICONS/////*/
+/*///// SOCIAL MEDIA ICONS /////*/
 .social-media-icons {
   float: right;
   /*width:auto;*/
@@ -173,7 +172,7 @@ i {
   text-decoration: none;
   color: #a3a29e;
 }
-/*/////END SOCIAL MEDIA ICONS/////*/
+/*///// END SOCIAL MEDIA ICONS /////*/
 
 /*///// HEADER /////*/
 header {
@@ -203,7 +202,6 @@ header a:hover {
 #nav-wide {
   background-color: #100f0d;
 }
-
 
 #nav-main {
   height: 40px;
@@ -248,21 +246,30 @@ header a:hover {
 /*#nav-main ul li:first-child a:hover {*/
 /*  margin-left:20px;  */
 /*}*/
-
 /*///// END NAV-MAIN STYLES /////*/
 
 .search input {
-  /*display: block;*/
   float: right;
-  /*padding-right: 20px;*/
   height:34px;
   margin-top:-37px;
-
 }
 
 /*///// FRONT PAGE STYLES /////*/
-#main-content-fp {
-  width: 940px;
+#hero-front-page  {
+  background-image:url("images/Global_model_Earthship-1920x675px.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#100f0d;
+  background-position:center;
+  /*background-size: 100% 100%;*/
+  height: 0px;
+  padding-bottom: calc(100% * (675/1920));
+}
+
+.main-content-fp {
   margin-top:20px;
 }
 
@@ -276,8 +283,6 @@ header a:hover {
   text-align:right;
   float:right;
   position:relative;
-  /*display:block;*/
-  /*clear:both;*/
 }
 
 .big-right h3 {
@@ -288,25 +293,128 @@ header a:hover {
   font-size: calc(1em * (23/16));
 }
 
+/*///// MID SIDEBAR /////*/
+#mid-div {
+  /*height: 250px;*/
+  margin-bottom: 20px;
+}
+
+#mid {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#mid div { 
+  /*width:calc(32.9% - 10px);*/
+  /*width:calc(100% * ((300/940) - (10/940)) );*/
+  width:calc(100% * (300/940));
+  /*margin:0 10px;*/
+  margin:0 calc(100% * (10/940));
+  /*background-color: #BCBCBC;*/
+  float: left;
+  background-color:#A3A29E;
+}
+
+#mid div:first-child{
+  margin-left:0;
+}
+
+#mid div:last-child{
+  margin-right:0;
+}
+
+#mid h3 {
+}
+
+#mid ul {
+  margin-bottom: 20px;
+  padding-left: 0px;
+}
+
+#mid li {
+  list-style: none;
+}
+
+/*p.pis-thumbnail,
+img.pis-thumbnail-img,
+a.pis-thumbnail-link {
+  height:0;
+  padding-bottom:300px;  
+}*/
+
+/*.pis-thumbnail .pis-thumbnail-img {
+  height:0;
+  padding-bottom:300%;
+}*/
+
+/*///// END MID SIDEBAR /////*/
+
+/*///// LOWER SIDEBAR /////*/
+#lower-div {
+  clear:both;
+}
+
+#lower {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  /*margin-bottom:10px;*/
+}
+
+#lower div {
+  /*height: 120px;*/
+  /*width:calc(25% - 15px);*/
+  /*margin:0 10px;*/
+  /*background-color: #BCBCBC;*/
+  /*float: left;*/
+}
+
+#lower div:first-child{
+  margin-left:0;
+}
+
+#lower div:last-child{
+  margin-right:0;
+}
+
+#lower ul {
+  margin-bottom: 20px;
+  padding-left: 0px;
+}
+
+#lower li {
+  list-style: none;
+}
+
+#lower .textwidget{
+  /*height:75%;*/
+}
+
+/* .widget styles each of the four lower boxes */
+#lower-div .widget {
+   height: 120px;
+   max-width: 380px;
+   width: calc(100% * (220/940));
+   display: inline-block;
+   margin-bottom: 15px;
+   float:left;
+   background-color: #BCBCBC;
+   /*background-color: #D94040;*/
+}
+
+#lower-div .widget:nth-child(even) {
+    margin-left:calc(100% * (20/940));
+    float:left;
+}
+
+#lower-div .widget:nth-child(3) {
+    margin-left: calc(100% * (20/940));
+}
+/*///// END LOWER SIDEBAR /////*/
 /*///// END FRONT PAGE STYLES /////*/
 
 /*///// INDEX.PHP STYLES ///*/
-.wp-caption,
-.size-full {
-  float:right;
-  max-width:220px;
-  margin-left: calc(100% * (20/940));
-}
-
-caption {
-  width:100%;
-}
-
-hr {
-  height: 2px;
-  color:#333333;
-}
-
 .hero-index-page  {
   background-image:url("images/hands-tires-1979x280px-maxblack.jpg");
   background-repeat: no-repeat;
@@ -321,6 +429,32 @@ hr {
   background-size: cover;*/
   
   background-size: 100% 100%; 
+}
+
+#main-content {
+  max-width: 620px;
+  width: calc(100% * (620/940));
+  float: left;
+}
+
+#main-content h2 {
+  padding-bottom:2px;
+}
+
+.wp-caption,
+.size-full {
+  float:right;
+  max-width:220px;
+  margin-left: calc(100% * (20/940));
+}
+
+caption {
+  width:100%;
+}
+
+hr {
+  height: 2px;
+  color:#333333;
 }
 
 .post-box {
@@ -341,123 +475,9 @@ hr {
 .post-box .wp-caption {
   margin-left:10px;
 }
-
-#main-content {
-  max-width: 620px;
-  width: calc(100% * (620/940));
-  float: left;
-}
-
-#main-content h2 {
-  padding-bottom:2px;
-}
 /*///// END INDEX.PHP STYLES /////*/
-
-/*///// SINGLE.PHP STYLES /////*/
-.single {
-  /*width: 700px;*/
-  /*float: left;*/
-  /*padding: 10px 20px;*/
-}
-.commentlist li {
-  list-style-type: none;
-}
-/*///// END SINGLE.PHP /////*/
-
-/*///////////MID SIDEBAR////////*/
-#mid-div {
-  /*height: 250px;*/
-  margin-bottom: 20px;
-}
-#mid {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-}
-#mid div {
   
-  /*width:calc(32.9% - 10px);*/
-  /*width:calc(100% * ((300/940) - (10/940)) );*/
-  width:calc(100% * (300/940));
-  /*margin:0 10px;*/
-  margin:0 calc(100% * (10/940));
-  /*background-color: #BCBCBC;*/
-  float: left;
-  background-color:#A3A29E;
-}
-#mid div:first-child{
-  margin-left:0;
-}
-#mid div:last-child{
-  margin-right:0;
-}
-#mid h3 {
-}
-#mid ul {
-  margin-bottom: 20px;
-  padding-left: 0px;
-}
-#mid li {
-  list-style: none;
-}
-
-/*///////////LOWER SIDEBAR////////*/
-#lower-div {
-  /*height: 130px;*/
-  clear:both;
-}
-#lower {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  /*margin-bottom:10px;*/
-}
-#lower div {
-  /*height: 120px;*/
-  /*width:calc(25% - 15px);*/
-  /*margin:0 10px;*/
-  /*background-color: #BCBCBC;*/
-  /*float: left;*/
-}
-#lower div:first-child{
-  margin-left:0;
-}
-#lower div:last-child{
-  margin-right:0;
-}
-#lower ul {
-  margin-bottom: 20px;
-  padding-left: 0px;
-}
-#lower li {
-  list-style: none;
-}
-#lower .textwidget{
-  /*height:75%;*/
-}
-
-/* .widget is each of the four lower boxes */
-#lower-div .widget {
-   height: 120px;
-   max-width: 380px;
-   width: calc(100% * (220/940));
-   display: inline-block;
-   margin-bottom: 15px;
-   float:left;
-   background-color: #BCBCBC;
-   /*background-color: #D94040;*/
-}
-
-#lower-div .widget:nth-child(even) {
-    margin-left:calc(100% * (20/940));
-    float:left;
-}
-
-#lower-div .widget:nth-child(3) {
-    margin-left: calc(100% * (20/940));
-}
-  
-/*///////////SIDEBAR-PRIMARY SIDEBAR////////*/
+/*////////// SIDEBAR-PRIMARY SIDEBAR ////////*/
 #primary {
   width: calc(100% * (300/940));
   /*width:300px;*/
@@ -484,8 +504,13 @@ hr {
 a.pis-title-link {
     font-size: 1em;
 }
-
 /*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
+
+/*///// SINGLE.PHP STYLES /////*/
+.commentlist li {
+  list-style-type: none;
+}
+/*///// END SINGLE.PHP /////*/
 
 /*///// FOOTER A TAGS /////*/
 footer a:link,
@@ -619,30 +644,11 @@ footer a:focus {
   padding-bottom: 20px;
   clear: both;
 }
-#hero-front-page  {
-  background-image:url("images/Global_model_Earthship-1920x675px.jpg");
-  /*min-height:575px;*/
-  /*min-height:675px;*/
-  /*max-width:1920px;*/
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color:#100f0d;
-  background-position:center;
-  /*background-size: 100% 100%;*/
-  height: 0px;
-  padding-bottom: calc(100% * (675/1920));
-}
-
-
 
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-1600x550px.png");
-    /*min-height:550px;*/
     padding-bottom: calc(100% * (550/1600));
   }
 }
@@ -650,7 +656,6 @@ footer a:focus {
 @media all and (max-width: 1280px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-1280x450px.jpg");
-    /*min-height:450px;*/
     padding-bottom: calc(100% * (450/1280));
   }
 }
@@ -658,7 +663,6 @@ footer a:focus {
 @media all and (max-width: 980px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-980x350px.jpg");
-    /*min-height:350px;*/
     padding-bottom: calc(100% * (350/980));
   }
   
@@ -670,7 +674,6 @@ footer a:focus {
 }
 
 @media all and (max-width: 800px) {
-  
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-800x275px.jpg");
     padding-bottom: calc(100% * (275/800));
@@ -723,7 +726,7 @@ footer a:focus {
     display:block;
   }
   
-  /* .widget is each of the four lower boxes */
+  /* .widget styles each of the four lower boxes */
   #lower-div .widget {
     max-width: 380px;
     width: calc(100% * (380/780));
@@ -762,7 +765,7 @@ footer a:focus {
   #nav-main li {
     display: inline;
     list-style: none;
-    font-size: calc(1em * (14/16));
+    font-size: calc(1em * (13/16));
   }
   
   .logo-header {
@@ -777,7 +780,6 @@ footer a:focus {
     /*display:inline-block;*/
     line-height:100px;
   }
-
 }
 
 @media all and (max-width: 640px) {
@@ -791,66 +793,63 @@ footer a:focus {
     width:calc(100% * (290/940));
     margin:0 calc(100% * (17.5/940));
   }
-  
-  #nav-main li {
-  font-size: calc(1em * (11/16));
-  }
 
   #nav-main{
-        /*height: 80px;*/
-        padding-top:3px;
-    }
-    
-    #nav-main li {
-        display: none;
-        height: auto;
-    }
-    
-    #nav-main ul {
-        width: 15%;
-        height: 34px;
-        /*padding: 5px 0;*/
-        /*margin-top: 34px;*/
-        margin-right: 20px;
-        float:right;
-        /*background: url("images/mobile-menu-icon.png")repeat-x ;*/
-        position:relative;
-    }
+      /*height: 80px;*/
+      padding-top:3px;
+  }
   
-    #nav-main ul:before {
-        position:absolute;
-        font-family: FontAwesome;
-        top:0px;
-        left:20px;
-        color:#FFF;
-        content: "\f0c9";
-        /*content: "\2630";*/ /* UTF-8 */
-        font-size:2.15em;
-    }
+  #nav-main li {
+    font-size: calc(1em * (11/16));
+    display: none;
+    height: auto;
+  }
+  
+  #nav-main ul {
+    width: 15%;
+    height: 34px;
+    /*padding: 5px 0;*/
+    /*margin-top: 34px;*/
+    margin-right: 20px;
+    float:right;
+    /*background: url("images/mobile-menu-icon.png")repeat-x ;*/
+    position:relative;
+  }
 
-    #nav-main ul:hover li{
-        display: block;
-        position: relative;
-        width: 220px;
-        right: 150px;
-        bottom: 6px;
-        background-color: #100f0d
-    }
+  #nav-main ul:before {
+    position:absolute;
+    font-family: FontAwesome;
+    top:0px;
+    left:20px;
+    color:#FFF;
+    content: "\f0c9";
+    /*content: "\2630";*/ /* UTF-8 */
+    font-size:2.15em;
+  }
 
-    #nav-main ul:hover a {
-        width: 100%
-    }
+  #nav-main ul:hover li{
+    display: block;
+    position: relative;
+    width: 220px;
+    right: 150px;
+    bottom: 6px;
+    background-color: #100f0d
+  }
 
-    .search input {
-        float: left;
-        /*margin-left: 10px;
-        margin-top: 34px;*/
-        width:50%;
-        margin-top:0;
-    }
-    
-    textarea#comment {
-      width:100%;
+  #nav-main ul:hover a {
+    width: 100%;
+  }
+
+  .search input {
+    float: left;
+    /*margin-left: 10px;
+    margin-top: 34px;*/
+    width:50%;
+    margin-top:0;
+  }
+  
+  textarea#comment {
+    width:100%;
   }
   
   .logo-header {
@@ -872,40 +871,24 @@ footer a:focus {
       float: left;
       margin-right: 8px;
   }
-
 }
 
 @media all and (max-width: 480px) {
-  #hero-front-page  {
-    background-image:url("images/Global_model_Earthship-480x175px.jpg");
-    padding-bottom: calc(100% * (175/480));
+  .logo-header {
+    max-width: 85px;
+    float: left;
+    margin-right: 8px;
   }
   
-  .hero-index-page {
-    background-image:url("images/hands-tires-480x150px-maxblack.jpg");
-    padding-bottom: calc(100% * (150/480));
+  #site-title {
+    font-size: 1.45em;
+    /*display:inline-block;*/
+    line-height:85px;
   }
   
-  #lower-div .widget {
-    /*max-width: 460px;*/
-    /*width: calc(100% * (460/480));*/
-    max-width: 100%;
-    width:100%;
-    display: inline-block;
-    margin-bottom: 15px;
-  }
-  
-  #lower-div .widget:nth-child(even) {
-    margin-left: 0;
-  }
-  
-  #mid-div .widget {
-    max-width: 100%;
-    /*width: calc(100% * (460/480));*/
-    width:100%;
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-left: 0;
+  .search input {
+    float: right;
+    margin-top:0;
   }
   
   .breadcrumbs {
@@ -914,15 +897,20 @@ footer a:focus {
   
   #middle h1 {
     padding-bottom:15px;
-  }
+  }  
   
   /***** FRONT PAGE STYLES *****/
-  #main-content-fp h2 {
+  #hero-front-page  {
+    background-image:url("images/Global_model_Earthship-480x175px.jpg");
+    padding-bottom: calc(100% * (175/480));
+  }
+  
+  .main-content-fp h2 {
     font-size: calc(1em * (26/16));
     padding-top:20px;
   }
   
-  #main-content-fp h3 {
+  .main-content-fp h3 {
     font-size: calc(1em * (24/16));
   }
   
@@ -942,11 +930,34 @@ footer a:focus {
   .big-p {
     font-size: calc(1em * (19/16));
   }
+  
+  #mid-div .widget {
+    max-width: 100%;
+    /*width: calc(100% * (460/480));*/
+    width:100%;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+  
+  #lower-div .widget {
+    /*max-width: 460px;*/
+    /*width: calc(100% * (460/480));*/
+    max-width: 100%;
+    width:100%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  #lower-div .widget:nth-child(even) {
+    margin-left: 0;
+  } 
   /***** END FRONT PAGE STYLES *****/
   
   /***** INDEX PAGE STYLES *****/
-  header h1 {
-    /*font-size: 1em;*/
+  .hero-index-page {
+    background-image:url("images/hands-tires-480x150px-maxblack.jpg");
+    padding-bottom: calc(100% * (150/480));
   }
   
   #main-content {
@@ -981,35 +992,18 @@ footer a:focus {
     border-top: 2px #333333 solid;
   }
   /***** END INDEX PAGE STYLES *****/
-  
-  .search input {
-    float: right;
-    margin-top:0;
-  }
-
-  #site-title {
-    font-size: 1.5em;
-    /*display:inline-block;*/
-    line-height:85px;
-  }
-  
-  .logo-header {
-    max-width: 85px;
-    float: left;
-    margin-right: 8px;
-  }
 }
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 430px) {
   .logo-header {
     max-width: 70px;
     display:inline-block;
     float: left;
-    margin-right: 6;
+    margin-right: 3px;
   }
   
   #site-title {
-    font-size: 1.1em;
+    font-size: .9em;
     /*display:inline-block;*/
     line-height:70px;
   }
@@ -1019,14 +1013,13 @@ footer a:focus {
 @media all and (max-width: 320px) {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-320x140px.jpg");
-    /*min-height:140px;*/
     padding-bottom: calc(100% * (140/320));
   }
   
   .logo-header {
     max-width: 60px;
     display:inline-block;
-    margin-right:5;
+    margin-right:5px;
   }
   
   #site-title {
@@ -1084,14 +1077,6 @@ footer a:focus {
 
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
-    /*body,*/
-    /*#main-content,*/ /* these rules cause layout issues */
-    /*#main-content-fp,*/
-    /*#masthead,*/
-    /*#site-footer,*/
-    /*#wrapper{*/
-    /*    width: 100%;*/
-    /*}*/
     /*nav {
         height: auto;
     }
@@ -1140,24 +1125,25 @@ footer a:focus {
   .footer-col:first-child {
     padding-left: .625em;
   }
-  .footer-col:last-child. .footer-col:nth-child(4){
+  .footer-col:last-child .footer-col:nth-child(4){
     padding-right: 0px;
     text-align: right;
   }
-
 
 /* Phone */
 @media all and (max-width: 480px) {
     body,
     #main-content,
-    #main-content-fp,
+    .main-content-fp,
     #masthead,
     #site-footer,
     #wrapper {
         width: 100%;
     }
     
-    #nav-main{
+    /* nav-main goes to mobile nav at 640 now, it had too many nav items to break at this
+       small of a screen width with the search input also in the nav. */
+    #nav-main{ 
         /*height: 80px;*/
         /*padding-top:3px;*/
     }
@@ -1199,7 +1185,7 @@ footer a:focus {
               font-size:2em;
     }*/
 
-    .logo-header{
+    .logo-header{ /* logo image displays now by sizing it smaller */
         /*display: none;*/
     }
 
