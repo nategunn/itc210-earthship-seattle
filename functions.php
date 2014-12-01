@@ -22,7 +22,9 @@ add_theme_support( 'custom-header', $args );
 function register_my_menus() {
   register_nav_menus(
     array( 
-		  'main-menu' => __( 'nav-main' ) 
+		  'main-menu' => __( 'nav-main' ), 
+		  'events-menu' =>__( 'primary'),
+		  'projects-menu'=>__( 'primary') 
 		  )
   );
   
@@ -35,8 +37,9 @@ function register_my_menus() {
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-		  'main-menu' => 'Main Menu' //Main Menu is the name of the registered location as it appears in the dashboard
-
+		  'main-menu' => 'Main Menu', //Main Menu is the name of the registered location as it appears in the dashboard
+		  'events-menu' => 'Events Menu',
+		  'projects-menu' => 'Projects Menu'
 			 )
 	);
 }    
