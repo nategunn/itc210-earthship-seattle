@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: projects-past
+Template Name: projects-current
 */
 ?>
 <?php get_header(); ?>
