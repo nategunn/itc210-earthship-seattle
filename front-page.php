@@ -9,10 +9,7 @@ Template Name: Front Page
 <div id="hero-front-page"></div>
     
 <!--<div id="wrapper">-->
-<div id="middle" class="wrapper940">
- 
- 
- <div id="main-content-fp" class="front-page">
+<div id="middle" class="front-page wrapper940 main-content-fp">
 
     
     <h2>Vision</h2>
@@ -48,7 +45,4 @@ Template Name: Front Page
         <?php get_sidebar('lower');?>
     </div>
 
-</div><!-- #main-content -->
-
-<!--<div id='delimiter'></div>-->
 <?php get_footer();
