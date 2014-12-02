@@ -500,6 +500,10 @@ hr {
   padding-left: 10px;
       font-size: calc(1em * (18/16));
 }
+#menu-projects-menu li:first-child,
+#menu-events-menu li:first-child{
+    font-size:2em;
+}
 
 a.pis-title-link {
     font-size: 1em;
