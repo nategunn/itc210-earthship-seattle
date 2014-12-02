@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141201a
+Version: 141202a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -395,7 +395,6 @@ a.pis-thumbnail-link {
   font-weight:bold;
 }
 
-
 /* .widget styles each of the four lower boxes */
 #lower-div .widget {
    height: 120px;
@@ -511,7 +510,7 @@ hr {
 }
 
 #primary .widget-title{
-  font-family:'PT Sans', Helvetica, Geneva, Arial, sans-serif;
+  font-family:'PT Serif', Helvetica, Geneva, Arial, sans-serif;
   font-size:2em;
   font-weight:normal;  
 }

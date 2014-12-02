@@ -13,7 +13,7 @@ Template Name: Front Page
 
     
     <h2>Vision</h2>
-        <p class="xbig-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu sit amet, consectetur adipiscing elit.</p>
+        <p class="xbig-p">Freedom, community and sustainability</p>
     
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -38,7 +38,7 @@ Template Name: Front Page
     
     <div class="big-right">
         <h3>Mission</h3>
-            <p class="big-p">Nam pharetra nulla. venenatis sed, volutpat eget lacus. Duis dictum metus felis, sed eleifend erat volutpat.</p>
+            <p class="big-p">To raise awareness about Earthships and tackle the barriers between people and their Earthship dream in the greater Seattle area.</p>
     </div> <!-- end big-right -->
     
     <div id="lower-div" class="clear-fix">
