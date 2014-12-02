@@ -54,7 +54,7 @@
 			</ul>
 		</div>
 		</div><!-- end footer-nav -->		
-		<p><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#"> TOP OF PAGE </a></p>	
+		<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#"> TOP OF PAGE </a></p>	
 	</footer>
 	</div><!-- close footer container -->
 	

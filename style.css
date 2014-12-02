@@ -1044,53 +1044,6 @@ footer a:focus {
     line-height:60px;
   }
 }
-
-/******** footer desktop styles width 1 *********/
-/*@media only screen and (min-device-width: 901px){	
-.footer-nav{
-	width: 100%;
-	max-width: 901px;
-	margin:0 auto;		
-	}	
-.copy{
-	padding-right: .625em;
-	clear: both;
-	}	
-.c1{
-	padding-left: .625em;
-	}
-}*/
-
-/******** footer desktop styles width 2 *********/
-/*@media only screen and (min-device-width: 801px) and (max-device-width: 900px) {	
-.footer-nav{
-	width: 100%;
-	max-width: 900px;
-	margin:0 auto;		
-	}	
-.c1{
-	width: 16.66%;
-	max-width: 160px;
-	float: left;
-	padding-bottom: 20px;
-	padding-left: .625em;
-	}
-.c2{
-	width: 11.9057143%;
-	max-width: 115px;
-	float: left;
-	padding-left: .625em;
-	padding-bottom: 20px;
-	}
-#site-footer li:first-child{
-	font-size: 1em;
-	}	
-.copy{
-	padding-right: .625em;
-	clear: both;
-	}
-}*/
-
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
     /*nav {
@@ -1111,10 +1064,7 @@ footer a:focus {
         font-size: 2.75vw;
         padding-left: 10px;
         width: 100%;
-    }*/
-    
-}
-  
+    }*/ 
  /********* footer styles *********/
 /* footer styles */
   #site-footer{
@@ -1139,13 +1089,18 @@ footer a:focus {
     padding-left: 2em
   }
   .footer-col:first-child {
-    padding-left: .625em;
+    padding-left: .125em;
   }
   .footer-col:last-child .footer-col:nth-child(4){
     padding-right: 0px;
     text-align: right;
   }
-
+    #site-footer .copy{
+  float: none;
+  clear: both;
+  text-align: center;
+  }
+}
 /* Phone */
 @media all and (max-width: 480px) {
     body,
@@ -1207,12 +1162,12 @@ footer a:focus {
 
  /********* phone footer styles ********/
   .footer-nav{
-  width: 100%;
-  max-width: 500px;
-  margin:0 auto;    
+    width: 100%;
+    max-width: 500px;
+    margin:0 auto;    
   } 
-.footer-col{
-  display: none;
+  .footer-col{
+    display: none;
   } 
 
   .footer-col:first-child{
@@ -1224,13 +1179,13 @@ footer a:focus {
     padding-left: 0px;
   }
 #site-footer .pseudo-button {
-  font-size: 1.2em;
+  font-size: 1.25em;
   margin-bottom: 15px;
-  padding: .625em 0em;
+  padding: .75em 0em;
   } 
-.copy{
-  float: right;
-  padding-left: .625em;
+#site-footer .copy{
+  float: none;
   clear: both;
+  text-align: center;
   }
 }
