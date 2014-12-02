@@ -391,6 +391,11 @@ a.pis-thumbnail-link {
   /*height:75%;*/
 }
 
+.pis-more a{
+  font-weight:bold;
+}
+
+
 /* .widget styles each of the four lower boxes */
 #lower-div .widget {
    height: 120px;
@@ -504,6 +509,13 @@ hr {
 #menu-events-menu li:first-child{ 
     font-size:2em;
 }
+
+#primary .widget-title{
+  font-family:'PT Sans', Helvetica, Geneva, Arial, sans-serif;
+  font-size:2em;
+  font-weight:normal;  
+}
+
 
 a.pis-title-link {
     font-size: 1em;
