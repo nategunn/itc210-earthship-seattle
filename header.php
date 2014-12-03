@@ -39,17 +39,22 @@
 	    <div class="social-media-icons wrapper940">
 		<span class="fa-lg">
 		
-		<a href="https://twitter.com/Earthship_SEA" target="_blank">
+		<!--<a href="https://twitter.com/Earthship_SEA" target="_blank">
 		    <i class="fa fa-twitter-square fa-1x" ></i>
+		</a>-->
+		
+		<!--<a href="http://earthship-seattle.tumblr.com/" target="_blank">
+		    <i class="fa fa-tumblr-square fa-1x"></i>
+		</a>-->
+		
+		<a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">
+		    <i class="meetup fa fa-users fa-1x"></i>
 		</a>
 		
 		<a href="https://www.facebook.com/EarthshipSeattle" target="_blank">
 		    <i class="fa fa-facebook-square fa-1x"></i>
 		</a>
-		
-		<a href="http://earthship-seattle.tumblr.com/" target="_blank">
-		    <i class="fa fa-tumblr-square fa-1x"></i>
-		</a> 
+
 		
 		</span>
 	    </div> <!-- end social-media-icons -->

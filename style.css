@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141202a
+Version: 141203a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -53,7 +53,7 @@ body {
 }
 
 #middle {
-   background-image: url("images/bg-980px-grid.png");
+   background-image: url("images/bg-980px-grid-.png");
    background-position:center;
    margin-bottom:20px;
    overflow:hidden;
@@ -168,9 +168,17 @@ i {
   transition: color 0.35s ease-in-out;
 }
 
-.social-media-icons a:hover {
+/*.social-media-icons a:hover {
   text-decoration: none;
   color: #a3a29e;
+}*/
+
+.fa-facebook-square:hover {
+  color: #43609C;
+}
+
+.meetup:hover {
+  color: #E51937;
 }
 /*///// END SOCIAL MEDIA ICONS /////*/
 
@@ -276,6 +284,7 @@ header a:hover {
 .xbig-p {
   /* multiply by 1em to set unit type */
   font-size: calc(1em * (25/16)); /* 25px/16px = 1.5625 */
+  margin-bottom:25px;
 }
 
 .big-right {
@@ -283,6 +292,7 @@ header a:hover {
   text-align:right;
   float:right;
   position:relative;
+  margin-bottom:20px;
 }
 
 .big-right h3 {
@@ -462,7 +472,7 @@ hr {
 }
 
 .post-box {
-  /*margin: 10px 0;*/
+  margin: 15px 0;
 }
 
 .post-box p {
@@ -502,11 +512,12 @@ hr {
 #primary li {
   list-style: none;
   padding-left: 10px;
-      font-size: calc(1em * (18/16));
+      /*font-size: calc(1em * (18/16));*/
 }
 #menu-projects-menu li:first-child,
 #menu-events-menu li:first-child{ 
     font-size:2em;
+    font-family:'PT Serif', Helvetica, Geneva, Arial, sans-serif;
 }
 
 #primary .widget-title{
@@ -517,7 +528,9 @@ hr {
 
 
 a.pis-title-link {
-    font-size: 1em;
+  font-family:'PT Serif', Helvetica, Geneva, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 200;
 }
 /*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
 
@@ -593,7 +606,7 @@ footer a:focus {
   width: 12.50%;
   float: left;
   padding-bottom: 20px;
-  padding-left: 2.5em
+  /*padding-left: 2.5em;*/
 }
 .footer-col:first-child {
   padding-left: 0px;
@@ -700,7 +713,7 @@ footer a:focus {
   }
   
   #middle {
-    background-image: url("images/bg-800px-grid.png");
+    background-image: url("images/bg-800px-grid-.png");
     background-position:center;
     max-width:780px;
   }
@@ -840,6 +853,7 @@ footer a:focus {
     content: "\f0c9";
     /*content: "\2630";*/ /* UTF-8 */
     font-size:2.15em;
+    display:block;
   }
 
   #nav-main ul:hover li{
