@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141201a
+Version: 141204a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
@@ -53,7 +53,7 @@ body {
 }
 
 #middle {
-   background-image: url("images/bg-980px-grid.png");
+   background-image: url("images/bg-980px-grid-.png");
    background-position:center;
    margin-bottom:20px;
    overflow:hidden;
@@ -79,7 +79,7 @@ header h1 {
 h1,
 h2,
 h3 {
-  font-family: 'PT Serif', serif;
+  font-family: 'Roboto', serif;
   color:#000;
 }
 
@@ -168,9 +168,17 @@ i {
   transition: color 0.35s ease-in-out;
 }
 
-.social-media-icons a:hover {
+/*.social-media-icons a:hover {
   text-decoration: none;
   color: #a3a29e;
+}*/
+
+.fa-facebook-square:hover {
+  color: #43609C;
+}
+
+.meetup:hover {
+  color: #E51937;
 }
 /*///// END SOCIAL MEDIA ICONS /////*/
 
@@ -269,13 +277,34 @@ header a:hover {
   padding-bottom: calc(100% * (675/1920));
 }
 
+#hero-front-page h2 {
+  position: relative;
+  left:70%;
+  top:12em;
+  color:#FFF;
+  background:rgba(0,0,0,.7);
+  padding:5px;
+  width:calc(100% * (300/940));
+  text-align:right;
+  letter-spacing: .15em;
+  font-style: italic;
+  font-size:1.75em;
+  font-family: "Roboto";
+}
+
+
 .main-content-fp {
   margin-top:20px;
+}
+
+.main-content-fp h2 {
+      text-transform:uppercase; 
 }
 
 .xbig-p {
   /* multiply by 1em to set unit type */
   font-size: calc(1em * (25/16)); /* 25px/16px = 1.5625 */
+  margin-bottom:25px;
 }
 
 .big-right {
@@ -283,10 +312,12 @@ header a:hover {
   text-align:right;
   float:right;
   position:relative;
+  margin-bottom:20px;
 }
 
 .big-right h3 {
     font-size: calc(1em * (30/16));
+    text-transform:uppercase; 
 }
 
 .big-p {
@@ -306,14 +337,11 @@ header a:hover {
 }
 
 #mid div { 
-  /*width:calc(32.9% - 10px);*/
-  /*width:calc(100% * ((300/940) - (10/940)) );*/
   width:calc(100% * (300/940));
-  /*margin:0 10px;*/
   margin:0 calc(100% * (10/940));
-  /*background-color: #BCBCBC;*/
   float: left;
   background-color:#A3A29E;
+  /*margin-top: -65px;*/
 }
 
 #mid div:first-child{
@@ -348,6 +376,30 @@ a.pis-thumbnail-link {
   padding-bottom:300%;
 }*/
 
+#mid .widget-title {
+  font-size: 1.2em;
+  margin:10px 0 10px 0;
+  position:relative;
+  top:60px;
+  color:#FFF;
+  background-color:rgba(0,0,0,.75);
+  padding:10px;
+}
+
+#mid a.pis-title-link {
+  font-family:'Roboto', Helvetica, Geneva, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top:0;
+}
+
+#mid .pis-excerpt {
+
+}
+
+#pis_posts_in_sidebar-10 {
+  
+}
 /*///// END MID SIDEBAR /////*/
 
 /*///// LOWER SIDEBAR /////*/
@@ -395,7 +447,6 @@ a.pis-thumbnail-link {
   font-weight:bold;
 }
 
-
 /* .widget styles each of the four lower boxes */
 #lower-div .widget {
    height: 120px;
@@ -420,7 +471,7 @@ a.pis-thumbnail-link {
 /*///// END FRONT PAGE STYLES /////*/
 
 /*///// INDEX.PHP STYLES ///*/
-.hero-index-page  {
+.hero-gateway-page  {
   background-image:url("images/hands-tires-1979x280px-maxblack.jpg");
   background-repeat: no-repeat;
   background-color:#100f0d;
@@ -463,7 +514,7 @@ hr {
 }
 
 .post-box {
-  /*margin: 10px 0;*/
+  margin: 15px 0 20px 0;
 }
 
 .post-box p {
@@ -480,7 +531,32 @@ hr {
 .post-box .wp-caption {
   margin-left:10px;
 }
+
+p.wp-caption-text {
+  max-width:220px;
+  /*overflow:hidden;*/
+  margin-top:15px;
+  padding-top:15px;
+}
 /*///// END INDEX.PHP STYLES /////*/
+
+/*///// PAGE.PHP STYLES /////*/
+.hero-gateway-page h2 {
+  position: relative;
+  left:83%;
+  top:4em;
+  color:#000;
+  background:rgba(255,255,255,.7);
+  padding:5px;
+  width:calc(100% * (160/940));
+  text-align:right;
+  letter-spacing: .15em;
+  font-style: italic;
+  font-size:1.75em;
+  font-family: "Roboto";
+}
+
+/*///// END PAGE.PHP STYLES /////*/
   
 /*////////// SIDEBAR-PRIMARY SIDEBAR ////////*/
 #primary {
@@ -503,22 +579,28 @@ hr {
 #primary li {
   list-style: none;
   padding-left: 10px;
-      font-size: calc(1em * (18/16));
+      /*font-size: calc(1em * (18/16));*/
 }
+
+/* Events and Projects Navigation */
 #menu-projects-menu li:first-child,
 #menu-events-menu li:first-child{ 
     font-size:2em;
+    font-family:'Roboto', Helvetica, Geneva, Arial, sans-serif;
 }
 
+/* Event Widget Excerpt */
+a.pis-title-link {
+  font-family:'Roboto', Helvetica, Geneva, Arial, sans-serif;
+  font-size: 2em;
+  /*font-weight: 200;*/
+}
+
+/* Category Widget */
 #primary .widget-title{
-  font-family:'PT Sans', Helvetica, Geneva, Arial, sans-serif;
+  font-family:'Roboto', Helvetica, Geneva, Arial, sans-serif;
   font-size:2em;
   font-weight:normal;  
-}
-
-
-a.pis-title-link {
-    font-size: 1em;
 }
 /*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
 
@@ -594,7 +676,7 @@ footer a:focus {
   width: 12.50%;
   float: left;
   padding-bottom: 20px;
-  padding-left: 2.5em
+  padding-left: 1.5em;
 }
 .footer-col:first-child {
   padding-left: 0px;
@@ -682,7 +764,7 @@ footer a:focus {
     padding-bottom: calc(100% * (350/980));
   }
   
-  .hero-index-page {
+  .hero-gateway-page {
     background-image:url("images/hands-tires-980x200px-maxblack.jpg");
     padding-bottom: calc(100% * (200/980));
   }
@@ -695,13 +777,13 @@ footer a:focus {
     padding-bottom: calc(100% * (275/800));
   }
   
-  .hero-index-page {
+  .hero-gateway-page {
     background-image:url("images/hands-tires-800x200px-maxblack.jpg");
     padding-bottom: calc(100% * (200/800));
   }
   
   #middle {
-    background-image: url("images/bg-800px-grid.png");
+    background-image: url("images/bg-800px-grid-.png");
     background-position:center;
     max-width:780px;
   }
@@ -841,6 +923,7 @@ footer a:focus {
     content: "\f0c9";
     /*content: "\2630";*/ /* UTF-8 */
     font-size:2.15em;
+    display:block;
   }
 
   #nav-main ul:hover li{
@@ -924,10 +1007,12 @@ footer a:focus {
   .main-content-fp h2 {
     font-size: calc(1em * (26/16));
     padding-top:20px;
+      text-transform:uppercase;
   }
   
   .main-content-fp h3 {
     font-size: calc(1em * (24/16));
+      text-transform:uppercase;
   }
   
   .xbig-p {
@@ -971,7 +1056,7 @@ footer a:focus {
   /***** END FRONT PAGE STYLES *****/
   
   /***** INDEX PAGE STYLES *****/
-  .hero-index-page {
+  .hero-gateway-page {
     background-image:url("images/hands-tires-480x150px-maxblack.jpg");
     padding-bottom: calc(100% * (150/480));
   }
@@ -1044,53 +1129,6 @@ footer a:focus {
     line-height:60px;
   }
 }
-
-/******** footer desktop styles width 1 *********/
-/*@media only screen and (min-device-width: 901px){	
-.footer-nav{
-	width: 100%;
-	max-width: 901px;
-	margin:0 auto;		
-	}	
-.copy{
-	padding-right: .625em;
-	clear: both;
-	}	
-.c1{
-	padding-left: .625em;
-	}
-}*/
-
-/******** footer desktop styles width 2 *********/
-/*@media only screen and (min-device-width: 801px) and (max-device-width: 900px) {	
-.footer-nav{
-	width: 100%;
-	max-width: 900px;
-	margin:0 auto;		
-	}	
-.c1{
-	width: 16.66%;
-	max-width: 160px;
-	float: left;
-	padding-bottom: 20px;
-	padding-left: .625em;
-	}
-.c2{
-	width: 11.9057143%;
-	max-width: 115px;
-	float: left;
-	padding-left: .625em;
-	padding-bottom: 20px;
-	}
-#site-footer li:first-child{
-	font-size: 1em;
-	}	
-.copy{
-	padding-right: .625em;
-	clear: both;
-	}
-}*/
-
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
     /*nav {
@@ -1111,10 +1149,7 @@ footer a:focus {
         font-size: 2.75vw;
         padding-left: 10px;
         width: 100%;
-    }*/
-    
-}
-  
+    }*/ 
  /********* footer styles *********/
 /* footer styles */
   #site-footer{
@@ -1139,13 +1174,18 @@ footer a:focus {
     padding-left: 2em
   }
   .footer-col:first-child {
-    padding-left: .625em;
+    padding-left: .125em;
   }
   .footer-col:last-child .footer-col:nth-child(4){
     padding-right: 0px;
     text-align: right;
   }
-
+    #site-footer .copy{
+  float: none;
+  clear: both;
+  text-align: center;
+  }
+}
 /* Phone */
 @media all and (max-width: 480px) {
     body,
@@ -1207,12 +1247,12 @@ footer a:focus {
 
  /********* phone footer styles ********/
   .footer-nav{
-  width: 100%;
-  max-width: 500px;
-  margin:0 auto;    
+    width: 100%;
+    max-width: 500px;
+    margin:0 auto;    
   } 
-.footer-col{
-  display: none;
+  .footer-col{
+    display: none;
   } 
 
   .footer-col:first-child{
@@ -1224,13 +1264,13 @@ footer a:focus {
     padding-left: 0px;
   }
 #site-footer .pseudo-button {
-  font-size: 1.2em;
+  font-size: 1.25em;
   margin-bottom: 15px;
-  padding: .625em 0em;
+  padding: .75em 0em;
   } 
-.copy{
-  float: right;
-  padding-left: .625em;
+#site-footer .copy{
+  float: none;
   clear: both;
+  text-align: center;
   }
 }

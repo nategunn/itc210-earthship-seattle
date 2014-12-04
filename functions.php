@@ -95,5 +95,8 @@ add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
 add_theme_support( 'post-thumbnails', array( 'page' ) );          // Pages only
 add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and Movies
 
-/*Add a custom size for images displayed in the mid-page widget area. */
-add_image_size( 'mid-thumbnail', 300,200,true);
+/* Add Custom Size Images */
+add_image_size('blog-220px-width', 220); /* 220 px width and unlimited height */
+add_image_size('home-300px-width', 300); /* 300 px width and unlimited height */
+
+add_image_size('home-300x200px-cropped', 300,200,true); /* crops image to 300 x 200 px */

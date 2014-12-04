@@ -6,14 +6,18 @@ Template Name: Front Page
 
 <?php get_header(); ?>
   
-<div id="hero-front-page"></div>
+<div id="hero-front-page">
+    <div class="wrapper940">
+        <h2>Bringing Earthships To Seattle</h2>
+    </div>
+</div>
     
 <!--<div id="wrapper">-->
 <div id="middle" class="front-page wrapper940 main-content-fp">
 
     
     <h2>Vision</h2>
-        <p class="xbig-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu sit amet, consectetur adipiscing elit.</p>
+        <p class="xbig-p">Freedom, Community and Sustainability</p>
     
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -38,7 +42,7 @@ Template Name: Front Page
     
     <div class="big-right">
         <h3>Mission</h3>
-            <p class="big-p">Nam pharetra nulla. venenatis sed, volutpat eget lacus. Duis dictum metus felis, sed eleifend erat volutpat.</p>
+            <p class="big-p">To raise awareness about Earthships and tackle the barriers between people and their Earthship dream in the greater Seattle area.</p>
     </div> <!-- end big-right -->
     
     <div id="lower-div" class="clear-fix">

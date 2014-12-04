@@ -1,9 +1,10 @@
-<?php
-/*
-Template Name: projects-current
-*/
-?>
 <?php get_header(); ?>
+
+<div class="hero-gateway-page">
+    <div class="wrapper940">
+        <h2>RADICALLY SUSTAINABLE - about.php</h2>
+    </div>
+</div>
 
 <div id="middle" class="wrapper940">
     
@@ -15,9 +16,9 @@ Template Name: projects-current
 	}?>
     </div>
 
-    <div id="main-content" class="page">
+    <div id="main-content" class="page-about">
 
-    <?php query_posts( 'cat=projects&tag=current' ); ?>
+    
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">

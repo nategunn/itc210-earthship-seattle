@@ -1,9 +1,11 @@
 <?php
 /*
-Template Name: projects-current
+Template Name: page-gateway
 */
 ?>
 <?php get_header(); ?>
+
+<div class="hero-gateway-page"></div>
 
 <div id="middle" class="wrapper940">
     
@@ -17,7 +19,7 @@ Template Name: projects-current
 
     <div id="main-content" class="page">
 
-    <?php query_posts( 'cat=projects&tag=current' ); ?>
+    
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
