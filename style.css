@@ -316,12 +316,8 @@ header a:hover {
 }
 
 #mid div { 
-  /*width:calc(32.9% - 10px);*/
-  /*width:calc(100% * ((300/940) - (10/940)) );*/
   width:calc(100% * (300/940));
-  /*margin:0 10px;*/
   margin:0 calc(100% * (10/940));
-  /*background-color: #BCBCBC;*/
   float: left;
   background-color:#A3A29E;
 }
@@ -357,6 +353,27 @@ a.pis-thumbnail-link {
   height:0;
   padding-bottom:300%;
 }*/
+
+#mid .widget-title {
+  font-size: 1.2em;
+  margin:10px 0 10px 0;
+  position:relative;
+  top:60px;
+  color:#FFF;
+  background-color:rgba(0,0,0,.75);
+  padding:10px;
+}
+
+#mid a.pis-title-link {
+  font-family:'PT Serif', Helvetica, Geneva, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top:0;
+}
+
+#mid .pis-excerpt {
+
+}
 
 /*///// END MID SIDEBAR /////*/
 
@@ -489,6 +506,13 @@ hr {
 .post-box .wp-caption {
   margin-left:10px;
 }
+
+p.wp-caption-text {
+  max-width:220px;
+  /*overflow:hidden;*/
+  margin-top:15px;
+  padding-top:15px;
+}
 /*///// END INDEX.PHP STYLES /////*/
   
 /*////////// SIDEBAR-PRIMARY SIDEBAR ////////*/
@@ -525,7 +549,6 @@ hr {
   font-size:2em;
   font-weight:normal;  
 }
-
 
 a.pis-title-link {
   font-family:'PT Serif', Helvetica, Geneva, Arial, sans-serif;

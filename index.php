@@ -21,8 +21,11 @@
 	    <h4 class="postmetadata">
 		<span class="date">Posted on <?php the_time('F jS, Y') ?></span> in 
 		<span class="cat"><?php the_category(', ') ?></span>
-		<span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
-		    <span class="comments">with <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span>
+		<span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?>. </span>
+		
+		<span class="tags">Tags:  <?php wp_get_post_tags( $post_id, $args ) ?>. </span>
+		
+		<span class="comments"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?>.</span>
 	    </h4>
 		    <?php the_content('More &rAquo;'); ?>
 	    <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
