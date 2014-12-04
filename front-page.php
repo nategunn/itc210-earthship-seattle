@@ -6,14 +6,18 @@ Template Name: Front Page
 
 <?php get_header(); ?>
   
-<div id="hero-front-page"></div>
+<div id="hero-front-page">
+    <div class="wrapper940">
+        <h2>Bringing Earthships To Seattle</h2>
+    </div>
+</div>
     
 <!--<div id="wrapper">-->
 <div id="middle" class="front-page wrapper940 main-content-fp">
 
     
     <h2>Vision</h2>
-        <p class="xbig-p">Freedom, community and sustainability</p>
+        <p class="xbig-p">Freedom, Community and Sustainability</p>
     
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

@@ -21,6 +21,7 @@
     <!-- sans-serifs -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     
     <!-- for social media icons -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -48,7 +49,7 @@
 		</a>-->
 		
 		<a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">
-		    <i class="meetup fa fa-users fa-1x"></i>
+		    <i class="meetup fa fa-square fa-1x"></i>
 		</a>
 		
 		<a href="https://www.facebook.com/EarthshipSeattle" target="_blank">

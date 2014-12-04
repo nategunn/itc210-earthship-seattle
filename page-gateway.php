@@ -1,10 +1,11 @@
+<?php
+/*
+Template Name: page-gateway
+*/
+?>
 <?php get_header(); ?>
 
-<div class="hero-gateway-page">
-    <div class="wrapper940">
-        <h2>RADICALLY SUSTAINABLE - page-about.php</h2>
-    </div>
-</div>
+<div class="hero-gateway-page"></div>
 
 <div id="middle" class="wrapper940">
     

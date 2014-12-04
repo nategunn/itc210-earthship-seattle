@@ -2,7 +2,7 @@
 
 <div class="hero-gateway-page">
     <div class="wrapper940">
-        <h2>RADICALLY SUSTAINABLE - page-about.php</h2>
+        <h2>RADICALLY SUSTAINABLE - about.php</h2>
     </div>
 </div>
 
@@ -16,7 +16,7 @@
 	}?>
     </div>
 
-    <div id="main-content" class="page">
+    <div id="main-content" class="page-about">
 
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
