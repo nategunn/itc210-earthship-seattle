@@ -12,20 +12,13 @@
 			<ul>
 				<li><a href="#">ABOUT</a></li>
 				<li><a href="#">US</a></li>
-				<li><a href="#">PARENT</a></li>
+				<li><a href="#">BIOTECTURE</a></li>
 				<li><a href="#">EDUCATION</a></li>
-				<li><a href="#">OUR EVENTS</a></li>
-				<li><a href="#">OUR PROJECTS</a></li>
 			</ul>
 		</div>
 		<div class="footer-col">
 			<ul>
 				<li><a href="#">CALENDAR</a></li>
-			</ul>
-		</div>
-		<div class="footer-col">
-			<ul>
-				<li><a href="#">FORUM</a></li>
 			</ul>
 		</div>
 		<div class="footer-col">
@@ -37,15 +30,20 @@
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">RESOURCES</a></li>
-				<li><a href="#">LAND</a></li>
-				<li><a href="#">PERMITS</a></li>
-				<li><a href="#">LEGAL</a></li>
+				<li><a href="#">FORUM</a></li>
 			</ul>
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">PHOTOS</a></li>
+				<li><a href="#">GALLERY</a></li>				
+			</ul>
+		</div>
+		<div class="footer-col">
+			<ul>
+				<li><a href="#">RESOURCES</a></li>
+				<li><a href="#">LAND</a></li>
+				<li><a href="#">PERMITS</a></li>
+				<li><a href="#">LEGAL</a></li>
 			</ul>
 		</div>
 		<div class="footer-col last">
