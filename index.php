@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<div class="hero-index-page"></div>
-
 <div id="middle" class="wrapper940">
     
     <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
