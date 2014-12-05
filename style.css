@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141205b
+Version: 141205c
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -415,6 +415,7 @@ header a:hover {
 /*///// LOWER SIDEBAR /////*/
 #lower-div {
   clear:both;
+  font-family:"Open Sans";
 }
 
 #lower {
@@ -455,14 +456,14 @@ header a:hover {
 
 /* .widget styles each of the four lower boxes */
 #lower-div .widget {
-   height: 120px;
-   max-width: 380px;
-   width: calc(100% * (220/940));
-   display: inline-block;
-   margin-bottom: 15px;
-   float:left;
-   background-color: #BCBCBC;
-   /*background-color: #D94040;*/
+  max-width: 380px;
+  width: calc(100% * (220/940));
+  display: inline-block;
+  margin-bottom: 15px;
+  float:left;
+  /*background-color: #BCBCBC;*/
+  border: 2px solid #333333;
+  padding:10px;
 }
 
 #lower-div .widget:nth-child(even) {
@@ -472,6 +473,19 @@ header a:hover {
 
 #lower-div .widget:nth-child(3) {
     margin-left: calc(100% * (20/940));
+}
+
+#lower-div h3 {
+  margin-bottom:.75em;
+}
+
+#lower-div .read-more {
+  text-align:right;
+  display:block;
+  font-variant: small-caps;
+  font-weight:600;
+  font-style: italic;
+  margin-top:5px;
 }
 /*///// END LOWER SIDEBAR /////*/
 /*///// END FRONT PAGE STYLES /////*/
