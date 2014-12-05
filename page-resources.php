@@ -2,7 +2,7 @@
 
 <div class="hero-gateway-page">
     <div class="wrapper940">
-        <h2>LIVE FREE</h2>
+        <h2>Live Free</h2>
     </div>
 </div>
 
