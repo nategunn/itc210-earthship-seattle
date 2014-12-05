@@ -221,6 +221,7 @@ header a:hover {
 #nav-main ul {
   margin:auto;
   display: inline;
+  /*text-transform: uppercase;*/
 }
 
 #nav-main li {
@@ -478,7 +479,7 @@ header a:hover {
 /*///// INDEX.PHP STYLES ///*/
 #main-content {
   max-width: 620px;
-  width: calc(100% * (600/940));
+  width: calc(100% * (560/940));
   float: left;
 }
 
@@ -565,7 +566,7 @@ p.wp-caption-text {
   
 /*////////// SIDEBAR-PRIMARY SIDEBAR ////////*/
 #primary {
-  width: calc(100% * (300/940));
+  width: calc(100% * (320/940));
   /*width:300px;*/
   border: 2px #333333 solid;
   float: right;
