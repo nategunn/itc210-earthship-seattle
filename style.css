@@ -4,13 +4,10 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141204a
+Version: 141204b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar,
-fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style,
-featured-images, flexible-header, full-width-template, microformats, post-formats,
-rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Tags:
 Text Domain: earthship
 */
 
@@ -35,6 +32,7 @@ a img {
 
 img {
   max-width:100%;
+  height:auto;
 }
 /*///// END RESETS /////*/
 
@@ -275,21 +273,23 @@ header a:hover {
   /*background-size: 100% 100%;*/
   height: 0px;
   padding-bottom: calc(100% * (675/1920));
+  position:relative
 }
 
 #hero-front-page h2 {
-  position: relative;
-  left:70%;
-  top:12em;
+  right:10%;
+  bottom:25px;
+  position:absolute;
   color:#FFF;
   background:rgba(0,0,0,.7);
   padding:5px;
-  width:calc(100% * (300/940));
+  /*width:calc(100% * (300/940));*/
   text-align:right;
   letter-spacing: .15em;
   font-style: italic;
   font-size:1.75em;
   font-family: "Roboto";
+  
 }
 
 
@@ -336,19 +336,20 @@ header a:hover {
   overflow: hidden;
 }
 
-#mid div { 
+#mid .widget { 
   width:calc(100% * (300/940));
   margin:0 calc(100% * (10/940));
   float: left;
   background-color:#A3A29E;
+  position: relative;
   /*margin-top: -65px;*/
 }
 
-#mid div:first-child{
+#mid .widget:first-child{
   margin-left:0;
 }
 
-#mid div:last-child{
+#mid .widget:last-child{
   margin-right:0;
 }
 
@@ -379,8 +380,8 @@ a.pis-thumbnail-link {
 #mid .widget-title {
   font-size: 1.2em;
   margin:10px 0 10px 0;
-  position:relative;
-  top:60px;
+  position:absolute;
+  top:10px;
   color:#FFF;
   background-color:rgba(0,0,0,.75);
   padding:10px;
@@ -471,22 +472,6 @@ a.pis-thumbnail-link {
 /*///// END FRONT PAGE STYLES /////*/
 
 /*///// INDEX.PHP STYLES ///*/
-.hero-gateway-page  {
-  background-image:url("images/hands-tires-1979x280px-maxblack.jpg");
-  background-repeat: no-repeat;
-  background-color:#100f0d;
-  height:0;
-  /*padding-bottom:280px;*/
-  padding-bottom: calc(100% * (280/1979));
-  
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-  
-  background-size: 100% 100%; 
-}
-
 #main-content {
   max-width: 620px;
   width: calc(100% * (620/940));
@@ -541,19 +526,36 @@ p.wp-caption-text {
 /*///// END INDEX.PHP STYLES /////*/
 
 /*///// PAGE.PHP STYLES /////*/
-.hero-gateway-page h2 {
+.hero-gateway-page  {
+  background-image:url("images/hands-tires-1979x280px-maxblack.jpg");
+  background-repeat: no-repeat;
+  background-color:#100f0d;
+  height:0;
+  /*padding-bottom:280px;*/
+  padding-bottom: calc(100% * (280/1979));
+  
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  
+  background-size: 100% 100%;
   position: relative;
-  left:83%;
-  top:4em;
+}
+
+.hero-gateway-page h2 {
   color:#000;
   background:rgba(255,255,255,.7);
   padding:5px;
-  width:calc(100% * (160/940));
+  /*width:calc(100% * (160/940));*/
   text-align:right;
   letter-spacing: .15em;
   font-style: italic;
   font-size:1.75em;
   font-family: "Roboto";
+  position:absolute;
+  bottom:15px;
+  right:30%;
 }
 
 /*///// END PAGE.PHP STYLES /////*/

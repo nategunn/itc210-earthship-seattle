@@ -99,4 +99,7 @@ add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and M
 add_image_size('blog-220px-width', 220); /* 220 px width and unlimited height */
 add_image_size('home-300px-width', 300); /* 300 px width and unlimited height */
 
+add_image_size('blog-220xauto', 220, auto); /* 220 px width and auto height */
+add_image_size('home-300xauto', 300, auto); /* 300 px width and auto height */
+
 add_image_size('home-300x200px-cropped', 300,200,true); /* crops image to 300 x 200 px */
