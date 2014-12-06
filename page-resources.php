@@ -33,7 +33,7 @@
     <?php endif; ?> 
 
 
-</div><!-- #main-content -->
+    </div><!-- #main-content -->
 <div>
         <?php get_sidebar();?>
 </div>

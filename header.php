@@ -31,8 +31,7 @@
 	
     <meta name="viewport" content="initial-scale=1">
     
-    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
-	
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />	
 </head>
 
 <body id="top"<?php body_class(); ?>>

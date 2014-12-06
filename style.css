@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141205c
+Version: 141205d
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -542,6 +542,7 @@ p.wp-caption-text {
   margin-top:15px;
   padding-top:15px;
 }
+
 /*///// END INDEX.PHP STYLES /////*/
 
 /*///// PAGE.PHP STYLES /////*/
@@ -564,7 +565,7 @@ p.wp-caption-text {
 
 .hero-gateway-page h2 {
   color:#000;
-  background:rgba(255,255,255,.7);
+  background:rgba(255,255,255,.85);
   padding:5px;
   /*width:calc(100% * (160/940));*/
   text-align:right;
@@ -574,7 +575,32 @@ p.wp-caption-text {
   font-family: "Open Sans";
   position:absolute;
   bottom:15px;
-  right:30%;
+  right:13%;
+}
+
+.hero-about-page  {
+  background-image:url("images/Bottle,_Tire_and_Brick_walls_of_Earthships1600x280px.jpg");
+  background-repeat: no-repeat;
+  background-color:#100f0d;
+  height:0;
+  padding-bottom: calc(100% * (280/1979));
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.hero-about-page h2 {
+  color:#000;
+  background:rgba(255,255,255,.85);
+  padding:5px;
+  /*width:calc(100% * (160/940));*/
+  text-align:right;
+  letter-spacing: .15em;
+  font-style: italic;
+  font-size:1.75em;
+  font-family: "Open Sans";
+  position:absolute;
+  bottom:15px;
+  right:10%;
 }
 /*///// END PAGE.PHP STYLES /////*/
   
@@ -848,6 +874,11 @@ footer a:focus {
   .hero-gateway-page {
     background-image:url("images/hands-tires-800x200px-maxblack.jpg");
     padding-bottom: calc(100% * (200/800));
+  }
+  
+  .hero-about-page  {
+  background-image:url("images/Bottle,_Tire_and_Brick_walls_of_Earthships800x200px.jpg");
+  padding-bottom: calc(100% * (200/800));
   }
   
   #middle {
