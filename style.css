@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141205d
+Version: 141205e
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -281,14 +281,14 @@ header a:hover {
 
 #hero-front-page h2 {
   right:10%;
-  bottom:75px;
+  bottom:60px;
   position:absolute;
   color:#FFF;
   background:rgba(0,0,0,.6);
   padding:5px 10px;
   text-align:right;
   letter-spacing: .06em;
-  font-size:2.5em;
+  font-size:1.9em;
   font-family: "Open Sans";
   font-style: italic;
   font-weight: 600;
@@ -871,16 +871,28 @@ footer a:focus {
     padding-bottom: calc(100% * (275/800));
   }
   
+  #hero-front-page h2 {
+    right:5%;
+    bottom:35px;
+    padding:5px 10px;
+    letter-spacing: .06em;
+    font-size:1.4em;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+  }
+  
   .hero-gateway-page {
     background-image:url("images/hands-tires-800x200px-maxblack.jpg");
     padding-bottom: calc(100% * (200/800));
   }
   
   .hero-about-page  {
-  background-image:url("images/Bottle,_Tire_and_Brick_walls_of_Earthships800x200px.jpg");
-  padding-bottom: calc(100% * (200/800));
+    background-image:url("images/Bottle,_Tire_and_Brick_walls_of_Earthships800x200px.jpg");
+    padding-bottom: calc(100% * (200/800));
   }
   
+
   #middle {
     background-image: url("images/bg-800px-grid-.png");
     background-position:center;
@@ -1101,6 +1113,18 @@ footer a:focus {
   #hero-front-page  {
     background-image:url("images/Global_model_Earthship-480x175px.jpg");
     padding-bottom: calc(100% * (175/480));
+  }
+  
+  #hero-front-page h2 {
+    right:5%;
+    bottom:25px;
+    position:absolute;
+    padding:5px 10px;
+    letter-spacing: .06em;
+    font-size:.9em;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
   }
   
   .main-content-fp h2 {
