@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141205e
+Version: 141205f
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -103,9 +103,9 @@ h2 a:focus {
   color: #000;
 }
 
-caption {
+/*caption {
   font-family: 'PT Sans Caption', sans-serif;
-}
+}*/
 
 p,
 ol,
@@ -277,6 +277,7 @@ header a:hover {
   height: 0px;
   padding-bottom: calc(100% * (675/1920));
   position:relative;
+  box-shadow: 1px 4px 7px #333;
 }
 
 #hero-front-page h2 {
@@ -561,6 +562,7 @@ p.wp-caption-text {
   
   background-size: 100% 100%;
   position: relative;
+  box-shadow: 1px 3px 6px #333;
 }
 
 .hero-gateway-page h2 {
@@ -586,6 +588,7 @@ p.wp-caption-text {
   padding-bottom: calc(100% * (280/1979));
   background-size: 100% 100%;
   position: relative;
+  box-shadow: 1px 3px 6px #333;
 }
 
 .hero-about-page h2 {
@@ -600,7 +603,7 @@ p.wp-caption-text {
   font-family: "Open Sans";
   position:absolute;
   bottom:15px;
-  right:10%;
+  right:20%;
 }
 /*///// END PAGE.PHP STYLES /////*/
   
@@ -839,30 +842,56 @@ footer a:focus {
 
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
-  #hero-front-page  {
+/*  #hero-front-page  {
     background-image:url("images/Global_model_Earthship-1600x550px.png");
     padding-bottom: calc(100% * (550/1600));
+  }*/
+  
+  .hero-gateway-page h2 {
+    color:#000;
+    background:rgba(255,255,255,.85);
+    padding:5px;
+    text-align:right;
+    letter-spacing: .15em;
+    font-style: italic;
+    font-size:1.75em;
+    font-family: "Open Sans";
+    position:absolute;
+    bottom:15px;
+    right:13%;
   }
 }
 
 @media all and (max-width: 1280px) {
-  #hero-front-page  {
-    background-image:url("images/Global_model_Earthship-1280x450px.jpg");
-    padding-bottom: calc(100% * (450/1280));
+  #hero-front-page h2 {
+    right:5%;
+    bottom:50px;
+    padding:5px 10px;
+    letter-spacing: .06em;
+    font-size:1.7em;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
   }
 }
 
 @media all and (max-width: 980px) {
-  #hero-front-page  {
-    background-image:url("images/Global_model_Earthship-980x350px.jpg");
-    padding-bottom: calc(100% * (350/980));
-  }
-  
   .hero-gateway-page {
     background-image:url("images/hands-tires-980x200px-maxblack.jpg");
     padding-bottom: calc(100% * (200/980));
   }
   
+  #hero-front-page h2 {
+    right:5%;
+    bottom:35px;
+    padding:5px 10px;
+    letter-spacing: .06em;
+    font-size:1.4em;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+  }
+   
 }
 
 @media all and (max-width: 800px) {
@@ -997,6 +1026,17 @@ footer a:focus {
     /*min-height:220px;*/
     padding-bottom: calc(100% * (220/640));
   }
+  
+  /*  #hero-front-page h2 {
+    right:5%;
+    bottom:35px;
+    padding:5px 10px;
+    letter-spacing: .06em;
+    font-size:1.4em;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+  }*/
   
    #mid-div .widget {
     width:calc(100% * (290/940));
@@ -1216,6 +1256,18 @@ footer a:focus {
     border-top: 2px #333333 solid;
   }
   /***** END INDEX PAGE STYLES *****/
+  
+  .hero-about-page h2 {
+    font-size:.7em;
+    right:5%;
+    bottom:10px;
+  }
+  
+  .hero-gateway-page h2 {
+    font-size:1.1em;
+    right:5%;
+    bottom:10px;
+  }
 }
 
 @media all and (max-width: 430px) {
