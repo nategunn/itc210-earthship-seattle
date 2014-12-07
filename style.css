@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141206a
+Version: 141206b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -398,10 +398,14 @@ header a:hover {
   
 }
 
+#primary .widget-title {
+  padding-left:20px;
+}
+
 .pis-more a{
-  font-weight: bold;
-  font-variant: small-caps;
-  font-style: italic;
+  /*font-weight: bold;*/
+  /*font-variant: small-caps;*/
+  /*font-style: italic;*/
 }
 
 /*a.pis-title-link {*/
@@ -625,7 +629,8 @@ p.wp-caption-text {
 #primary {
   width: calc(100% * (320/940));
   /*width:300px;*/
-  border: 2px #333333 solid;
+  /*border: 2px #333333 solid;*/
+  border-left: 1px solid #a3a29e;
   float: right;
 }
 #primary h3 {
@@ -669,19 +674,33 @@ p.wp-caption-text {
 #menu-events-menu li:first-child{ 
     font-size:2em;
     font-family:'Open Sans', Helvetica, Geneva, Arial, sans-serif;
+    margin-bottom: .1em;
+}
+
+#menu-events-menu li:nth-child(2),
+#menu-events-menu li:nth-child(3),
+#menu-events-menu li:nth-child(4),
+#menu-projects-menu li:nth-child(2),
+#menu-projects-menu li:nth-child(3),
+#menu-projects-menu li:nth-child(4) {
+  margin-bottom:.3em;
 }
 
 /* Event Widget Excerpt */
 a.pis-title-link {
   font-family:'Open Sans', Helvetica, Geneva, Arial, sans-serif;
-  font-size: 2em;
+  /*font-size: 2em;*/
   /*font-weight: 200;*/
+  margin-bottom: .1em;
+  display:block;
+
 }
 
 /* Category Widget */
 #primary .widget-title{
   font-family:'Open Sans', Helvetica, Geneva, Arial, sans-serif;
-  font-size:2em; 
+  font-size:2em;
+  margin-bottom: .1em;
 }
 
 /* Events Menu Widget */
@@ -701,9 +720,9 @@ a.pis-title-link {
 .menu-projects-menu-container:after,
 #pis_posts_in_sidebar-5:after {
   content:""; 
-  background: #333333; 
+  background: #a3a29e;  
   position: absolute;
-  height: 2px; 
+  height: 1px; 
   bottom: 0; 
   left: 20px;
   right:20px;
@@ -711,7 +730,24 @@ a.pis-title-link {
 
 /* Categories Menu Widget */
 #categories-2 {
-  padding: 20px 0 10px 0;
+  padding: 20px 0 10px 0px;
+}
+
+#categories-2 li {
+  margin-bottom: .1em;
+}
+
+#categories-2 h3.widget-title {
+  padding-left:20px;
+}
+
+.pis-more a {
+  font-weight: normal;
+  /*font-variant: small-caps;*/
+  font-style: italic;
+  display: block;
+  line-height: 1.9;
+  
 }
 /*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
 
@@ -991,7 +1027,7 @@ footer a:focus {
   #primary {
     max-width: 220px;
     /*width: calc(100% * (220/940));*/
-    border: 2px #333333 solid;
+    /*border: 2px #333333 solid;*/
     float: right;
   }
   
