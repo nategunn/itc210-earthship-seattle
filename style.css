@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141206b
+Version: 141207a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -302,6 +302,7 @@ header a:hover {
   padding-bottom: calc(100% * (675/1920));
   position:relative;
   box-shadow: 1px 4px 7px #333;
+  z-index:-10;
 }
 
 #hero-front-page h2 {
@@ -591,6 +592,7 @@ p.wp-caption-text {
   background-size: 100% 100%;
   position: relative;
   box-shadow: 1px 3px 6px #333;
+  z-index:-10;
 }
 
 .hero-gateway-page h2 {
@@ -617,6 +619,7 @@ p.wp-caption-text {
   background-size: 100% 100%;
   position: relative;
   box-shadow: 1px 3px 6px #333;
+  z-index:-10;
 }
 
 .hero-about-page h2 {
