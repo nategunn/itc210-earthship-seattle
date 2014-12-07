@@ -720,7 +720,29 @@ a.pis-title-link {
   list-style-type: none;
 }
 /*///// END SINGLE.PHP /////*/
-
+/*///// START CONTACT FORM STYLES /////*/
+.wpcf7 p{
+  margin-bottom: .6em;
+  font-size: 1.5em;
+}
+.wpcf7 textarea{
+  margin-bottom: .6em;
+}
+.wpcf7 input[type="text"],
+input[type="email"]{
+  width: 60%;
+  height: 32px;
+}
+.wpcf7-submit{
+  width: 25%;
+  height: 32px;
+  font-size: .875em;
+  margin-top: .6em;
+}
+.wpcf7-list-item-label{
+  padding-right: 10px;
+}
+/*///// END CONTACT FORM STYLES /////*/
 /*///// FOOTER A TAGS /////*/
 footer a:link,
 footer a:visited {
@@ -1433,7 +1455,30 @@ footer a:focus {
     .logo-header{ /* logo image displays now by sizing it smaller */
         /*display: none;*/
     }
-
+/********* start phone form styles ********/
+.wpcf7 p{
+  margin-bottom: .6em;
+  font-size: 1em;
+}
+.wpcf7 textarea{
+  margin-bottom: .6em;
+  width: 100%;
+}
+.wpcf7 input[type="text"],
+input[type="email"]{
+  width: 100%;
+  height: 32px;
+}
+.wpcf7-submit{
+  width: 100%;
+  height: 40px;
+  font-size: 1em;
+  margin-top: .6em;
+}
+.wpcf7-list-item-label{
+  padding-right: 5px;
+}
+/********* end phone form styles ********/
  /********* phone footer styles ********/
   .footer-nav{
     width: 100%;
