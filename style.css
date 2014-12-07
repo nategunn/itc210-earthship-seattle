@@ -222,27 +222,52 @@ header a:hover {
   margin:auto;
 }
 
-#nav-main ul {
-  margin:auto;
-  display: inline;
-  /*text-transform: uppercase;*/
+#nav-main ul{
+  padding-left:0;
+  list-style:none;
+  position:relative;
+  display:inline-table;
 }
 
-#nav-main li {
-  display: inline;
-  list-style: none;
-  font-size: calc(1em * (18/16));
+#nav-main ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  padding:none;
 }
 
-#nav-main li ul {
-  display: none;
+#nav-main ul li:hover > ul{
+  display:block;
+  background-color:#333333;
+  color:#FFF;
+}
+
+#nav-main ul:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+#nav-main ul li {
+  float:left;
+  margin-bottom:0;
+}
+
+
+#nav-main ul li a{
+  display:block;
+
+}
+
+#nav-main ul ul li{
+  float:none;
+  position:relative;
 }
 
 #nav-main a:link,
 #nav-main a:visited {
   padding: 0 20px;
   display: inline-block;
-  /*font-size:1.25em;*/
   color:#FFF;
 }
 
@@ -252,19 +277,12 @@ header a:hover {
   color:#FFF;
 }
 
-/*#nav-main ul li:first-child a {*/
-/*  padding:0;  */
-/*}*/
-  
-/*#nav-main ul li:first-child a:hover {*/
-/*  margin-left:20px;  */
-/*}*/
 /*///// END NAV-MAIN STYLES /////*/
 
 .search input {
   float: right;
   height:34px;
-  margin-top:-37px;
+  margin-top:-50px;
 }
 
 /*///// FRONT PAGE STYLES /////*/
@@ -1067,16 +1085,6 @@ footer a:focus {
     display:block;
   }
   
-  .search input {
-    float: right;
-    margin-top:-37px;
-  }
-
-  #nav-main li {
-    display: inline;
-    list-style: none;
-    font-size: calc(1em * (13/16));
-  }
   
   .logo-header {
     max-width: 100px;
@@ -1128,12 +1136,9 @@ footer a:focus {
   
   #nav-main ul {
     width: 15%;
-    height: 34px;
-    /*padding: 5px 0;*/
-    /*margin-top: 34px;*/
+    height: 34px;    
     margin-right: 20px;
-    float:right;
-    /*background: url("images/mobile-menu-icon.png")repeat-x ;*/
+    float:right;   
     position:relative;
   }
 
@@ -1143,19 +1148,21 @@ footer a:focus {
     top:0px;
     left:20px;
     color:#FFF;
-    content: "\f0c9";
-    /*content: "\2630";*/ /* UTF-8 */
+    content: "\f0c9";    
     font-size:2.15em;
     display:block;
   }
 
   #nav-main ul:hover li{
-    display: block;
-    position: relative;
-    width: 220px;
-    right: 150px;
+    display: block;    
+    width: 220px;    
     bottom: 6px;
     background-color: #100f0d
+  }
+
+  #nav-main ul:hover ul:before{
+    content: none;
+    display:none;
   }
 
   #nav-main ul:hover a {
@@ -1164,8 +1171,6 @@ footer a:focus {
 
   .search input {
     float: left;
-    /*margin-left: 10px;
-    margin-top: 34px;*/
     width:50%;
     margin-top:0;
   }
