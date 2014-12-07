@@ -240,6 +240,7 @@ header a:hover {
   display:block;
   background-color:#333333;
   color:#FFF;
+  z-index: +1; 
 }
 
 #nav-main ul:after{
@@ -262,6 +263,7 @@ header a:hover {
 #nav-main ul ul li{
   float:none;
   position:relative;
+  z-index: +1;
 }
 
 #nav-main a:link,
