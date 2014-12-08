@@ -1139,6 +1139,9 @@ footer a:focus {
     display: none;
     height: auto;
   }
+  #nav-main ul ul li{
+    font-size: 1em;
+  }
   
   #nav-main ul {
     width: 15%;
