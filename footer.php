@@ -10,10 +10,14 @@
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">ABOUT</a></li>
-				<li><a href="#">US</a></li>
-				<li><a href="#">BIOTECTURE</a></li>
-				<li><a href="#">EDUCATION</a></li>
+				<li><a href="#">EARTHSHIP SEATTLE</a></li>
+				<li><a href="#">OUR EVENTS</a></li>
+				<li><a href="#">OUR PROJECTS</a></li>
+				<li><a href="#">EARTHSHIP BIOTECTURE</a></li>
+				<li><a href="#">EARTHSHIP ACADEMY</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">IN THE PRESS</a></li>
+				<li><a href="#">FUNDING</a></li>
 			</ul>
 		</div>
 		<div class="footer-col">
