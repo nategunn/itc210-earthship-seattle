@@ -1412,7 +1412,31 @@ footer a:focus {
         font-size: 2.75vw;
         padding-left: 10px;
         width: 100%;
-    }*/ 
+    }*/
+/******START FORM STYLES**********/
+  .wpcf7 p{
+  margin-bottom: .6em;
+  font-size: 1em;
+}
+.wpcf7 textarea{
+  margin-bottom: .6em;
+  width: 100%;
+}
+.wpcf7 input[type="text"],
+input[type="email"]{
+  width: 100%;
+  height: 32px;
+}
+.wpcf7-submit{
+width: 100%;
+  height: 40px;
+  font-size: 1em;
+  margin-top: .6em;
+}
+.wpcf7-list-item-label{
+  padding-right: 5px;
+}
+/********END FORM STYLES**********/
  /********* footer styles *********/
 /* footer styles */
   #site-footer{
