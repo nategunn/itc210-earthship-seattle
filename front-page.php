@@ -17,7 +17,7 @@ Template Name: Front Page
 
     
     <h2>Vision</h2>
-        <p class="xbig-p">Living Off The Grid: Freedom, Community and Sustainability</p>
+        <p class="xbig-p">Living Off The Grid: Freedom, Community  and Sustainability</p>
     
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
