@@ -10,12 +10,12 @@
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">EARTHSHIP SEATTLE</a></li>
-				<li><a href="#">OUR EVENTS</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">ABOUT</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'seattle-team' ) ) ); ?>">SEATTLE TEAM</a></li>
 				<li><a href="#">OUR PROJECTS</a></li>
 				<li><a href="#">EARTHSHIP BIOTECTURE</a></li>
-				<li><a href="#">EARTHSHIP ACADEMY</a></li>
-				<li><a href="#">FAQ</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'earthship-academy' ) ) ); ?>">EARTHSHIP ACADEMY</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'faq' ) ) ); ?>">FAQ</a></li>
 				<li><a href="#">IN THE PRESS</a></li>
 				<li><a href="#">FUNDING</a></li>
 			</ul>
@@ -28,13 +28,13 @@
 		<div class="footer-col">
 			<ul>
 				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'blog' ) ) ); ?>">BLOG</a></li>
-				<li><a href="#">EVENTS</a></li>
-				<li><a href="#">PROJECTS</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'past-events' ) ) ); ?>">EVENTS</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'current-events' ) ) ); ?>">PROJECTS</a></li>
 			</ul>
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">FORUM</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'forum' ) ) ); ?>">FORUM</a></li>
 			</ul>
 		</div>
 		<div class="footer-col">
