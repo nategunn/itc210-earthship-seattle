@@ -50,8 +50,12 @@
 		    <i class="fa fa-tumblr-square fa-1x"></i>
 		</a>-->
 		
+		<!--<a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">-->
+		<!--    <i class="meetup fa fa-square fa-1x"></i>-->
+		<!--</a>-->
+		
 		<a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">
-		    <i class="meetup fa fa-square fa-1x"></i>
+		    <i class="meetup fa fa-users fa-1x"></i>
 		</a>
 		
 		<a href="https://www.facebook.com/EarthshipSeattle" target="_blank">
