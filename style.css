@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141208a
+Version: 141208b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -138,8 +138,12 @@ dl {
   margin: 15px 0px;
 }
 
-textarea#comment {
-      width:calc(100% * (380/620));
+/* show next or previous post */
+nav.post-nav {
+  clear:both;
+  margin-bottom:20px;
+  font-size:1.1em;
+  font-weight: 600;
 }
 
 /* creates standard square input boxes */
@@ -425,8 +429,6 @@ header a:hover {
   
 }
 
-
-
 .pis-more a{
   /*font-weight: bold;*/
   /*font-variant: small-caps;*/
@@ -498,6 +500,8 @@ header a:hover {
   /*background-color: #BCBCBC;*/
   border: 2px solid #333333;
   padding:10px;
+  /*max-height:163px;*/
+  overflow:hidden;
 }
 
 #lower-div .widget:nth-child(even) {
@@ -564,6 +568,7 @@ hr {
   float:right;
   width:220px;
   margin-left:20px;
+  margin-bottom:7px;
 }
 
 .post-box .wp-caption {
@@ -572,9 +577,6 @@ hr {
 
 p.wp-caption-text {
   max-width:220px;
-  /*overflow:hidden;*/
-  margin-top:15px;
-  padding-top:15px;
 }
 
 /*///// END INDEX.PHP STYLES /////*/
@@ -652,7 +654,7 @@ p.wp-caption-text {
 }
 /*///// END PAGE.PHP STYLES /////*/
   
-/*////////// SIDEBAR-PRIMARY SIDEBAR ////////*/
+/*////////// PRIMARY SIDEBAR ////////*/
 #primary {
   width: calc(100% * (320/940));
   /*width:300px;*/
@@ -735,13 +737,13 @@ a.pis-title-link {
 /* Events Menu Widget */
 #primary .menu-events-menu-container {
   /*border-bottom:2px solid black;*/
-  padding: 5px 0 20px 0;
+  padding: 10px 0 15px 0;
   position:relative;
 }
 
 .menu-projects-menu-container, /* Projects Menu Widget */
 #pis_posts_in_sidebar-5 { /* Upcoming Events Menu Widget */
-  padding: 20px 0 20px 0;
+  padding: 15px 0 15px 0;
   position:relative;
 }
 
@@ -759,7 +761,7 @@ a.pis-title-link {
 
 /* Categories Menu Widget */
 #categories-2 {
-  padding: 20px 0 10px 0px;
+  padding: 15px 0 10px 0px;
 }
 
 #categories-2 li {
@@ -775,18 +777,59 @@ a.pis-title-link {
   /*font-variant: small-caps;*/
   font-style: italic;
   display: block;
-  line-height: 1.9;
-  
+  padding-top:7px;
 }
+
+#primary .pis-more a {
+ padding-top:10px;
+} 
 
 .widget.widget_categories li {
   padding-bottom:.4em;
 }
-/*///// END SIDEBAR-PRIMARY SIDEBAR /////*/
+/*///// END PRIMARY SIDEBAR /////*/
 
 /*///// SINGLE.PHP STYLES /////*/
 .commentlist li {
   list-style-type: none;
+}
+
+textarea#comment element {
+  width:10px;
+}
+
+textarea#comment {
+      width:calc(100% * (510/620));
+}
+
+.single #respond {
+ clear:both;
+}
+
+.single p.wp-caption-text {
+    margin-top: 8px;
+    font-family:"PT Sans Caption";
+    font-size:.9em;
+}
+
+#main-content.single {
+ margin-top:15px; 
+}
+
+#commentform input {
+  height:34px;
+}
+
+/* leave a reply */
+#respond h3 {
+  margin-bottom:.3em;
+}
+
+/* logged in as */
+#commentform p {
+  font-size:1.1em;
+  text-align: left;
+  line-height:34px;
 }
 /*///// END SINGLE.PHP /////*/
 
@@ -847,7 +890,7 @@ footer a:focus {
 }
 
 .postmetadata {
-  margin-bottom:15px;
+  margin-bottom:17px;
 }
 
 /* Footer Styles */
@@ -1181,6 +1224,10 @@ footer a:focus {
     /*display:inline-block;*/
     line-height:100px;
   }
+  
+  textarea#comment {
+      width:calc(100% * (460/530));
+  }
 }
 
 @media all and (max-width: 640px) {
@@ -1339,7 +1386,11 @@ footer a:focus {
   #middle h1 {
     padding-bottom:15px;
     margin: 0 5px;
-  }  
+  }
+  
+  textarea#comment {
+      width:calc(100% * (450/460));
+  }
   
   /***** FRONT PAGE STYLES *****/
   #hero-front-page  {
@@ -1474,6 +1525,9 @@ footer a:focus {
   #categories-2 h3.widget-title {
     padding-left:10px;
   }
+  
+
+}
   /***** END INDEX PAGE STYLES *****/
   
   .hero-about-page h2 {

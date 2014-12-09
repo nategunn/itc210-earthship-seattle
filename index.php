@@ -21,7 +21,7 @@
 		<span class="cat"><?php the_category(', ') ?></span>
 		<span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?>. </span>
 		
-		<span class="tags">Tags:  <?php wp_get_post_tags( $post_id, $args ) ?>. </span>
+		<span class="tags"><?php the_tags( 'Tags: ', ' , ', '.' ); ?></span>
 		
 		<span class="comments"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?>.</span>
 	    </h4>
