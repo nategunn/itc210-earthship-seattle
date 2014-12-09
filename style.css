@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141208b
+Version: 141209a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -220,7 +220,7 @@ header a:hover {
 }
 
 #nav-main {
-  height: 40px;
+  height: 42px;
   line-height: 40px;
   background-color:#100f0d;
   margin:auto;
@@ -834,13 +834,16 @@ textarea#comment {
 /*///// END SINGLE.PHP /////*/
 
 /*///// MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
-#tribe-events-pg-template {
-/*    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;*/
-    max-width: 940px;
+#tribe-events-pg-template.tribe-clearfix {
+  background-image: url("images/bg-980px-grid.png");
+  /*margin-bottom: 0;*/
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  margin-top:15px;
 }
+
+
 /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
 
 /*///// START CONTACT FORM STYLES /////*/
@@ -849,12 +852,13 @@ textarea#comment {
   font-size: 1.5em;
 }
 .wpcf7 textarea{
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
+  width: calc(100% * (400/560));
 }
 .wpcf7 input[type="text"],
 input[type="email"]{
-  width: 60%;
-  height: 32px;
+  width: calc(100% * (400/560));
+  height: 34px;
 }
 .wpcf7-submit{
   width: 25%;
@@ -1490,8 +1494,6 @@ footer a:focus {
   /*width: calc(100% * (460/480));*/
   }
   
-
-  
   .post-box {
     margin-right:10px;
   }
@@ -1736,15 +1738,17 @@ width: 100%;
 }
 .wpcf7 textarea{
   margin-bottom: .6em;
-  width: 100%;
+  width: calc(100% * (490/500));
 }
 .wpcf7 input[type="text"],
 input[type="email"]{
-  width: 100%;
+  /*width: 100%;*/
+  width: calc(100% * (490/500));
   height: 32px;
 }
 .wpcf7-submit{
-  width: 100%;
+  /*width: 100%;*/
+  width: calc(100% * (490/500));
   height: 40px;
   font-size: 1em;
   margin-top: .6em;
