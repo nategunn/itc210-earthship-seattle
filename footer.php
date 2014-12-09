@@ -10,7 +10,7 @@
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">EARTHSHIP SEATTLE</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">EARTHSHIP SEATTLE</a></li>
 				<li><a href="#">OUR EVENTS</a></li>
 				<li><a href="#">OUR PROJECTS</a></li>
 				<li><a href="#">EARTHSHIP BIOTECTURE</a></li>
@@ -22,12 +22,12 @@
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">CALENDAR</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'calendar' ) ) ); ?>">CALENDAR</a></li>
 			</ul>
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">BLOG</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'blog' ) ) ); ?>">BLOG</a></li>
 				<li><a href="#">EVENTS</a></li>
 				<li><a href="#">PROJECTS</a></li>
 			</ul>
@@ -39,20 +39,21 @@
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">GALLERY</a></li>				
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'gallery' ) ) ); ?>">GALLERY</a></li>				
 			</ul>
 		</div>
 		<div class="footer-col">
 			<ul>
-				<li><a href="#">RESOURCES</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'resources' ) ) ); ?>">RESOURCES</a></li>
 				<li><a href="#">LAND</a></li>
-				<li><a href="#">PERMITS</a></li>
-				<li><a href="#">LEGAL</a></li>
+				<li><a href="#">ECOBUILD PERMITS</a></li>
+				<li><a href="#">LOCAL BUILDERS</a></li>
+				<li><a href="#">CLIMATE</a></li>
 			</ul>
 		</div>
 		<div class="footer-col last">
 			<ul>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'contact' ) ) ); ?>">CONTACT</a></li>
 			</ul>
 		</div>
 		</div><!-- end footer-nav -->		
