@@ -219,8 +219,8 @@ header a:hover {
 }
 
 #nav-main {
-  height: 40px;
-  line-height: 40px;
+  height: 42px;
+  line-height: 42px;
   background-color:#100f0d;
   margin:auto;
 }
@@ -228,18 +228,20 @@ header a:hover {
 #nav-main ul{
   padding-left:0;
   list-style:none;
-  position:relative;
+  
+  /* Mike said to do the following */
+  /*position:relative;*/
+  float:left;
+  /* end Mike */
 }
 
-/*span .search {
-  float:right;
-}*/
+
 
 #nav-main ul ul {
   display:none;
   position:absolute;
   top:100%;
-  padding: none;
+  /*padding: none;*/
 }
 
 #nav-main ul li:hover > ul{
@@ -287,11 +289,23 @@ header a:hover {
 
 /*///// END NAV-MAIN STYLES /////*/
 
-.search input {
-  float: right;
-  height:34px;
-  margin-top:-60px;
+.search {
+  float:right;
+  
+  /*clear:left;*/
 }
+
+.search input {
+  /*float: right;*/
+  /*height:34px;*/
+  /*margin-top:-60px;*/
+  
+  padding-top:7px;
+  padding-bottom:4px;
+  
+}
+
+
 
 /*///// FRONT PAGE STYLES /////*/
 #hero-front-page  {
@@ -882,8 +896,6 @@ textarea#comment {
   max-width: 940px;
   margin-top:15px;
 }
-
-
 /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
 
 /*///// START CONTACT FORM STYLES /////*/
@@ -1197,7 +1209,89 @@ footer a:focus {
     padding-bottom: calc(100% * (200/800));
   }
   
+  /*///// NAV MAIN STYLES /////*/
+  #nav-main{
+      /*height: 80px;*/
+      padding-top:3px;
+  }
+  
+  #nav-main li {
+    font-size: calc(1em * (12/16));
+    display: none;
+    height: auto;
+  }
+  
+  #nav-main ul ul li{
+    font-size: 1em;
+  }
+  
+  #nav-main ul {
+    width: 15%;
+    height: 34px;    
+    margin-right: 20px;
+    float:right;   
+    position:relative;
+  }
 
+  #nav-main ul:before {
+    position:absolute;
+    font-family: FontAwesome;
+    top:0px;
+    left:20px;
+    color:#FFF;
+    content: "\f0c9";    
+    font-size:2.15em;
+    display:block;
+  }
+
+  #nav-main ul:hover li{
+    display: block;    
+    position: relative;
+    width: 220px;
+    left: -120px;
+    background-color: #100f0d    
+  }
+
+  #nav-main ul li:hover > ul{
+    position:absolute;
+    left: -45%;
+    top: 0;
+  }
+
+  #nav-main ul:hover ul:before{
+    content: none;
+    display:none;
+  }
+
+  #nav-main ul:hover a {
+    width: 100%;
+  }
+  
+  .search {
+    float:left;
+    /*width: calc(100% * (220/780));*/
+    
+  }
+  
+  .search input {
+    /*float: left;*/
+    /*width: calc(100% * (220/480));*/
+    /*margin-top:0;*/
+    /*width: calc(100% * (220/780));*/
+    width:220px;
+    padding-top:10px;
+    padding-bottom:0px;
+  }
+  
+  #menu-nav-main.menu {
+    padding:0;
+    margin:0;
+    bottom:0;
+    top:0;
+  }
+
+  /*///// END NAV MAIN STYLES /////*/
+   
   #middle {
     background-image: url("images/bg-800px-grid-.png");
     background-position:center;
@@ -1331,68 +1425,6 @@ footer a:focus {
     margin:0 calc(100% * (17.5/940));
   }
 
-  #nav-main{
-      /*height: 80px;*/
-      padding-top:3px;
-  }
-  
-  #nav-main li {
-    font-size: calc(1em * (11/16));
-    display: none;
-    height: auto;
-  }
-  #nav-main ul ul li{
-    font-size: 1em;
-  }
-  
-  #nav-main ul {
-    width: 15%;
-    height: 34px;    
-    margin-right: 20px;
-    float:right;   
-    position:relative;
-  }
-
-  #nav-main ul:before {
-    position:absolute;
-    font-family: FontAwesome;
-    top:0px;
-    left:20px;
-    color:#FFF;
-    content: "\f0c9";    
-    font-size:2.15em;
-    display:block;
-  }
-
-  #nav-main ul:hover li{
-    display: block;    
-    position: relative;
-    width: 220px;
-    left: -120px;
-    background-color: #100f0d    
-  }
-
-  #nav-main ul li:hover > ul{
-    position:absolute;
-    left: -45%;
-    top: 0;
-  }
-
-  #nav-main ul:hover ul:before{
-    content: none;
-    display:none;
-  }
-
-  #nav-main ul:hover a {
-    width: 100%;
-  }
-
-  .search input {
-    float: left;
-    width:50%;
-    margin-top:0;
-  }
-  
   textarea#comment {
     width:100%;
   }
@@ -1438,10 +1470,10 @@ footer a:focus {
     line-height:85px;
   }
   
-  .search input {
-    float: right;
-    margin-top:0;
-  }
+  /*.search input {*/
+  /*  float: right;*/
+  /*  margin-top:0;*/
+  /*}*/
   
   .breadcrumbs {
     margin: 15px 5px;
@@ -1770,10 +1802,10 @@ width: 100%;
     }*/
 
     .search input {
-        float: left;
+        /*float: left;*/
         /*margin-left: 10px;*/
         /*margin-top: 34px;*/
-        width:70%;
+        /*width:70%;*/
     }
     
    /* .search {
