@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141210a
+Version: 141210b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -229,13 +229,11 @@ header a:hover {
   padding-left:0;
   list-style:none;
   
-  /* Mike said to do the following */
-  /*position:relative;*/
-  float:left;
-  /* end Mike */
+  /* Mike said to comment this out, but that breaks nav-main from dropping down */
+  position:relative; 
+  float:left;   /* Mike said to add this */
+
 }
-
-
 
 #nav-main ul ul {
   display:none;
@@ -288,10 +286,8 @@ header a:hover {
   color:#FFF;
 }
 
-/*///// END NAV-MAIN STYLES /////*/
-
 .search {
-  float:right;
+  float:right;  /* Mike said to add this */
   
   /*clear:left;*/
 }
@@ -305,8 +301,7 @@ header a:hover {
   padding-bottom:4px;
   
 }
-
-
+/*///// END NAV-MAIN STYLES /////*/
 
 /*///// FRONT PAGE STYLES /////*/
 #hero-front-page  {
