@@ -24,7 +24,8 @@ function register_my_menus() {
     array( 
 		  'main-menu' => __( 'nav-main' ), 
 		  'events-menu' =>__( 'primary'),
-		  'projects-menu'=>__( 'primary') 
+		  'projects-menu'=>__( 'primary'),
+		  'footer-menu' =>__( 'footer-menu' ) 
 		  )
   );
   
@@ -39,7 +40,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		array(
 		  'main-menu' => 'Main Menu', //Main Menu is the name of the registered location as it appears in the dashboard
 		  'events-menu' => 'Events Menu',
-		  'projects-menu' => 'Projects Menu'
+		  'projects-menu' => 'Projects Menu',
+		  'footer-menu' => 'Footer Menu'
 			 )
 	);
 }    
@@ -95,11 +97,5 @@ add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
 add_theme_support( 'post-thumbnails', array( 'page' ) );          // Pages only
 add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and Movies
 
-/* Add Custom Size Images */
-add_image_size('blog-220px-width', 220); /* 220 px width and unlimited height */
-add_image_size('home-300px-width', 300); /* 300 px width and unlimited height */
-
-add_image_size('blog-220xauto', 220, auto); /* 220 px width and auto height */
-add_image_size('home-300xauto', 300, auto); /* 300 px width and auto height */
-
-add_image_size('home-300x200px-cropped', 300,200,true); /* crops image to 300 x 200 px */
+/*Add a custom size for images displayed in the mid-page widget area. */
+add_image_size( 'mid-thumbnail', 300,200,true);

@@ -8,6 +8,14 @@
 			<p class="pseudo-button"><a href="#">NEWSLETTER</a></p>
 			<p class="pseudo-button"><a href="#">CONTRIBUTE</a></p>				
 		</div>
+		<nav id="footer-menu" >
+		<?php wp_nav_menu( array( 
+		    'theme_location' => 'footer-menu' ,
+		    'menu' => 'footer-menu' ,
+		    'container'  => 'ul'
+		));?>
+	    </nav>
+
 		<div class="footer-col">
 			<ul>
 				<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) ); ?>">ABOUT</a></li>
