@@ -3,6 +3,7 @@
 Template Name: projects-current
 */
 ?>
+
 <?php get_header(); ?>
 
 <div id="middle" class="wrapper940">

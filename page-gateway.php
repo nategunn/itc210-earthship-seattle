@@ -1,8 +1,4 @@
-<?php
-/*
-Template Name: page-gateway
-*/
-?>
+
 <?php get_header(); ?>
 
 <div class="hero-gateway-page"></div>
@@ -17,7 +13,7 @@ Template Name: page-gateway
 	}?>
     </div>
 
-    <div id="main-content" class="page">
+    <div id="main-content" class="page-about">
 
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

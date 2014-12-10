@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141209c
+Version: 141210a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -69,7 +69,6 @@ a:visited {
 a:hover,
 a:focus {
   text-decoration: underline;
-
 }
 
 header h1 {
@@ -230,8 +229,6 @@ header a:hover {
   padding-left:0;
   list-style:none;
   position:relative;
-  display:inline-table;
-  /*float:left;*/
 }
 
 /*span .search {
@@ -293,7 +290,7 @@ header a:hover {
 .search input {
   float: right;
   height:34px;
-  margin-top:-50px;
+  margin-top:-60px;
 }
 
 /*///// FRONT PAGE STYLES /////*/
@@ -579,12 +576,22 @@ hr {
   margin-bottom:7px;
 }
 
+.post-box a img {
+  border:2px solid #333;
+}
+
 .post-box .wp-caption {
   margin-left:10px;
 }
 
 p.wp-caption-text {
   max-width:220px;
+}
+
+.wp-caption-text {
+  font-family:"PT Sans Caption";
+  padding-bottom:.45em;
+  font-weight: 600; 
 }
 
 /*///// END INDEX.PHP STYLES /////*/
@@ -653,13 +660,34 @@ p.wp-caption-text {
 
 .more {
   text-align:left;
-  display:block;
+  /*display:block;*/
+  display: inline-block;
   /*font-variant: small-caps;*/
   font-weight:500;
   font-style: italic;
-  margin-top:8px;
-  
+  margin-top:7px;
 }
+
+article {
+  margin-bottom: 20px;
+}
+
+#main-content h3 {
+  padding-bottom:3px;
+}
+
+#main-content p a:link,
+#main-content p a:visited {
+  border-bottom: 2px dotted #ccc;
+}
+
+#main-content p a:hover,
+#main-content p a:focus {
+  border-bottom: 1px solid #333;
+  text-decoration:none;
+}
+
+
 /*///// END PAGE.PHP STYLES /////*/
   
 /*////////// PRIMARY SIDEBAR ////////*/
@@ -839,6 +867,10 @@ textarea#comment {
   text-align: left;
   line-height:34px;
 }
+
+.wp-caption img {
+  border:2px solid #333;
+}
 /*///// END SINGLE.PHP /////*/
 
 /*///// MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
@@ -898,7 +930,8 @@ footer a:focus {
 .postmetadata a:hover,
 .postmetadata a:focus {
   text-decoration: underline;
-  color: #0065ff;
+  /*color: #0065ff;*/
+  color: #000;
 }
 
 .postmetadata {
@@ -1012,6 +1045,22 @@ footer a:focus {
   clear: both;
 }
 
+.copy a:link,
+.copy a:visited {
+  color: #FFF;
+}
+
+.copy a:hover,
+.copy a:focus {
+  /*border-bottom: 1px solid #FFF;*/
+}
+
+.hero-gateway-page h2 {
+  bottom: 15px;
+  font-size: 2.1em;
+  right: 20%;
+}
+
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
 /*  #hero-front-page  {
@@ -1042,6 +1091,7 @@ footer a:focus {
     bottom:10%;
     right:17%;
   }
+  
 
 }
 
@@ -1072,14 +1122,14 @@ footer a:focus {
   .hero-about-page h2 {
     right:5%;
     bottom:20%;
-    
   }
   
-  .hero-gateway-page h2 {
+  /*
+   .hero-gateway-page h2 {
     font-size:1.75em;
     bottom:10%;
     right:8%;
-  }
+  }*/
 }
 
 @media all and (max-width: 980px) {
@@ -1317,12 +1367,14 @@ footer a:focus {
   #nav-main ul:hover li{
     display: block;    
     position: relative;
-    width: 220px;    
+    width: 220px;
+    left: -120px;
     background-color: #100f0d    
   }
+
   #nav-main ul li:hover > ul{
     position:absolute;
-    left: -100%;
+    left: -45%;
     top: 0;
   }
 
@@ -1536,20 +1588,12 @@ footer a:focus {
     padding-left:10px;
   }
   
-
-}
   /***** END INDEX PAGE STYLES *****/
   
   .hero-about-page h2 {
     font-size:1em;
     right:5%;
     bottom:15%;
-  }
-  
-  .hero-gateway-page h2 {
-    font-size:1.1em;
-    right:5%;
-    bottom:10px;
   }
 
 }
@@ -1675,7 +1719,7 @@ width: 100%;
     padding-right: 0px;
     text-align: right;
   }
-    #site-footer .copy{
+  #site-footer .copy{
   float: none;
   clear: both;
   text-align: center;
