@@ -959,8 +959,9 @@ footer a:focus {
 
 .footer-container{
   width: 100%;
+  position: relative;
   background-color: #333;
-  padding-bottom: 20px;
+  padding-bottom: 50px; /*change to 20px when done styling*/
 }
 #site-footer{
   margin: 0 auto;
@@ -969,92 +970,73 @@ footer a:focus {
   background-color: #333;
   font-family: 'PT Sans', sans-serif;
 }
-.footer-nav{
+#footer-menu{
   width: 100%;
   max-width: 940px;
   margin:0 auto;  
   padding-top: 40px;
+  background-color:#333;
 }
-
-#copy-right-info {
-  color:#FFF;
+#footer-menu ul{
+  width: 100%;
 }
-
-#copy-right-info a:link,
-#copy-right-info a:visited {
-  color:#FFF;
+#footer-menu ul:after{
+  content:"";
+  clear:both;
+  display:block;
 }
-
-#copy-right-info a:hover,
-#copy-right-info a:focus {
-  color:#FFF;
-  text-decoration:underline;
-}
-
-.footer-col{
-  width: 12.50%;
-  float: left;
-  padding-bottom: 20px;
-  padding-left: 1.5em;
-}
-.footer-col:first-child {
-  padding-left: 0px;
-}
-.footer-col:last-child{
-  padding-right: 0px;
-  text-align: right;
-
-}
-#site-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}       
-#site-footer li {
-  padding-bottom: 10px;
-  padding-left: 20px;
-  font-size:.8em;
-  text-align: left;
-} 
-#site-footer li:first-child{
-  font-size: 1.1em;
-} 
-#site-footer li a{
-  color: #fff;
+#footer-menu ul li{
+  list-style: none;
   text-decoration: none;
+  float: left;
   text-align: left;
-}   
-#site-footer li a:hover{
-  color: #90C695;
+}
+#footer-menu .gateway  {
+  font-size: 1.2em;
+  padding-left: 35px;
+}
+#footer-menu .gateway:last-child{
+  padding-right: none;
+}
+#footer-menu ul li ul{
+    list-style-position: inside; 
+    display: list-item;
+    list-style: none;
+  }
+
+#footer-menu ul li ul li{
+    display: block;
+    float: none;
+    margin: 0; padding: 0;
+    text-align: left;
+  }
+#footer-menu ul li a{ 
+    line-height: 2.5em;
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    padding:10px 10px;
+}
+#footer-menu ul li ul li a{
+  font-size: .8em;
 }
 
-/********* button styled links on left side *********/	
-
-#site-footer .pseudo-button{
-  font-size: 1em;
-  margin-bottom: 20px;
-  padding: .625em .313em;
-}  
-#site-footer .pseudo-button:first-child {
+#footer-menu .top_pseudo_button{
   background-color: #A3A29E;
   text-align: center;
-} 
-#site-footer .pseudo-button:nth-child(2) {
+  font-size: 1.2em;
+}
+#footer-menu .center_pseudo_button{
   background-color: #837E7A;
   text-align: center;
-} 
-#site-footer .pseudo-button:last-child {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+#footer-menu .bottom_pseudo_button{
   background-color: #605B55;
   text-align: center;
-} 
-#site-footer .pseudo-button a {
-  color: #fff;
-  text-decoration: none;
-} 
-#site-footer .pseudo-button:hover {
-  background-color: #90C695;
-} 
-
+  font-size: 1.2em;
+}
 #site-footer .copy{
   color: #fff;
   float: right;
@@ -1730,7 +1712,7 @@ width: 100%;
 /********END FORM STYLES**********/
  /********* footer styles *********/
 /* footer styles */
-  #site-footer{
+ /* #site-footer{
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
@@ -1762,7 +1744,7 @@ width: 100%;
   float: none;
   clear: both;
   text-align: center;
-  }
+  }*/
 }
 /* Phone */
 @media all and (max-width: 480px) {
@@ -1849,7 +1831,7 @@ input[type="email"]{
 }
 /********* end phone form styles ********/
  /********* phone footer styles ********/
- #site-footer{
+ /*#site-footer{
   padding: 0px 8px;
  }
   .footer-nav{
@@ -1880,6 +1862,6 @@ input[type="email"]{
   float: none;
   clear: both;
   text-align: center;
-  }
+  }*/
   
 }
