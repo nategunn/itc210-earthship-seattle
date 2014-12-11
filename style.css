@@ -229,7 +229,7 @@ header a:hover {
   padding-left:0;
   list-style:none;
   
-  /* Mike said to comment this out, but that breaks nav-main from dropping down */
+  /* Mike said to comment this out: (but that breaks nav-main from dropping down.) */
   position:relative; 
   float:left;   /* Mike said to add this */
 
@@ -702,8 +702,9 @@ article {
 
 #main-content p a:hover,
 #main-content p a:focus {
-  border-bottom: 1px solid #333;
-  text-decoration:none;
+  text-decoration:underline;
+  border-bottom: 2px solid rgba(255,255,255,0);
+  /*border-bottom:none;*/
 }
 
 
