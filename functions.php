@@ -25,7 +25,8 @@ function register_my_menus() {
 		  'main-menu' => __( 'nav-main' ), 
 		  'events-menu' =>__( 'primary'),
 		  'projects-menu'=>__( 'primary'),
-		  'footer-menu' =>__( 'footer-menu' ) 
+		  'footer-menu' =>__( 'footer-menu' ),
+		  'footer-button-menu' =>__( 'footer-button-menu' ) 
 		  )
   );
   
@@ -41,7 +42,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		  'main-menu' => 'Main Menu', //Main Menu is the name of the registered location as it appears in the dashboard
 		  'events-menu' => 'Events Menu',
 		  'projects-menu' => 'Projects Menu',
-		  'footer-menu' => 'Footer Menu'
+		  'footer-menu' => 'Footer Menu',
+		  'footer-button-menu' => 'Footer Button Menu'
 			 )
 	);
 }    

@@ -1,6 +1,13 @@
 </div><!-- #middle -->    
 <div class="footer-container clear-fix">
-	<footer id="site-footer" class="clear-fix" >	
+	<footer id="site-footer" class="clear-fix" >
+		<nav id="footer-button-menu">
+			<?php wp_nav_menu( array( 
+		    'theme_location' => 'footer-button-menu' ,
+		    'menu' => 'footer-button-menu' ,
+		    'container'  => 'ul'
+		));?>
+		</nav>	
 		<nav id="footer-menu" class=:>
 		<?php wp_nav_menu( array( 
 		    'theme_location' => 'footer-menu' ,
