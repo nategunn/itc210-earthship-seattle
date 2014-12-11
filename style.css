@@ -691,6 +691,10 @@ article {
   margin-bottom: 20px;
 }
 
+.author article {
+  display: inline-block;
+}
+
 #main-content h3 {
   padding-bottom:3px;
 }
