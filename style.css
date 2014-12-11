@@ -514,9 +514,17 @@ header a:hover {
   padding:10px;
   /*max-height:163px;*/
   overflow:hidden;
-  /*min-height:120px;
-  max-height:180px;*/
-  height:165px;
+/*  min-height:120px;
+     max-height:180px;*/
+  /*height:195px;*/
+}
+
+#lower-div .widget p {
+  overflow:hidden;
+  max-height:100px;
+  display:inline-block;
+  font-size:.9em;
+  margin-bottom:5px;
 }
 
 #lower-div .widget:nth-child(even) {
@@ -530,6 +538,7 @@ header a:hover {
 
 #lower-div h3 {
   margin-bottom:.75em;
+  font-size:.9em;
 }
 
 #lower-div .read-more {
@@ -538,7 +547,7 @@ header a:hover {
   font-variant: small-caps;
   font-weight:600;
   font-style: italic;
-  margin-top:5px;
+  font-size:.9em;
 }
 /*///// END LOWER SIDEBAR /////*/
 /*///// END FRONT PAGE STYLES /////*/
@@ -1206,7 +1215,7 @@ footer a:focus {
   }
   
   /*///// NAV MAIN STYLES /////*/
-  #nav-main{
+  #nav-main {
       /*height: 80px;*/
       padding-top:3px;
   }
@@ -1348,6 +1357,8 @@ footer a:focus {
   
   #lower-div .widget:nth-child(3) {
     margin-left: 0;
+    float:left;
+    clear:both;
   }
   
   .wp-caption,
@@ -1553,9 +1564,9 @@ footer a:focus {
   
   #lower-div .widget {
     /*max-width: 460px;*/
-    /*width: calc(100% * (460/480));*/
+    width: calc(100% * (460/480));
     max-width: 100%;
-    width:100%;
+    /*width:100%;*/
     display: inline-block;
     margin-bottom: 15px;
   }
