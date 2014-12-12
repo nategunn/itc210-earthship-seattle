@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141211a
+Version: 141212a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -81,13 +81,18 @@ header h1 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Open Sans', serif;
   color:#000;
 }
 
 h2 {
   font-size: 2em; /* 32/16 */
+}
+
+h4 {
+  margin-bottom:7px;
 }
 
 article {
@@ -154,6 +159,15 @@ input[type=search] {
         -webkit-appearance: textfield; 
         /*width:108px;
         height:20px;*/
+}
+
+iframely {
+  
+}
+
+iframely-widget-container {
+  display:block;
+  margin-top:40px;
 }
   
 /*///// END GLOBAL STYLES /////*/
@@ -1213,6 +1227,52 @@ footer a:focus {
 }
 
 @media all and (max-width: 800px) {
+  
+  iframe {
+    clear:both;
+    /*margin-top:30px;*/
+    
+    
+  }
+  
+  .hentry p+div {
+    margin-bottom:130px;
+    padding-bottom:130px;
+  }
+  
+  iframely {
+  /*margin-top:30px;*/
+}
+
+/*iframely-widget-container {
+  margin-top:30px;
+  clear:both;
+  margin-bottom:30px;
+  padding-bottom:30px;
+}*/
+
+.hentry iframe  {
+  /*float:left;*/
+ /*clear:both;*/
+ /*float:none;*/
+ /*margin-top:50px;*/
+/* display:block;
+ display:inline-block;*/
+ /*padding-top:100px;*/
+}
+
+.hentry p {
+  clear:both;
+}
+
+/*.player {
+  margin-bottom:20px;
+}*/
+
+#player {
+  margin-bottom:20px;
+}
+  
   #hero-front-page  {
   /*background-image:url("images/Global_model_Earthship-800x275px.jpg");*/
   /*padding-bottom: calc(100% * (275/800));*/
@@ -1342,7 +1402,8 @@ footer a:focus {
     background-position:center;
     max-width:780px;
     padding:0;
-    margin: 0 calc(100% * (10/800)) 0 calc(100% * (10/800));
+    margin: 0 calc(100% * (10/800)) 15px calc(100% * (10/800));
+    
   }
   
   #main-content {
@@ -1350,12 +1411,14 @@ footer a:focus {
     width: calc(100% * (460/780));
     /*float: left;*/
     display:inline-block;
+   
   }
   
   #main-content p {
     max-width: 540px;
     width: 100%;
-    float: left;
+    clear:both;
+    /*float: left;*/
     /*display:inline-block;*/
   }
   
@@ -1624,8 +1687,8 @@ footer a:focus {
   
   #main-content {
   max-width: 100%;
-  width: calc(100% * (460/480));
-  margin: 0 5px;
+  width: calc(100% * (450/480));
+  /*margin: 0 5px;*/
   }
   
   #main-content p {
