@@ -1023,7 +1023,6 @@ footer a:focus {
 #footer-button-menu .pseudo-button{
   text-align: center;
   font-size: 1.2em;
-  background-color: orange;
   padding: 10px;
   margin-top: 20px;
 }
@@ -1033,7 +1032,7 @@ footer a:focus {
 #footer-button-menu .pseudo-button.center{
   background-color: #837E7A;
 }
-#footer-button-menu.pseudo-button.bottom{
+#footer-button-menu .pseudo-button.bottom{
   background-color: #605B55;
 }
 #footer-button-menu .pseudo-button:first-child{
