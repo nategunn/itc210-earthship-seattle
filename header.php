@@ -19,16 +19,11 @@
     <?php wp_head()?>
     
     <!-- serifs -->
-    <!--<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
     <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'>
-    <!--<link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>-->
-    
+   
     <!-- sans-serifs -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
-    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
-    <!--<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     
     <!-- for social media icons -->
@@ -47,27 +42,22 @@
 	    <div class="social-media-icons wrapper940">
 		<span class="fa-lg">
 		
-		<!--<a href="https://twitter.com/Earthship_SEA" target="_blank">
-		    <i class="fa fa-twitter-square fa-1x" ></i>
-		</a>-->
-		
-		<!--<a href="http://earthship-seattle.tumblr.com/" target="_blank">
-		    <i class="fa fa-tumblr-square fa-1x"></i>
-		</a>-->
-		
-		<!--<a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">-->
-		<!--    <i class="meetup fa fa-square fa-1x"></i>-->
-		<!--</a>-->
-		
-		<a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">
-		    <i class="meetup fa fa-users fa-1x"></i>
-		</a>
-		
-		<a href="https://www.facebook.com/EarthshipSeattle" target="_blank">
-		    <i class="fa fa-facebook-square fa-1x"></i>
-		</a>
+		    <!--<a href="https://twitter.com/Earthship_SEA" target="_blank">
+			<i class="fa fa-twitter-square fa-1x" ></i>
+		    </a>-->
+		    
+		    <!--<a href="http://earthship-seattle.tumblr.com/" target="_blank">
+			<i class="fa fa-tumblr-square fa-1x"></i>
+		    </a>-->
+		    
+		    <a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">
+			<i class="meetup fa fa-users fa-1x"></i>
+		    </a>
+		    
+		    <a href="https://www.facebook.com/EarthshipSeattle" target="_blank">
+			<i class="fa fa-facebook-square fa-1x"></i>
+		    </a>
 
-		
 		</span>
 	    </div> <!-- end social-media-icons -->
 	    
@@ -103,7 +93,3 @@
 	    </nav>
 	</div> <!-- end nav-wide -->
     
-
-    <!--<div id="wrapper">
-	<div id="middle">
--->
