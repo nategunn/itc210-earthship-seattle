@@ -1033,7 +1033,7 @@ footer a:focus {
 #footer-button-menu .pseudo-button.center{
   background-color: #837E7A;
 }
-#footer-button-menu .pseudo-button.bottom{
+#footer-button-menu.pseudo-button.bottom{
   background-color: #605B55;
 }
 #footer-button-menu .pseudo-button:first-child{
