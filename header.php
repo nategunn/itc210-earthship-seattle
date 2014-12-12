@@ -9,6 +9,11 @@
    <!-- <title><?php// wp_title('&laquo;',true,'right'); bloginfo('name'); ?></title>-->
    
    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+   
+   <!-- Remy Sharp Shim --> 
+   <!--[if lt IE 9]> 
+   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+   <![endif]-->
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <?php wp_head()?>
