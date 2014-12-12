@@ -8,14 +8,15 @@
 		    'container'  => 'ul'
 		));?>
 		</nav>	
-		<nav id="footer-menu" class=:>
+		<nav id="footer-menu">
 		<?php wp_nav_menu( array( 
 		    'theme_location' => 'footer-menu' ,
 		    'menu' => 'footer-menu' ,
 		    'container'  => 'ul'
 		));?>
 	    </nav>	
-	    <p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#"> TOP OF PAGE </a></p>		
+	    
+	   	<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull;<a href="#"> TOP OF PAGE </a></p>
 	</footer>
 	</div><!-- close footer container -->	
         <script src="//localhost:35729/livereload.js"></script>

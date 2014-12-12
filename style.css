@@ -1006,15 +1006,59 @@ footer a:focus {
   background-color: #333;
   font-family: 'PT Sans', sans-serif;
 }
+/**************button styled menu**************/
+/********************Button styled footer  navigation**************/
+#footer-button-menu{
+  width: 20%;
+  max-width: 188px;
+  padding-top: 40px;
+  background-color: #333;
+  float: left;
+}
+#footer-button-menu ul li{
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+}
+#footer-button-menu .pseudo-button{
+  text-align: center;
+  font-size: 1.2em;
+  background-color: orange;
+  padding: 10px;
+  margin-top: 20px;
+}
+#footer-button-menu .pseudo-button.top{
+  background-color: #A3A29E;
+}
+#footer-button-menu .pseudo-button.center{
+  background-color: #837E7A;
+}
+#footer-button-menu .pseudo-button.bottom{
+  background-color: #605B55;
+}
+#footer-button-menu .pseudo-button:first-child{
+  margin-top: 0px;
+}
+#footer-button-menu a{
+  text-decoration: none;
+  color: #fff;
+}
+#footer-button-menu .pseudo-button:hover,
+#footer-button-menu .pseudo-button:focus{
+  background-color: #90c695;
+}
+#footer-button-menu .pseudo-button:hover a,
+#footer-button-menu .pseudo-button:focus a{
+  color: #000;
+}
+/*************** right footer nav **************/
 #footer-menu{
-  width: 100%;
-  max-width: 940px;
-  margin:0 auto;  
+  width: 80%;
+  max-width: 752px; 
   padding-top: 40px;
   background-color:#333;
-}
-#footer-menu ul{
-  width: 100%;
+  float:right;
+  padding-left: 1em;
 }
 #footer-menu ul:after{
   content:"";
@@ -1029,10 +1073,10 @@ footer a:focus {
 }
 #footer-menu .gateway  {
   font-size: 1.2em;
-  padding-left: 35px;
+  padding-left: 1em;
 }
 #footer-menu .gateway:last-child{
-  padding-right: none;
+  padding-right: 0px;
 }
 #footer-menu ul li ul{
     list-style-position: inside; 
@@ -1056,46 +1100,25 @@ footer a:focus {
 #footer-menu ul li ul li a{
   font-size: .8em;
 }
-
-#footer-menu .top_pseudo_button{
-  background-color: #A3A29E;
-  text-align: center;
-  font-size: 1.2em;
-}
-#footer-menu .center_pseudo_button{
-  background-color: #837E7A;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-#footer-menu .bottom_pseudo_button{
-  background-color: #605B55;
-  text-align: center;
-  font-size: 1.2em;
-}
 #site-footer .copy{
   color: #fff;
   float: right;
   padding-bottom: 20px;
   clear: both;
 }
-
 .copy a:link,
 .copy a:visited {
   color: #FFF;
 }
-
 .copy a:hover,
 .copy a:focus {
   /*border-bottom: 1px solid #FFF;*/
 }
-
 .hero-gateway-page h2 {
   bottom: 15px;
   font-size: 2.1em;
   right: 20%;
 }
-
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
 /*  #hero-front-page  {
@@ -1746,9 +1769,8 @@ width: 100%;
   padding-right: 5px;
 }
 /********END FORM STYLES**********/
- /********* footer styles *********/
-/* footer styles */
- /* #site-footer{
+/********* footer styles *********/
+  #site-footer{
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
@@ -1756,31 +1778,34 @@ width: 100%;
     font-family: 'PT Sans', sans-serif;
     padding: 0px 8px;
   }
-  .footer-nav{
-    width: 100%;
-    max-width: 800px;
-    margin:0 auto;  
-    padding-top: 40px;
-  }
-  .footer-col{
-    width: 25%;
-    max-width: 200px;
-    float: left;
-    padding-bottom: 20px;
-    padding-left: 2em
-  }
-  .footer-col:first-child {
-    padding-left: .125em;
-  }
-  .footer-col:last-child .footer-col:nth-child(4){
-    padding-right: 0px;
-    text-align: right;
+/************* footer button menu styles **************/
+
+#footer-button-menu{
+  width: 25%;
+  max-width: 200px;
+  background-color: #333;
+  float: left;
+  margin-top: 3px;
+}
+#footer-button-menu .pseudo-button{
+  font-size: .9em;
+}
+/************* footer right menu styles **************/ 
+  #footer-menu{
+  width: 75%;
+  max-width: 600px; 
+  background-color:#333;
+  float:right;
   }
   #site-footer .copy{
+  color: #fff;
+  margin:0 auto;
   float: none;
+  width: 80%;
+  max-width: 800px;
+  padding-bottom: 20px;
   clear: both;
-  text-align: center;
-  }*/
+  }
 }
 /* Phone */
 @media all and (max-width: 480px) {
@@ -1791,8 +1816,7 @@ width: 100%;
     #site-footer,
     #wrapper {
         width: 100%;
-    }
-    
+    }   
     /* nav-main goes to mobile nav at 640 now, it had too many nav items to break at this
        small of a screen width with the search input also in the nav. */
     #nav-main{ 
@@ -1812,7 +1836,6 @@ width: 100%;
         float:right;*/
         /*background: url("images/mobile-menu-icon.png")repeat-x ;*/
     }
-
     /*#nav-main ul:hover li{
         display: block;
         position: relative;
@@ -1867,37 +1890,29 @@ input[type="email"]{
 }
 /********* end phone form styles ********/
  /********* phone footer styles ********/
- /*#site-footer{
+ #site-footer{
   padding: 0px 8px;
  }
-  .footer-nav{
-    width: 100%;
-    max-width: 500px;
-    margin:0 auto;    
-  } 
-  .footer-col{
+ #footer-button-menu{
+  width: 98%;
+  max-width: 480px;
+  padding-top: 20px;
+  background-color: #333;
+  float: none;
+  margin: 0 auto;
+}
+  #footer-menu{
     display: none;
   } 
-
-  .footer-col:first-child{
-    display: block;
-    width: 98%;
-    max-width: 480px;
-    margin:0 auto;
-    float:none;
-    padding-left: 0px;
+  #footer-button-menu .pseudo-button{
+    margin-top: 10px;
   }
-  
-#site-footer .pseudo-button {
-  font-size: 1.25em;
-  margin-bottom: 15px;
-  padding: .75em 0em;
-  }
-  
-#site-footer .copy{
+  #site-footer .copy{
+  color: #fff;
   float: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 10px;
   clear: both;
-  text-align: center;
-  }*/
-  
+  }  
 }
