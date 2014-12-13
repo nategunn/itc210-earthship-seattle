@@ -1396,7 +1396,7 @@ footer a:focus {
   }
 
   /*///// MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
-  .tribe-bar-is-disabled .tribe-events-page-title{
+  #tribe-events-content .tribe-events-page-title{
     margin-right: 0;
   }
   /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
