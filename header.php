@@ -67,16 +67,8 @@
 		    <h1 id="site-title">Earthship Seattle</h1>
 		</a>
 	    </div>
-	    
-	    <!-- From Giddy Throng Web 170 site: Begin Logo -->
-                  <?php /* <h1>
-                      <a href="<?php echo get_option('home'); ?>/"><span><?php bloginfo('name'); ?></span>
-                          <img src="<?php bloginfo('template_url'); ?>/images/logo-4-280x35px-white.png" width="280" height="35" id="logo" alt="<?php bloginfo('name'); ?>" />
-                      </a>
-                  </h1>
                   
-                  <p  id="tagline"><?php bloginfo('description'); ?></p> */ ?>
-                <!-- End Logo -->
+                <?php /*  <p  id="tagline"><?php bloginfo('description'); ?></p> */ ?>
 
 	</div><!-- #masthead -->
 	
