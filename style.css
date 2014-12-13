@@ -1321,6 +1321,11 @@ footer a:focus {
     float: right;
     z-index: -10;
   }
+
+  #primary .menu-projects-menu-container,
+  #primary .menu-events-menu-container{
+    position:static;
+  }
   
   #lower {
     clear:both;
