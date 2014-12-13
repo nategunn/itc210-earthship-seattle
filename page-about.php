@@ -36,7 +36,7 @@ Template Name: page-about
     <?php endwhile; ?>
    
     <?php endif; ?>
-     <?php // <?php get_child_pages(); ?> ?>
+     <?php // <?php get_child_pages(); ?>
 
 
 </div><!-- #main-content -->
