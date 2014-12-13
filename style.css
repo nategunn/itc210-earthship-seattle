@@ -1212,6 +1212,7 @@ footer a:focus {
   
   #nav-main ul ul li{
     font-size: 1em;
+    z-index:1000;
   }
   
   #nav-main ul {
@@ -1220,6 +1221,7 @@ footer a:focus {
     margin-right: 20px;
     float:right;   
     position:relative;
+    z-index:1000;
   }
 
   #nav-main ul:before {
