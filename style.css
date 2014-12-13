@@ -958,7 +958,7 @@ footer a:focus {
 #footer-button-menu .pseudo-button{
   text-align: center;
   font-size: 1.2em;
-  padding: 10px;
+  padding: 5px 8px;
   margin-top: 20px;
 }
 #footer-button-menu .pseudo-button.top{
@@ -993,6 +993,7 @@ footer a:focus {
   background-color:#333;
   float:right;
   padding-left: 1em;
+  text-transform: uppercase;
 }
 #footer-menu ul:after{
   content:"";
@@ -1006,8 +1007,8 @@ footer a:focus {
   text-align: left;
 }
 #footer-menu .gateway  {
-  font-size: 1.2em;
-  padding-left: 1em;
+  font-size: 1.1em;
+  padding-left: 1.5em;
 }
 #footer-menu .gateway:last-child{
   padding-right: 0px;
@@ -1025,11 +1026,16 @@ footer a:focus {
     text-align: left;
   }
 #footer-menu ul li a{ 
-    line-height: 2.5em;
+    line-height: 2em;
     text-decoration: none;
     font-size: 1em;
     color: #fff;
-    padding:10px 10px;
+    padding:10px 5px;
+}
+#footer-menu ul li a:hover,
+#footer-menu ul li a:focus{
+  color: #90c695;
+  text-decoration: underline;
 }
 #footer-menu ul li ul li a{
   font-size: .8em;
