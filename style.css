@@ -877,7 +877,7 @@ textarea#comment {
   margin: 0 auto;
 }
 
-.tribe-bar-is-disabled .tribe-events-page-title{
+#tribe-events-content .tribe-events-page-title{
   margin-right: 400px;
 }
 /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
