@@ -872,6 +872,14 @@ textarea#comment {
   max-width: 940px;
   margin-top:15px;
 }
+#tribe-events-content-wrapper{
+  max-width:940px
+  margin: 0 auto;
+}
+
+.tribe-bar-is-disabled .tribe-events-page-title{
+  margin-right: 400px;
+}
 /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
 
 /*///// START CONTACT FORM STYLES /////*/
@@ -1383,6 +1391,12 @@ footer a:focus {
   textarea#comment {
       width:calc(100% * (460/530));
   }
+
+  /*///// MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
+  .tribe-bar-is-disabled .tribe-events-page-title{
+    margin-right: 0;
+  }
+  /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
   
 }
 
