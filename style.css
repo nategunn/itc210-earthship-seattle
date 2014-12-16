@@ -1220,9 +1220,10 @@ footer a:focus {
   #nav-main ul:hover li{
     display: block;    
     position: relative;
-    width: 220px;
-    left: -120px;
-    background-color: #100f0d    
+    width: 200px;
+    left: -95px;
+    background-color: #100f0d; 
+    z-index:999;   
   }
 
   #nav-main ul li:hover > ul{
@@ -1633,6 +1634,8 @@ footer a:focus {
     font-style: italic;
     font-weight: 600;
   }
+
+
   
 }
 
