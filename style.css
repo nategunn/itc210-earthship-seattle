@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141212c
+Version: 141216a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -320,26 +320,34 @@ header a:hover {
 
 /*///// YOU ARE HERE STATES /////*/
 #nav-main li.current_page_item a:link, 
-#nav-main li.current_page_item a:visited {
+#nav-main li.current_page_item a:visited,
+#nav-main li.menu-item-525 a:link,
+#nav-main li.menu-item-525 a:visited {
         background-color:#333;
 }
 	
 #nav-main li.current_page_item a:hover,
-#nav-main li.current_page_item a:focus {
+#nav-main li.current_page_item a:focus,
+#nav-main li.menu-item-525 a:hover,
+#nav-main li.menu-item-525 a:focus {
 	background-color:#333;
 }
 	
 #nav-main li.current_page_parent a:link,
 #nav-main li.current-page-ancestor a:link,
 #nav-main li.current_page_parent a:visited,
-#nav-main li.current-page-ancestor a:visited {
+#nav-main li.current-page-ancestor a:visited,
+#nav-main li.menu-item-525 a:link,
+#nav-main li.menu-item-525 a:visited, {
 	background-color:#333;
 }
 	
 #nav-main li.current_page_parent a:hover,
 #nav-main li.current_page_parent a:focus,
 #nav-main li.current-page-ancestor a:hover,
-#nav-main li.current-page-ancestor a:focus {
+#nav-main li.current-page-ancestor a:focus,
+#nav-main li.menu-item-525 a:hover,
+#nav-main li.menu-item-525 a:focus {
 	background-color:#333;
 }
 /*///// END YOU ARE HERE STATES /////*/
@@ -724,7 +732,7 @@ article {
 #menu-item-85,
 #primary .pis-title,
 #primary .widget-title {
- font-weight:600; 
+ font-weight:600;
 }
 
 /* Events + Projects Navigation Widgets */
@@ -774,8 +782,8 @@ a.pis-title-link {
 }
 
 #primary .menu-events-menu-container:after, 
-.menu-projects-menu-container:after,
-#pis_posts_in_sidebar-5:after {
+#primary .menu-projects-menu-container:after,
+#primary #pis_posts_in_sidebar-5:after  {
   content:""; 
   background: #a3a29e;  
   position: absolute;
@@ -864,16 +872,9 @@ textarea#comment {
 /*///// END SINGLE.PHP /////*/
 
 /*///// MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
-#tribe-events-pg-template.tribe-clearfix {
-  background-image: url("images/bg-980px-grid-.png");
-  /*margin-bottom: 0;*/
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 940px;
-  margin-top:15px;
-}
 #tribe-events-content-wrapper{
-  max-width:940px;
+  padding:15px 10px 15px 10px;
+  max-width:960px;
   margin: 0 auto;
 }
 
@@ -1143,39 +1144,9 @@ footer a:focus {
     clear:both;
   }
   
-  /*.hentry p+iframely-widget-container {
-    margin-bottom:130px;
-    padding-bottom:130px;
-  }*/
-  
-  iframely {
-  /*margin-top:30px;*/
-  }
-
-  /*iframely-widget-container {
-    margin-top:30px;
-    clear:both;
-    margin-bottom:30px;
-    padding-bottom:30px;
-  }*/
-  
-  .hentry iframe  {
-    /*float:left;*/
-   /*clear:both;*/
-   /*float:none;*/
-   /*margin-top:50px;*/
-  /* display:block;
-   display:inline-block;*/
-   /*padding-top:100px;*/
-  }
-  
   .hentry p {
     clear:both;
   }
-  
-  /*.player {
-    margin-bottom:20px;
-  }*/
   
   #player {
     margin-bottom:20px;
@@ -1306,7 +1277,6 @@ footer a:focus {
     width: calc(100% * (460/780));
     /*float: left;*/
     display:inline-block;
-   
   }
   
   #main-content p {
@@ -1337,7 +1307,7 @@ footer a:focus {
 
   #primary .menu-projects-menu-container,
   #primary .menu-events-menu-container{
-    position:static;
+    /*position:static;*/
   }
   
   #lower {
@@ -1445,6 +1415,37 @@ footer a:focus {
     line-height:90px;
   }
   
+  /* Events + Projects Navigation Widgets */
+  #menu-projects-menu li:first-child,
+  #menu-events-menu li:first-child { 
+      font-size:1.7em;
+  }
+  
+  /* Upcoming Event Navigation Widget */
+  #primary .widget-title {
+    /*font-size:1.7em;*/
+  }
+  
+  /* Category Widget */
+  #categories-2 h3.widget-title {
+      /*font-size:1.7em;*/
+  }
+  
+  /* Upcoming Event Navigation Widget */
+  /* Category Widget */
+  #primary .posts-in-sidebar .widget-title,
+  #primary .widget_categories .widget-title {
+    font-size:1.7em;
+  }
+  
+  #primary .pis-title .pis-title-link {
+    font-size:.9em;
+    margin-top:.5em;
+  }
+  
+
+  
+
 }
 
 @media all and (max-width: 495px) {
