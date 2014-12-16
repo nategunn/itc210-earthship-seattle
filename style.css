@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141216a
+Version: 141216b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -752,12 +752,19 @@ article {
   margin-bottom:.4em;
 }
 
+/* Posts In Sidebar - Upcoming Event */
 /* Event Widget Excerpt */
 a.pis-title-link {
   font-family:'Open Sans', Helvetica, Geneva, Arial, sans-serif;
   margin-bottom: .1em;
   display:block;
 }
+
+/* primary posts in sidebar read more */
+#primary .pis-more a {
+ padding-top:10px;
+} 
+
 
 /* Category Widget */
 #primary .widget-title {
@@ -806,6 +813,12 @@ a.pis-title-link {
   padding-left:20px;
 }
 
+.widget.widget_categories {
+    padding-top: 15px;
+}
+/* End Categories Widget */
+
+/* all posts in sidebar read more */
 .pis-more a {
   font-weight: normal;
   /*font-variant: small-caps;*/
@@ -814,9 +827,6 @@ a.pis-title-link {
   padding-top:7px;
 }
 
-#primary .pis-more a {
- padding-top:10px;
-} 
 
 .widget.widget_categories li {
   padding-bottom:.4em;
@@ -1444,9 +1454,6 @@ footer a:focus {
     margin-top:.5em;
   }
   
-
-  
-
 }
 
 @media all and (max-width: 495px) {
