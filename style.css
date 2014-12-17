@@ -1057,7 +1057,7 @@ footer a:focus {
 #site-footer .copy{
   clear: both;
   color: #fff;
-  float: right;
+  text-align: center;
   font-size: .75em;
   padding-bottom: 20px;
 }
