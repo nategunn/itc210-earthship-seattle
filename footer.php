@@ -16,8 +16,7 @@
 		));?>
 	    </nav>	
 	    <div class="copy-div">    
-	   		<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull;<a href="#"> (View site credits.) </a></p>
-	   		<p class="to-top-link"><a href="#"> TOP OF PAGE </a></p>
+	   		<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#"> (View site credits.) &bull; </a><a href="#"> TOP OF PAGE </a></p>
 		</div><!--copy div-->	   	
 	</footer>
 	</div><!-- close footer container -->	
