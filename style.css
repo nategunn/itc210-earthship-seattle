@@ -1058,7 +1058,7 @@ footer a:focus {
   clear: both;
   color: #fff;
   float: right;
-  font-size: 12px;
+  font-size: .75em;
   padding-bottom: 20px;
 }
 .copy a:link,
