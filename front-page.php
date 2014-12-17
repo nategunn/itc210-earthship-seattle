@@ -8,7 +8,10 @@ Template Name: Front Page
   
 <div id="hero-front-page">
     <div class="wrapper940">
-        <h2>Bringing Earthships To Seattle</h2>
+        <h2>Bringing Earthships To Seattle
+            <span class="sub-heading">Sustainable Building Design and Contruction</span>
+        </h2>
+        
     </div>
 </div>
     
@@ -17,7 +20,7 @@ Template Name: Front Page
 
     
     <h2>Vision</h2>
-        <p class="xbig-p">Living Off The Grid: Freedom, Community,  and Sustainability</p>
+        <p class="xbig-p">Freedom, Community,  and Sustainability</p>
     
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

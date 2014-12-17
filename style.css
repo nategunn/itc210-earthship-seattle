@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141216b
+Version: 141216c
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -159,16 +159,32 @@ input[type=search] {
   -webkit-appearance: textfield; 
 }
 
-iframely {
-  
+/*/// Widget Styles ///*/
+/* Posts In Sidebar - Read More */
+.pis-more a {
+  font-weight: normal;
+  /*font-variant: small-caps;*/
+  font-style: italic;
+  display: block;
+  padding-top:7px;
+}
+/*/// End Widget Styles ///*/
+
+/*///// END GLOBAL STYLES /////*/
+
+/*///// PLUGIN STYLES /////*/
+/*/// MODERN TRIBE EVENTS CALENDAR ///*/
+#tribe-events-content-wrapper{
+  padding:15px 10px 15px 10px;
+  max-width:960px;
+  margin: 0 auto;
 }
 
-/*iframely-widget-container {
-  display:block;
-  margin-top:40px;
-}*/
-  
-/*///// END GLOBAL STYLES /////*/
+#tribe-events-content .tribe-events-page-title{
+  margin-right: 400px;
+}
+/*/// END MODERN TRIBE EVENTS CALENDAR ///*/
+/*///// END PLUGIN STYLES /////*/
 
 /*///// SOCIAL MEDIA ICONS /////*/
 .social-media-icons {
@@ -248,7 +264,6 @@ header a:hover {
   /* Mike said to comment this out: (but that breaks nav-main from dropping down.) */
   position:relative; 
   float:left;   /* Mike said to add this */
-
 }
 
 #nav-main ul ul {
@@ -304,18 +319,12 @@ header a:hover {
 
 .search {
   float:right;  /* Mike said to add this */
-  
-  /*clear:left;*/
 }
 
 .search input {
-  /*float: right;*/
-  /*height:34px;*/
-  /*margin-top:-60px;*/
-  
+/* Mike uses padding instead of height */
   padding-top:7px;
   padding-bottom:4px;
-  
 }
 
 /*///// YOU ARE HERE STATES /////*/
@@ -373,8 +382,8 @@ header a:hover {
 }
 
 #hero-front-page h2 {
-  right:10%;
-  top:15%;
+  right:7%;
+  top:10%;
   position:absolute;
   color:#FFF;
   background:rgba(0,0,0,.75);
@@ -385,6 +394,12 @@ header a:hover {
   font-family: "Open Sans";
   font-style: italic;
   font-weight: 600;
+  /*padding-bottom:.2em;*/
+}
+
+#hero-front-page h2 .sub-heading {
+  font-size:.6em;
+  display:block;
 }
 
 .main-content-fp {
@@ -813,24 +828,14 @@ a.pis-title-link {
   padding-left:20px;
 }
 
-.widget.widget_categories {
+#primary .widget.widget_categories {
     padding-top: 15px;
 }
-/* End Categories Widget */
-
-/* all posts in sidebar read more */
-.pis-more a {
-  font-weight: normal;
-  /*font-variant: small-caps;*/
-  font-style: italic;
-  display: block;
-  padding-top:7px;
-}
-
 
 .widget.widget_categories li {
   padding-bottom:.4em;
 }
+/* End Categories Widget */
 /*///// END PRIMARY SIDEBAR /////*/
 
 /*///// SINGLE.PHP STYLES /////*/
@@ -880,18 +885,6 @@ textarea#comment {
   border:2px solid #333;
 }
 /*///// END SINGLE.PHP /////*/
-
-/*///// MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
-#tribe-events-content-wrapper{
-  padding:15px 10px 15px 10px;
-  max-width:960px;
-  margin: 0 auto;
-}
-
-#tribe-events-content .tribe-events-page-title{
-  margin-right: 400px;
-}
-/*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
 
 /*///// START CONTACT FORM STYLES /////*/
 .wpcf7 p{
@@ -1084,17 +1077,8 @@ footer a:focus {
 /* RESPONSIVE STYLES */
 @media all and (max-width: 1600px) {
   
-    #hero-front-page h2 {
-    /*right:5%;*/
-    /*bottom:50px;*/
-    /*top:60px;*/
-    /*top:15%;*/
-    padding:5px 10px;
-    letter-spacing: .06em;
+  #hero-front-page h2 {
     font-size:1.7em;
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 600;
   }
   
   .hero-about-page h2 {
@@ -1113,16 +1097,8 @@ footer a:focus {
 @media all and (max-width: 1280px) {
   
   #hero-front-page h2 {
-    /*right:5%;*/
-    /*bottom:50px;*/
-    /*top:40px;*/
-    padding:5px 10px;
-    letter-spacing: .06em;
     font-size:1.6em;
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 600;
-    }
+  }
   
   .hero-about-page h2 {
     right:5%;
@@ -1134,15 +1110,7 @@ footer a:focus {
 @media all and (max-width: 980px) {
   
   #hero-front-page h2 {
-    /*right:5%;*/
-    /*bottom:35px;*/
-    /*top:40px;*/
-    padding:5px 10px;
-    letter-spacing: .06em;
     font-size:1.1em;
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 600;
   }
   
 }
@@ -1170,14 +1138,7 @@ footer a:focus {
   
   #hero-front-page h2 {
     right:5%;
-    /*bottom:35px;*/
-    /*top:35px;*/
-    padding:5px 10px;
-    letter-spacing: .06em;
-    font-size:1.2em;
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 600;
+    top:8%;
   }
   
   .hero-gateway-page {
@@ -1280,7 +1241,6 @@ footer a:focus {
     max-width:780px;
     padding:0;
     margin: 0 calc(100% * (10/800)) 15px calc(100% * (10/800));
-    
   }
   
   #main-content {
@@ -1391,13 +1351,7 @@ footer a:focus {
   }
   
   #hero-front-page h2 {
-    right:5%;
-    padding:5px 10px;
-    letter-spacing: .06em;
-    font-size:1em;
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 600;
+    font-size:.9em;
   }
   
   .hero-about-page h2 {
@@ -1500,15 +1454,7 @@ footer a:focus {
   
   /***** FRONT PAGE STYLES *****/
   #hero-front-page h2 {
-    right:5%;
-    /*top:20px;*/
-    position:absolute;
-    padding:5px 10px;
-    letter-spacing: .06em;
     font-size:.7em;
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 600;
   }
   
   .main-content-fp h2 {
@@ -1631,19 +1577,8 @@ footer a:focus {
   }
   
   #hero-front-page h2 {
-    right:5%;
-    top:15px;
-    position:absolute;
-    padding:5px 10px;
-    letter-spacing: .06em;
     font-size:.5em;
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 600;
   }
-
-
-  
 }
 
 @media all and (max-width: 320px) {
