@@ -15,8 +15,10 @@
 		    'container'  => 'ul'
 		));?>
 	    </nav>	
-	    
-	   	<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull;<a href="#"> TOP OF PAGE </a></p>
+	    <div class="copy-div">    
+	   		<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull;<a href="#"> (View site credits.) </a></p>
+	   		<p class="to-top-link"><a href="#"> TOP OF PAGE </a></p>
+		</div><!--copy div-->	   	
 	</footer>
 	</div><!-- close footer container -->	
         <script src="//localhost:35729/livereload.js"></script>

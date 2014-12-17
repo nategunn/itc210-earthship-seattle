@@ -1055,10 +1055,11 @@ footer a:focus {
   font-size: .8em;
 }
 #site-footer .copy{
+  clear: both;
   color: #fff;
   float: right;
+  font-size: 12px;
   padding-bottom: 20px;
-  clear: both;
 }
 .copy a:link,
 .copy a:visited {
@@ -1067,6 +1068,18 @@ footer a:focus {
 .copy a:hover,
 .copy a:focus {
   /*border-bottom: 1px solid #FFF;*/
+}
+#site-footer .to-top-link{
+  text-align: center;
+  clear: both;  
+}
+#site-footer .to-top-link a:link, 
+#site-footer .to-top-link a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+#site-footer .to-top-link a:hover{
+  color: #90c695;
 }
 .hero-gateway-page h2 {
   bottom: 15px;
