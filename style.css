@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141217b
+Version: 141218a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -1046,6 +1046,10 @@ footer a:focus {
 #footer-button-menu .pseudo-button:focus a{
   color: #000;
 }
+
+#footer-button-menu ul {
+  margin-left: 0;
+}
 /*************** right footer nav **************/
 #footer-menu{
   width: 80%;
@@ -1056,10 +1060,17 @@ footer a:focus {
   padding-left: 1em;
   text-transform: uppercase;
 }
-#footer-menu ul{
+
+#footer-menu ul {
   margin-left:0;
   padding-left:0;
 }
+
+#footer-menu li {
+  margin-left:0;
+  padding-left:0;
+}
+
 #footer-menu ul:after{
   content:"";
   clear:both;
@@ -1073,7 +1084,7 @@ footer a:focus {
   margin-left:0;
   padding-left:0;
 }
-#footer-menu .gateway  {
+#footer-menu .gateway {
   font-size: 1.1em;
   padding-left: 1em;
 }
@@ -1108,6 +1119,7 @@ footer a:focus {
 
 #footer-menu ul li ul li a{
   font-size: .8em;
+  /*text-transform:lowercase;*/
 }
 #site-footer .copy{
   clear: both;

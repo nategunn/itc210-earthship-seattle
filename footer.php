@@ -16,7 +16,7 @@
 		));?>
 	    </nav>	
 	    <div class="copy-div">    
-	   		<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="#"> (View Site Credits.)</a> &bull;<a href="#"> TOP OF PAGE </a></p>
+	   		<p class="copy"><?php print ("&copy; " . date ('Y') . " "); ?>Earthship Seattle &bull; All Rights Reserved &bull; <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Site Credits' ) ) ); ?>">Site Credits</a> &bull;<a href="#"> TOP OF PAGE </a></p>
 		</div><!--copy div-->	   	
 	</footer>
 	</div><!-- close footer container -->	
