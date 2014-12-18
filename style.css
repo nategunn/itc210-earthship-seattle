@@ -1052,6 +1052,10 @@ footer a:focus {
   padding-left: 1em;
   text-transform: uppercase;
 }
+#footer-menu ul{
+  margin-left:0;
+  padding-left:0;
+}
 #footer-menu ul:after{
   content:"";
   clear:both;
@@ -1062,6 +1066,8 @@ footer a:focus {
   text-decoration: none;
   float: left;
   text-align: left;
+  margin-left:0;
+  padding-left:0;
 }
 #footer-menu .gateway  {
   font-size: 1.1em;
