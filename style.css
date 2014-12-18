@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141218a
+Version: 141218b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -276,10 +276,12 @@ header a:hover {
 /*///// END HEADER /////*/
 
 /*/////////////NAV-MAIN STYLES///////////*/
+/* extension nav div beyond 940 grid left and right */
 #nav-wide {
   background-color: #100f0d;
 }
 
+/* nav div in 940 grid */
 #nav-main {
   height: 42px;
   line-height: 42px;
@@ -287,6 +289,7 @@ header a:hover {
   margin:auto;
 }
 
+/* top level nav list items */
 #nav-main ul{
   padding-left:0;
   list-style:none;
@@ -294,57 +297,69 @@ header a:hover {
   /* Mike said to comment this out: (but that breaks nav-main from dropping down.) */
   position:relative; 
   float:left;   /* Mike said to add this */
+  
+  margin-left:0; /* cancels out global style */
 }
 
+/* for positioning top level and first set of drop down items */
 #nav-main ul ul {
-  display:none;
-  position:absolute;
-  top:100%;
-  /*padding: none;*/
+  display:none; /* hides first drop down list */
+  position:absolute; /* keeps nav items from moving */
+  top:100%; /* ? */
 }
 
+/* ? */
 #nav-main ul li:hover > ul{
   display:block;
-  background-color:#333333;
+  background-color:#333;
   color:#FFF;
   z-index: +1; 
 }
 
+/* ? */
 #nav-main ul:after{
   content:"";
   clear:both;
   display:block;
 }
 
+/* all nav list items */
 #nav-main ul li {
   float:left;
   margin-bottom:0;
   font-size:.98em;
 }
 
-
+/* top level nav item anchors */
 #nav-main ul li a{
   display:block;
-
 }
 
+#nav-main ul ul li a {
+  
+}
+
+/* all nav-main anchors */
+#nav-main a:link,
+#nav-main a:visited {
+  padding: 0 20px;
+  /*display: inline-block;*/
+  color:#FFF;
+  display:block;
+}
+
+/* all nav-main anchor hover states */
+#nav-main a:hover,
+#nav-main a:focus {
+  background-color:#333;
+  color:#FFF;
+}
+
+/* first set of drop down list items */
 #nav-main ul ul li{
   float:none;
   position:relative;
   z-index: +1;
-}
-
-#nav-main a:link,
-#nav-main a:visited {
-  padding: 0 20px;
-  display: inline-block;
-  color:#FFF;
-}
-
-#nav-main a:hover,
-#nav-main a:focus {
-  background-color:#333333;
-  color:#FFF;
 }
 
 .search {
@@ -352,7 +367,6 @@ header a:hover {
 }
 
 .search input {
-/* Mike uses padding instead of height */
   padding-top:7px;
   padding-bottom:4px;
 }
@@ -770,7 +784,9 @@ p.wp-caption-text {
   width: calc(100% * (320/940));
   border-left: 1px solid #a3a29e;
   float: right;
+  margin-bottom:25px;
 }
+
 #primary h3 {
   padding-left: 10px;
   font-size: calc(1em * (24/16));
@@ -1168,8 +1184,9 @@ footer a:focus {
   }
   
   .hero-about-page h2 {
-    right:5%;
-    bottom:20%;
+    right:10%;
+    bottom:17%;
+    font-size:1.55em;
   }
   
 }
@@ -1230,6 +1247,7 @@ footer a:focus {
     height: auto;
   }
   
+  /* drop down sub list items */
   #nav-main ul ul li{
     font-size: 1em;
     z-index:1000;
@@ -1261,12 +1279,14 @@ footer a:focus {
     width: 200px;
     left: -95px;
     background-color: #100f0d; 
-    z-index:999;   
+    z-index:999;
   }
-
+  
+  /* controls distance of drop down menu */
   #nav-main ul li:hover > ul{
     position:absolute;
-    left: -45%;
+    /*left: -45%;*/
+    left: -52%;
     top: 0;
   }
 
@@ -1281,14 +1301,9 @@ footer a:focus {
   
   .search {
     float:left;
-    /*width: calc(100% * (220/780));*/
   }
   
   .search input {
-    /*float: left;*/
-    /*width: calc(100% * (220/480));*/
-    /*margin-top:0;*/
-    /*width: calc(100% * (220/780));*/
     width:220px;
     padding-top:10px;
     padding-bottom:0px;
@@ -1422,7 +1437,7 @@ footer a:focus {
   }
   
   .hero-about-page h2 {
-    font-size:1em;
+    font-size:1.1em;
   }
   
   #mid-div .widget {
@@ -1489,11 +1504,11 @@ footer a:focus {
       margin-right: 8px;
   }
   
-  .hero-about-page h2 {
+  /*.hero-about-page h2 {
     right:5%;
     bottom:20%;
     font-size: 1.2em;
-  }
+  }*/
   
 }
 
@@ -1651,6 +1666,27 @@ footer a:focus {
   #hero-front-page h2 {
     font-size:.5em;
   }
+  
+  /* all nav list items */
+#nav-main ul li {
+  float:left;
+  margin-bottom:0;
+  font-size:.88em;
+}
+
+#nav-main ul:hover li{
+    display: block;    
+    position: relative;
+    width: 175px;
+    left: -84px;
+    background-color: #100f0d; 
+    z-index:999;
+  }
+  
+/*#nav-main ul:hover li ul:hover li a:hover {
+  background:#666;
+}*/
+
 }
 
 @media all and (max-width: 320px) {
@@ -1665,6 +1701,10 @@ footer a:focus {
     font-size: .9em;
     display:inline-block;
     line-height:60px;
+  }
+  
+  .hero-about-page h2 {
+    font-size:.8em;
   }
   
 }
