@@ -9,7 +9,7 @@ Template Name: Front Page
 <div id="hero-front-page">
     <div class="wrapper940">
         <h2>Bringing Earthships To Seattle
-            <span class="sub-heading">Sustainable Building Design and Contruction</span>
+            <span class="sub-heading">Sustainable Building Design and Construction</span>
         </h2>
         
     </div>

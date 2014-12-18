@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141216c
+Version: 141217a
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -91,16 +91,21 @@ h2 {
   font-size: 2em; /* 32/16 */
 }
 
+h3 {
+  margin-bottom: calc(1em * (5/16));
+}
+
 h4 {
-  margin-bottom:7px;
+  margin-bottom: calc(1em * (7/16));
 }
 
 article {
   clear:both;
+  margin-bottom: 20px;
 }
 
 article p {
-  margin-bottom:0;
+  margin-bottom:.6em;
 }
 
 h2 a:link,
@@ -123,7 +128,32 @@ p,
 ol,
 ul,
 dl {
-  margin-bottom: 10px;
+  margin-bottom: .5em;
+}
+
+p {
+  margin-bottom: .6em; /* mdn recommended */
+}
+
+ol {
+  margin-left: 1.75em;
+}
+
+ul {
+  margin-left: 1.25em;
+}
+
+li {
+  margin-bottom: 0.3125em;
+}
+
+blockquote {
+  font-style:italic;
+  font-size:.9em;
+  margin-top: .9em;
+  margin-bottom: .9em;
+  margin-left:.5%;
+  margin-right: 3.04347826%; /* 60/460 */
 }
 
 #delimiter {
@@ -331,23 +361,29 @@ header a:hover {
 #nav-main li.current_page_item a:link, 
 #nav-main li.current_page_item a:visited,
 #nav-main li.menu-item-525 a:link,
-#nav-main li.menu-item-525 a:visited {
+#nav-main li.menu-item-525 a:visited,
+#nav-main li.current_page_parent menu-item-26 a:link,
+#nav-main li.current_page_item menu-item-26 a:visited {
         background-color:#333;
 }
 	
 #nav-main li.current_page_item a:hover,
 #nav-main li.current_page_item a:focus,
 #nav-main li.menu-item-525 a:hover,
-#nav-main li.menu-item-525 a:focus {
+#nav-main li.menu-item-525 a:focus,
+#nav-main li.current_page_parent menu-item-26 a:hover,
+#nav-main li.current_page_item menu-item-26 a:focus {
 	background-color:#333;
 }
 	
-#nav-main li.current_page_parent a:link,
+/*#nav-main li.current_page_parent a:link,
 #nav-main li.current-page-ancestor a:link,
 #nav-main li.current_page_parent a:visited,
 #nav-main li.current-page-ancestor a:visited,
 #nav-main li.menu-item-525 a:link,
-#nav-main li.menu-item-525 a:visited, {
+#nav-main li.menu-item-525 a:visited,
+#nav-main li.current_page_parent menu-item-26 a:link,
+#nav-main li.current_page_item menu-item-26 a:visited {
 	background-color:#333;
 }
 	
@@ -356,9 +392,11 @@ header a:hover {
 #nav-main li.current-page-ancestor a:hover,
 #nav-main li.current-page-ancestor a:focus,
 #nav-main li.menu-item-525 a:hover,
-#nav-main li.menu-item-525 a:focus {
+#nav-main li.menu-item-525 a:focus,
+#nav-main li.current_page_parent menu-item-26 a:hover,
+#nav-main li.current_page_item menu-item-26 a:focus {
 	background-color:#333;
-}
+}*/
 /*///// END YOU ARE HERE STATES /////*/
 
 /*///// END NAV-MAIN STYLES /////*/
@@ -447,6 +485,7 @@ header a:hover {
 #mid ul {
   margin-bottom: 20px;
   padding-left: 0px;
+  margin-left:0;
 }
 
 #mid li {
@@ -469,8 +508,18 @@ header a:hover {
   margin-left:0;
 }
 
-#mid .widget:last-child{
+#mid .widget:nth-child(3){
   margin-right:0;
+}
+
+/* PHP Widget Under Photo Gallery (for Text) */
+#mid .widget_execphp {
+  text-align:left;
+  float:right;
+  display:inline;
+  clear: none;
+  margin-right:0;
+  /*line-height:1.1;*/
 }
 
 #mid .widget-title {
@@ -689,11 +738,6 @@ p.wp-caption-text {
   /*font-variant: small-caps;*/
   font-weight:500;
   font-style: italic;
-  margin-top:7px;
-}
-
-article {
-  margin-bottom: 20px;
 }
 
 .author article {
@@ -730,7 +774,8 @@ article {
 
 #primary ul {
   margin-bottom: 10px;
-  padding-left: 0px;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 #primary li {
@@ -1362,6 +1407,11 @@ footer a:focus {
   #mid-div .widget {
     width:calc(100% * (290/940));
     margin:0 calc(100% * (17.5/940));
+  }
+  
+  /* PHP Widget Under Photo Gallery */
+  #mid .widget_execphp {
+    margin-right:0;
   }
 
   textarea#comment {
