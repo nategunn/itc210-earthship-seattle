@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141218b
+Version: 141218c
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -413,7 +413,7 @@ header a:hover {
 	background-color:#333;
 }
 	
-/*#nav-main li.current_page_parent a:link,
+#nav-main li.current_page_parent a:link,
 #nav-main li.current-page-ancestor a:link,
 #nav-main li.current_page_parent a:visited,
 #nav-main li.current-page-ancestor a:visited,
@@ -433,7 +433,7 @@ header a:hover {
 #nav-main li.current_page_parent menu-item-26 a:hover,
 #nav-main li.current_page_item menu-item-26 a:focus {
 	background-color:#333;
-}*/
+}
 /*///// END YOU ARE HERE STATES /////*/
 
 /*///// END NAV-MAIN STYLES /////*/
