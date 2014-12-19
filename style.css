@@ -214,6 +214,29 @@ input[type=search] {
   margin-right: 400px;
 }
 /*/// END MODERN TRIBE EVENTS CALENDAR ///*/
+
+/*/// WP Google Maps ///*/
+#wpgmza_map {
+  width:220px;
+  border:2px solid #333;
+  margin-bottom:7px;
+}
+
+.wpGoogleMaps {
+  width:220px;
+  float:right;
+  clear:both;
+  margin:15px 0 15px 10px;
+}
+
+.wpGoogleMaps p {
+    font-family: "PT Sans Caption";
+    font-weight: 600;
+    padding-bottom: 0.45em;
+}
+/*/// END WP Google Maps ///*/
+
+
 /*///// END PLUGIN STYLES /////*/
 
 /*///// SOCIAL MEDIA ICONS /////*/
@@ -1400,6 +1423,13 @@ footer a:focus {
     margin-left:0px;
     display:block;
   }
+  
+  .wpGoogleMaps {
+    float:left;
+    margin:15px 0 15px 0;
+    max-width: 540px;
+    width: 100%;
+  }
    
   .logo-header {
     max-width: 100px;
@@ -1614,6 +1644,14 @@ footer a:focus {
     width: 100%;
     float: left;
   }
+  
+  .wpGoogleMaps {
+    width:100%;
+    float:left;
+    /*clear:both;*/
+    padding-right:5px;
+  }
+   
 
   #primary {
     max-width:480px;
