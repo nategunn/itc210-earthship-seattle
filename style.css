@@ -1444,6 +1444,10 @@ footer a:focus {
     top: 10px;
   }
 
+    #nav-main ul ul li{
+        display: none;
+    }
+
   .search {
     display: none;
   }
