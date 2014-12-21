@@ -1429,7 +1429,8 @@ footer a:focus {
   #nav-main a#pull {
     display: block;
     background-color: #100f0d;
-    width: 100%;
+    width: 15%;
+    float:right;
     position: relative;
   }
 
@@ -1449,7 +1450,9 @@ footer a:focus {
     }
 
   .search-bar {
-    display: none;
+    position: relative;
+    float: left;
+    top: 0;
   }
   
 }
