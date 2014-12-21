@@ -369,13 +369,13 @@ header a:hover {
   z-index: +1;
 }
 
-.search {
+.search-bar {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.search input {
+.search-bar input {
   padding-top:7px;
   padding-bottom:4px;
 }
@@ -1252,7 +1252,7 @@ footer a:focus {
     }
 
     /*moves the search bar above the nav*/
-    .search{
+    .search-bar{
         top: -40px;
     }
 
@@ -1448,7 +1448,7 @@ footer a:focus {
         display: none;
     }
 
-  .search {
+  .search-bar {
     display: none;
   }
   
