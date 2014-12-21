@@ -25,6 +25,12 @@
                 menu.slideToggle();
             });
         });
+        $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
     </script>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <?php wp_head()?>
@@ -94,7 +100,7 @@
 		    'container'  => 'ul', 
 		));?>
             <span class="search-bar"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></span>
-            <a href="#" id="pull">Menu</a>
+            <a href="#" id="pull">.</a>
 	    </nav>
 	</div> <!-- end nav-wide -->
     
