@@ -451,11 +451,11 @@ background-color:#333;
 	background-color:#333;
 }
 	
-/* selects "News" when "Calendar" is selected
-#nav-main li.current_page_parent a:link  */
+/* selects "News" when "Calendar" is selected */
+#nav-main li.current_page_parent a:link,
 
 #nav-main li.current-page-ancestor a:link,
-#nav-main li.current_page_parent a:visited,
+/*#nav-main li.current_page_parent a:visited,*/
 #nav-main li.current-page-ancestor a:visited {
 	background-color:#333;
 }

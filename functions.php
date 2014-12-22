@@ -132,6 +132,54 @@ endwhile; endif;
 }
 //
 
+?>
+
+<?php 
+
+// Get My Title Tag
+function get_my_title_tag() {
+    
+    global $post;
+    
+    if ( is_front_page() ) {  // for siteÕs Front Page
+    
+        bloginfo('description'); // retrieve the site tagline
+    
+    } 
+    
+    elseif ( is_page() || is_single() ) { // for your siteÕs Pages or Postings
+    
+        the_title(); // retrieve the page or posting title 
+    
+    } 
+
+    else { // for everything else
+        
+        bloginfo('description'); // retrieve the site tagline
+        
+    }
+    
+    if ( $post->post_parent ) { // for your siteÕs Parent Pages
+    
+        echo ' | '; // separator with spaces
+        echo get_the_title($post->post_parent); // retrieve the parent page title
+        
+    }
+
+    echo ' | '; // separator with spaces
+    bloginfo('name'); // retrieve the site name
+    echo ' | '; // separator with spaces
+    echo 'Seattle, WA.'; // write in the location
+    
+}
+//
+    
+?>
+
+<!-- Create Page Excerpts -->
+<?php add_post_type_support( 'page', 'excerpt' ); ?>
+
+
 
 
 

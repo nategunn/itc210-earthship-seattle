@@ -6,9 +6,10 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-   <!-- <title><?php// wp_title('&laquo;',true,'right'); bloginfo('name'); ?></title>-->
    
-   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+   <title><?php get_my_title_tag(); ?></title>
+   
+   <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
    
    <!-- Remy Sharp Shim --> 
    <!--[if lt IE 9]> 
