@@ -14,7 +14,24 @@
    <!--[if lt IE 9]> 
    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var pull        = $('#pull');
+            menu        = $('#nav-main ul');
 
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+        });
+        $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    </script>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <?php wp_head()?>
     
@@ -33,6 +50,7 @@
     
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />	
 </head>
+
 
 <body id="top"<?php body_class(); ?>>
     <header> <!-- has no width, extends left and right forever -->
@@ -81,7 +99,10 @@
 		    'menu' => 'nav-main' ,
 		    'container'  => 'ul', 
 		));?>
-		 <span class="search"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></span>
+
+            <span class="search-bar"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></span>
+            <a href="#" id="pull">.</a>
+
 	    </nav>
 	</div> <!-- end nav-wide -->
     

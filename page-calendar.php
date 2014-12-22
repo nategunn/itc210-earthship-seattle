@@ -1,10 +1,9 @@
+<?php
+/*
+Template Name: page-calendar
+*/
+?>
 <?php get_header(); ?>
-
-<div class="hero-gateway-page">
-    <div class="wrapper940">
-        <h2>RADICALLY SUSTAINABLE - about.php</h2>
-    </div>
-</div>
 
 <div id="middle" class="wrapper940">
     
@@ -16,7 +15,7 @@
 	}?>
     </div>
 
-    <div id="main-content" class="page-about">
+    <div id="main-content" class="page-calendar">
 
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -30,12 +29,11 @@
 
     <?php endwhile; ?>
    
-    <?php endif; ?> 
+    <?php endif; ?>
+     <?php // <?php get_child_pages(); ?>
 
 
 </div><!-- #main-content -->
-<div>
-        <?php get_sidebar();?>
-</div>
+
 <div id='delimiter'></div>
 <?php get_footer();

@@ -46,19 +46,21 @@
         <?
 	}
 	?>
+	
+	<hr class="author-bio">
     
 <!-- The Loop -->
  
- <h2 class="posttitle">Posts by <?php echo $curauth->display_name; ?></h2>
+ <h2 class="posttitle by">Posts by <?php echo $curauth->display_name; ?></h2>
 
     <?php 
 		$hasposts = have_posts(); ?>
 		<?php if ($hasposts) : ?>        
         
      <?php while ( have_posts() ) : the_post(); ?>
-     <article>
+     <article class="post-box">
      
-     <div class="post-box">
+     <!--<div class="post-box">-->
     	<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
         <p class="postmetadata">
             <span class="date">Posted on <?php the_time('F jS, Y') ?></span> in 
@@ -70,7 +72,7 @@
 		<?php the_content('More &raquo;'); ?>
         
      	<?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
-      </div> <!-- end post box -->
+      <!--</div>--> <!-- end post box -->
     <?php /*?><?php endwhile; ?><?php */?>
     
     </article>
