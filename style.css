@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141223b
+Version: 141223c
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -365,6 +365,11 @@ header a:hover {
   float:none;
   position:relative;
   z-index: +1;
+}
+
+/* hover color of *currently selected* nav item */
+  #nav-main ul li.current_page_item a:hover {
+    background-color: #100F0D;
 }
 
 .search-bar {
@@ -1518,7 +1523,24 @@ footer a:focus {
   #tribe-events-content .tribe-events-page-title{
     margin-right: 0;
   }
-  /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
+  /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/  
+
+  /* when exposed, make links lighter grey */
+  #nav-main ul ul a:link,
+  #nav-main ul ul a:visited {
+      background-color: #333;
+  }
+  
+  /* when hovered, make links darker grey */
+  #nav-main ul ul a:hover,
+  #nav-main ul ul a:focus {
+      background-color: #100F0D;
+  }
+  
+  /* make dropdown icon background same color as nav background */
+  #nav-main a#pull {
+      background-color: #100F0D;
+  }
   
 }
 

@@ -1,14 +1,12 @@
 <?php get_header(); ?>
 
-<!-- START MIDDLE-CONTENT-WRAPPER -->
-<!--<div id="middle-content-wrapper" class="page-wrapper">-->
 <div id="middle" class="wrapper940">
 	
 <div class="breadcrumbs">
 	<?php if (function_exists('bcn_display')) { bcn_display(); } ?>
 </div>
 
-<div id="main-content" class="author multi-posts">
+<div id="main-content" class="author">
 
 
 <!-- This sets the $curauth variable -->
@@ -97,7 +95,7 @@
 </div> <!-- end the post -->
 
 <!-- START SIDEBAR -->
-<?php get_sidebar( 'primary' ); ?>
+<?php get_sidebar(); ?>
 <!-- END SIDEBAR -->
 
 <?php get_footer(); ?>

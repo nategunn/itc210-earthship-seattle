@@ -9,7 +9,7 @@
 	}?>
     </div>
 
-	<div id="main-content" class="archive multi-posts" role="main">
+	<div id="main-content" class="archive" role="main">
 
 	<?php if (have_posts()) : ?>
 
