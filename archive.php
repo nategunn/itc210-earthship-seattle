@@ -36,7 +36,7 @@
         <div class="post-box clear-fix">
 		<div <?php post_class() ?>>
 			<h3 id="post-<?php the_ID(); ?>" class="clear"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-			<p class="postmetadata">
+			<h4 class="postmetadata">
 				<span class="date">Posted on <?php the_time('F jS, Y') ?></span> in 
 				<span class="cat"><?php the_category(', ') ?></span>
 				<span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?>. </span><br>
@@ -44,7 +44,7 @@
 				<span class="tags"><?php the_tags( 'Tags: ', ' , ', '.' ); ?></span>
 		
 				<span class="comments"><?php comments_popup_link('No Comments.', '1 Comment &#187;', '% Comments &#187;'); ?></span>
-			</p>
+			</h4>
 			
 			
 	
