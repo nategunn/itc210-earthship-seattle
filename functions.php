@@ -109,75 +109,9 @@ add_image_size('home-300xauto', 300, auto); /* 300 px width and auto height */
 
 add_image_size('home-300x200px-cropped', 300,200,true); /* crops image to 300 x 200 px */
 
-/*Add a custom size for images displayed in the mid-page widget area. */
-//add_image_size( 'mid-thumbnail', 300,200,true);
 
 
-/* From Mike */
-// Get Child Pages
-function get_child_pages() {
-global $post;
-rewind_posts(); // stop any previous loops
-query_posts(array('post_type' => 'page','numberposts' => -1,'post_status' => null,'post_parent' => $post->ID,'order' => 'ASC','orderby' => 'menu_order')); // query and order child pages
-if (have_posts()) : while (have_posts()) : the_post();
-$childPermalink = get_permalink( $post->ID ); // post permalink
-$childID = $post->ID; // post id
-$childTitle = $post->post_title; // post title
-$childExcerpt = $post->post_excerpt; // post excerpt
-echo '<article id="page-excerpt-'.$childID.'" class="page-excerpt">';
-echo '<h3><a href="'.$childPermalink.'">'.$childTitle.' &raquo;</a></h3>';
-echo '<p>'.$childExcerpt.' <a href="'.$childPermalink.'">Read More&nbsp;&raquo;</a></p>';
-echo '</article>';
-endwhile; endif;
-}
-//
 
-?>
-
-<?php 
-
-// Get My Title Tag
-function get_my_title_tag() {
-    
-    global $post;
-    
-    if ( is_front_page() ) {  // for siteÕs Front Page
-    
-        bloginfo('description'); // retrieve the site tagline
-    
-    } 
-    
-    elseif ( is_page() || is_single() ) { // for your siteÕs Pages or Postings
-    
-        the_title(); // retrieve the page or posting title 
-    
-    } 
-
-    else { // for everything else
-        
-        bloginfo('description'); // retrieve the site tagline
-        
-    }
-    
-    if ( $post->post_parent ) { // for your siteÕs Parent Pages
-    
-        echo ' | '; // separator with spaces
-        echo get_the_title($post->post_parent); // retrieve the parent page title
-        
-    }
-
-    echo ' | '; // separator with spaces
-    bloginfo('name'); // retrieve the site name
-    echo ' | '; // separator with spaces
-    echo 'Seattle, WA.'; // write in the location
-    
-}
-//
-    
-?>
-
-<!-- Create Page Excerpts -->
-<?php add_post_type_support( 'page', 'excerpt' ); ?>
 
 
 
