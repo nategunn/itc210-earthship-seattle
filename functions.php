@@ -17,7 +17,6 @@ $args = array(
 add_theme_support( 'custom-header', $args );
 
 
-
 //Register custom menus
 function register_my_menus() {
   register_nav_menus(
@@ -110,6 +109,7 @@ add_image_size('home-300xauto', 300, auto); /* 300 px width and auto height */
 add_image_size('home-300x200px-cropped', 300,200,true); /* crops image to 300 x 200 px */
 /* End Adding Theme Support - Post Thumbnails */
 
+
 // Get My Title Tag
 function get_my_title_tag() {
   global $post;
@@ -133,8 +133,9 @@ function get_my_title_tag() {
 }
 //
 
+// Create Page Excerpts
+add_post_type_support( 'page', 'excerpt' );
 
-?>
 
 
 

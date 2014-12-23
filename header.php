@@ -7,7 +7,8 @@
 <!--<![endif]-->
 <head>
    
-    <title><?php get_my_title_tag(); ?></title>
+<title><?php get_my_title_tag(); ?></title>
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
    
    <!-- Remy Sharp Shim --> 
    <!--[if lt IE 9]> 
