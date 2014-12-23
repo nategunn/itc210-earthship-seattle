@@ -11,23 +11,30 @@
     </div>
 
     <div id="main-content" class="page">
-
     
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php while (have_posts()) : the_post(); ?>
+    <article>
+    <div class="post-box clear-fix">
 
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-            <h2><?php the_title(); ?></h2> <!-- ex. "About" -->
+            <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
             
+            <div class="entry">
             <?php the_content(); ?>
+            </div>
             
-        </div>
+        </div> <!-- end post-class -->
+        
+    </div> <!-- end post-box -->
+    
+    </article>
+    
+    <hr>
 
     <?php endwhile; ?>
    
-    <?php endif; ?> 
-
-
-</div><!-- #main-content -->
+    </div><!-- #main-content -->
 <div>
         <?php get_sidebar();?>
 </div>

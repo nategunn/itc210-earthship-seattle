@@ -25,7 +25,7 @@
 
 		<h2>No posts found about your topic.</h2>
 		<h3>Try a different search?</h3>
-		<p><?php get_search_form(); ?></p> 
+		<p class="main-content-search-bar"><?php get_search_form(); ?></p> 
 
 	<?php endif; ?>
 		

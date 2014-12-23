@@ -16,7 +16,7 @@
 	}?>
     </div>
 
-    <div id="main-content" class="page">
+    <div id="main-content" class="page-resources">
 
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

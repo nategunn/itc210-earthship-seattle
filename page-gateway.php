@@ -13,7 +13,7 @@
 	}?>
     </div>
 
-    <div id="main-content" class="page-about">
+    <div id="main-content" class="page-gateway">
 
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

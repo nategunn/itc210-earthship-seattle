@@ -379,9 +379,16 @@ header a:hover {
 }
 
 /*///// UTILITY TEMPLATES /////*/
-.four04 .search-bar {
+.four04 .main-content-search-bar,
+.search-template .main-content-search-bar {
   float:left;
   margin-top:10px;
+}
+
+.main-content-search-bar input,
+.search-template input {
+  padding-top:7px;
+  padding-bottom:4px;
 }
 
 .four04 h2 {
@@ -400,7 +407,7 @@ header a:hover {
   margin-bottom:25px;
 }
 
-.archive hr:last-of-type {
+#main-content hr:last-of-type { 
   display:none;
 }
 
@@ -452,10 +459,11 @@ background-color:#333;
 }
 	
 /* selects "News" when "Calendar" is selected */
-/*#nav-main li.current_page_parent a:link,*/
-#nav-main li.current_page_parent a:visited,
+#nav-main li.current_page_parent a:link,
+/*#nav-main li.current_page_parent a:visited,*/
+/* end selects "News" when "Calendar" is selected */
 
-#nav-main li.current-page-ancestor a:link,*/
+#nav-main li.current-page-ancestor a:link,
 #nav-main li.current-page-ancestor a:visited {
 	background-color:#333;
 }

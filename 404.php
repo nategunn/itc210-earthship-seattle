@@ -14,14 +14,14 @@
 
 	<h2>Error 404</h2>
     
-    <p>Q: What does 404 mean? That doesn't make me feel giddy at all.</p>
+    <p>Q: What does 404 mean?</p>
 	<p>A: It just means the page you were looking for has been moved or removed.</p>
     <p>We apologize for the inconvienience.</p> 
     <p>Try another search to find your topic?<p>
     
-    <div class="search search404">
-    	<?php get_search_form(); ?>
-    </div> 
+    <div class="main-content-search-bar">
+	<?php get_search_form(); ?>
+</div> 
 
 </div><!-- #main-content -->
 
