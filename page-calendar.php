@@ -18,22 +18,22 @@ Template Name: page-calendar
     <div id="main-content" class="page-calendar">
 
     
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+            <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                <h2><?php the_title(); ?></h2> <!-- ex. "About" -->
+                
+                <?php the_content(); ?>
+                
+            </div>
+    
+        <?php endwhile; ?>
+       
+        <?php endif; ?>
+         <?php // <?php get_child_pages(); ?>
 
-        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-            <h2><?php the_title(); ?></h2> <!-- ex. "About" -->
-            
-            <?php the_content(); ?>
-            
-        </div>
 
-    <?php endwhile; ?>
-   
-    <?php endif; ?>
-     <?php // <?php get_child_pages(); ?>
-
-
-</div><!-- #main-content -->
+    </div><!-- #main-content -->
 
 <div id='delimiter'></div>
 <?php get_footer();

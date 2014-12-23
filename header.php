@@ -52,7 +52,7 @@
 </head>
 
 
-<body id="top"<?php body_class(); ?>>
+<body id="top" <?php body_class(); ?>>
     <header> <!-- has no width, extends left and right forever -->
     
 	<div id="masthead" class="wrapper940">
@@ -81,7 +81,7 @@
 	    
 	    <div class="clear-fix">
 		<a href="<?php echo get_option('home'); ?>/">
-		    <img class="logo-header" src="<?php echo(get_header_image("<?php bloginfo('template_url'); ?>/images/logo.png"));?>"alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+		    <img class="logo-header" src="<?php echo(get_header_image("<?php bloginfo('template_url'); ?>/images/logo.png"));?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 		    <h1 id="site-title">Earthship Seattle</h1>
 		</a>
 	    </div>

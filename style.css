@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141223a
+Version: 141223b
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -1416,13 +1416,6 @@ footer a:focus {
     /*moves the search bar above the nav*/
     .search-bar{
         top: -40px;
-    }
- 
-    .four04 .search-bar input {
-      padding-top:7px;
-      padding-bottom:4px;
-      width:auto;
-      /*margin-left:10px;*/
     }
   
   /*///// END NAV MAIN STYLES /////*/
