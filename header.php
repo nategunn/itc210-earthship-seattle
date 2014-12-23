@@ -7,7 +7,7 @@
 <!--<![endif]-->
 <head>
    
-
+    <title><?php get_my_title_tag(); ?></title>
    
    <!-- Remy Sharp Shim --> 
    <!--[if lt IE 9]> 
