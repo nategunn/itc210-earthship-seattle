@@ -36,7 +36,7 @@
     <?php get_sidebar();?>
 </div>
 
-</div> <!-- END MIDDLE -->
+<!--</div>--> <!-- END MIDDLE -->
 
 <div id='delimiter'></div>
 
