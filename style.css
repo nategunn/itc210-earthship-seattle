@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141224c
+Version: 141224d
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -378,6 +378,7 @@ header a:hover {
   position: absolute;
   right: 0;
   top: 0;
+  display: inline;
 }
 
 .search-bar input {

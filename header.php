@@ -99,7 +99,7 @@
 		    'menu' => 'nav-main' ,
 		    'container'  => 'ul', 
 		));?>
-            <span class="search-bar"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></span>
+            <div class="search-bar"><?php get_search_form(); /* outputs the default Wordpress search form */ ?></div>
             <a href="#" id="pull">.</a>
 	    </nav>
 	</div> <!-- end nav-wide -->
