@@ -21,7 +21,7 @@
     
     <div class="main-content-search-bar">
 	<?php get_search_form(); ?>
-</div> 
+    </div> 
 
 </div><!-- #main-content -->
 

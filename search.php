@@ -25,7 +25,10 @@
 
 		<h2>No posts found about your topic.</h2>
 		<h3>Try a different search?</h3>
-		<p class="main-content-search-bar"><?php get_search_form(); ?></p> 
+
+		<div class="main-content-search-bar">
+			<?php get_search_form(); ?>
+		</div> 
 
 	<?php endif; ?>
 		
@@ -33,7 +36,7 @@
 
 
 <div>
-    <?php get_sidebar();?>
+    <?php get_sidebar(); ?>
 </div>
 
 <!--</div>--> <!-- END MIDDLE -->
