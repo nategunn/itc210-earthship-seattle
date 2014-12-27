@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141226a
+Version: 141227
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -38,7 +38,7 @@ img {
 /*///// GLOBAL STYLES /////*/
 body {
   /*global font styles go on the body tag*/
-  font-family: 'PT Sans', Helvetica, Geneva, Arial, sans-serif;
+  font-family: 'PT Sans', 'Open Sans', Helvetica, Geneva, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.45;
   color: #000;
@@ -77,8 +77,8 @@ header h1 {
   font-family: 'PT Mono';
 }
 
-h1,h2,h3,h4 {
-  font-family: 'Open Sans', serif;
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'PT Sans', Helvetica, Geneva, Arial, sans-serif;
   color:#000;
 }
 
@@ -139,7 +139,7 @@ li {
 
 blockquote {
   font-style:italic;
-  font-size:.9em;
+  font-size: 1.1em;
   margin-top: .9em;
   margin-bottom: .9em;
   margin-left:.5%;
@@ -179,6 +179,15 @@ input[type=search] {
   -webkit-appearance: textfield; 
 }
 
+hr {
+  height: 2px;
+  color:#333333;
+}
+
+#main-content hr:last-of-type { 
+  display:none;
+}
+
 /*/// Widget Styles ///*/
 /* Posts In Sidebar - Read More */
 .pis-more a {
@@ -187,6 +196,7 @@ input[type=search] {
   display: block;
   padding-top:7px;
 }
+/* End Posts In Sidebar - Read More */
 /*/// End Widget Styles ///*/
 
 /*///// END GLOBAL STYLES /////*/
@@ -224,7 +234,6 @@ input[type=search] {
     padding-bottom: 0.45em;
 }
 /*/// END WP Google Maps ///*/
-
 /*///// END PLUGIN STYLES /////*/
 
 /*///// SOCIAL MEDIA ICONS /////*/
@@ -280,7 +289,7 @@ header a:hover {
 }
 /*///// END HEADER /////*/
 
-/*/////////////NAV-MAIN STYLES///////////*/
+/*///// NAV-MAIN STYLES /////*/
 /* extension nav div beyond 940 grid left and right */
 #nav-wide {
   background-color: #100f0d;
@@ -296,14 +305,14 @@ header a:hover {
 }
 
 /* top level nav list items */
-#nav-main ul{
+#nav-main ul {
   padding:0;
   margin: 0 auto;
   width: 100%;
   height: 40px;
 }
 
-#nav-main li{
+#nav-main li {
     display:inline;
     float:left;
 }
@@ -316,7 +325,8 @@ header a:hover {
     display: none;
 }
 
-/* for positioning top level and first set of drop down items */
+/* for positioning top level and
+first set of drop down items */
 #nav-main ul ul {
   display:none; /* hides first drop down list */
   position:absolute; /* keeps nav items from moving */
@@ -387,64 +397,7 @@ header a:hover {
   padding-bottom:4px;
 }
 
-/*///// UTILITY TEMPLATES /////*/
-.four04 .main-content-search-bar,
-.search-template .main-content-search-bar {
-  float:left;
-  margin-top:10px;
-}
-
-.main-content-search-bar input,
-.search-template input {
-  padding-top:7px;
-  padding-bottom:4px;
-}
-
-.four04 h2 {
-  margin-bottom:7px;
-}
-
-.the_time {
-  font-weight:bold;
-}
-
-.entry {
-    padding-top:6px;
-}
-
-.archive hr {
-  margin-bottom:25px;
-}
-
-#main-content hr:last-of-type { 
-  display:none;
-}
-
-p.postmetadata {
-  font-weight: 600;
-}
-
-#main-content.four04 {
-  padding-bottom:25px;
-}
-
-.author .post-box {
-  margin-top:0;
-}
-
-.author .posttitle.by {
-  /*font-style: italic;*/
-  margin-bottom:10px;
-  /*text-decoration: underline;*/
-}
-
-.author-bio {
-  margin-top:35px;
-}
-/*///// END UTILITY TEMPLATES /////*/
-
-/*///// YOU ARE HERE STATES /////*/
-
+/*/// YOU ARE HERE STATES ///*/
 /* For Modern Tribe Events Calendar */
 #nav-main .cal.current-menu-item a:link,
 #nav-main .cal.current-menu-item a:visited {
@@ -483,10 +436,58 @@ background-color:#333;
 #nav-main li.current-page-ancestor a:focus {
 	background-color:#333;
 }
-
-/*///// END YOU ARE HERE STATES /////*/
-
+/*/// END YOU ARE HERE STATES ///*/
 /*///// END NAV-MAIN STYLES /////*/
+
+/*///// UTILITY TEMPLATES /////*/
+.four04 .main-content-search-bar,
+.search-template .main-content-search-bar {
+  float:left;
+  margin-top:10px;
+}
+
+.main-content-search-bar input,
+.search-template input {
+  padding-top:7px;
+  padding-bottom:4px;
+}
+
+.four04 h2 {
+  margin-bottom:7px;
+}
+
+.the_time {
+  font-weight:bold;
+}
+
+.entry {
+    padding-top:6px;
+}
+
+.archive hr {
+  margin-bottom:25px;
+}
+
+p.postmetadata {
+  font-weight: 600;
+}
+
+#main-content.four04 {
+  padding-bottom:25px;
+}
+
+.author .post-box {
+  margin-top:0;
+}
+
+.author .posttitle.by {
+  margin-bottom:10px;
+}
+
+.author-bio {
+  margin-top:35px;
+}
+/*///// END UTILITY TEMPLATES /////*/
 
 /*///// FRONT PAGE STYLES /////*/
 #hero-front-page  {
@@ -607,10 +608,9 @@ background-color:#333;
 #mid .widget-title {
   font-size: 1.2em;
   margin-top:5px;
-  margin-right:0px;
   margin-bottom:10px;
   margin-left: calc(100% * (10/300));
-  
+  margin-right: calc(100% * (10/300));
   position:absolute;
   top:5px;
   color:#FFF;
@@ -619,7 +619,7 @@ background-color:#333;
 }
 
 #mid a.pis-title-link {
-  font-family:'Open Sans', Helvetica, Geneva, Arial, sans-serif;
+  font-family:'Open Sans', 'PT Sans', Helvetica, Geneva, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: normal;
   margin-top:0;
@@ -633,7 +633,7 @@ background-color:#333;
 /*///// LOWER SIDEBAR /////*/
 #lower-div {
   clear:both;
-  font-family:"Open Sans";
+  font-family:'Open Sans', 'PT Sans', Helvetica, Geneva, Arial, sans-serif;
 }
 
 #lower {
@@ -642,11 +642,11 @@ background-color:#333;
   overflow: hidden;
 }
 
-#lower div:first-child{
+#lower div:first-child {
   margin-left:0;
 }
 
-#lower div:last-child{
+#lower div:last-child {
   margin-right:0;
 }
 
@@ -724,11 +724,6 @@ background-color:#333;
 
 caption {
   width:100%;
-}
-
-hr {
-  height: 2px;
-  color:#333333;
 }
 
 .post-box {
@@ -841,7 +836,7 @@ p.wp-caption-text {
 }
 /*///// END PAGE.PHP STYLES /////*/
   
-/*////////// PRIMARY SIDEBAR ////////*/
+/*///// PRIMARY SIDEBAR /////*/
 #primary {
   width: calc(100% * (320/940));
   border-left: 1px solid #a3a29e;
@@ -876,7 +871,7 @@ p.wp-caption-text {
  font-weight:600;
 }
 
-/* Events + Projects Navigation Widgets */
+/*/// Events + Projects Navigation Widgets ///*/
 #menu-projects-menu li:first-child,
 #menu-events-menu li:first-child{ 
     font-size:2em;
@@ -893,7 +888,7 @@ p.wp-caption-text {
   margin-bottom:.4em;
 }
 
-/* Posts In Sidebar - Upcoming Event */
+/*/// Posts In Sidebar - Upcoming Event ///*/
 /* Event Widget Excerpt */
 a.pis-title-link {
   font-family:'Open Sans', Helvetica, Geneva, Arial, sans-serif;
@@ -907,7 +902,7 @@ a.pis-title-link {
 } 
 
 
-/* Category Widget */
+/*/// Category Widget ///*/
 #primary .widget-title {
   font-family:'Open Sans', Helvetica, Geneva, Arial, sans-serif;
   font-size:2em;
@@ -916,7 +911,7 @@ a.pis-title-link {
   padding-left:20px;
 }
 
-/* Events Menu Widget */
+/*/// Events Menu Widget ///*/
 #primary .menu-events-menu-container {
   padding: 10px 0 15px 0;
   position:relative;
@@ -940,7 +935,7 @@ a.pis-title-link {
   right:20px;
 }
 
-/* Categories Menu Widget */
+/*/// Categories Menu Widget ///*/
 #categories-2 {
   padding: 15px 0 10px 0px;
 }
@@ -960,7 +955,7 @@ a.pis-title-link {
 .widget.widget_categories li {
   padding-bottom:.4em;
 }
-/* End Categories Widget */
+/*/// End Categories Widget ///*/
 /*///// END PRIMARY SIDEBAR /////*/
 
 /*///// SINGLE.PHP STYLES /////*/
@@ -1017,46 +1012,53 @@ textarea#comment {
 /*///// END SINGLE.PHP /////*/
 
 /*///// START CONTACT FORM STYLES /////*/
-.wpcf7 p{
+.wpcf7 p {
   margin-bottom: .6em;
   font-size: 1.5em;
 }
-.wpcf7 textarea{
+
+.wpcf7 textarea {
   margin-bottom: 0.6em;
   width: calc(100% * (400/560));
 }
+
 .wpcf7 input[type="text"],
-input[type="email"]{
+input[type="email"] {
   width: calc(100% * (400/560));
   height: 34px;
 }
-.wpcf7-submit{
+
+.wpcf7-submit {
   width: 25%;
   height: 32px;
   font-size: .875em;
   margin-top: .6em;
 }
-.wpcf7-list-item-label{
+
+.wpcf7-list-item-label {
   padding-right: 10px;
 }
 /*///// END CONTACT FORM STYLES /////*/
 
-/*///// FOOTER A TAGS /////*/
+/*///// FOOTER STYLES /////*/
+/*/// FOOTER A TAGS ///*/
 footer a:link,
 footer a:visited {
   text-decoration: none;
   color: #545353;
 }
+
 footer a:hover,
 footer a:focus {
   text-decoration: underline;
   color: #0065ff;
 }
+
 .postmetadata a:link,
 .postmetadata a:visited {
-  /*text-decoration: underline;*/
   color: #545353;
 }
+
 .postmetadata a:hover,
 .postmetadata a:focus {
   text-decoration: underline;
@@ -1066,8 +1068,7 @@ footer a:focus {
 .postmetadata {
   margin-bottom:15px;
 }
-
-/* Footer Styles */
+/*/// END FOOTER A TAGS ///*/
 
 .footer-container{
   width: 100%;
@@ -1075,6 +1076,7 @@ footer a:focus {
   background-color: #333;
   padding-bottom: 50px; /*change to 20px when done styling*/
 }
+
 #site-footer{
   margin: 0 auto;
   width: 100%;
@@ -1082,8 +1084,8 @@ footer a:focus {
   background-color: #333;
   font-family: 'PT Sans', sans-serif;
 }
-/**************button styled menu**************/
-/********************Button styled footer  navigation**************/
+
+/*/// BUTTON-STYLED FOOTER MENU ///*/
 #footer-button-menu{
   width: 20%;
   max-width: 188px;
@@ -1091,37 +1093,46 @@ footer a:focus {
   background-color: #333;
   float: left;
 }
+
 #footer-button-menu ul li{
   list-style: none;
   text-decoration: none;
   text-align: left;
 }
+
 #footer-button-menu .pseudo-button{
   text-align: center;
   font-size: 1.2em;
   padding: 5px 8px;
   margin-top: 20px;
 }
+
 #footer-button-menu .pseudo-button.top{
   background-color: #A3A29E;
 }
+
 #footer-button-menu .pseudo-button.center{
   background-color: #837E7A;
 }
+
 #footer-button-menu .pseudo-button.bottom{
   background-color: #605B55;
 }
+
 #footer-button-menu .pseudo-button:first-child{
   margin-top: 0px;
 }
+
 #footer-button-menu a{
   text-decoration: none;
   color: #fff;
 }
+
 #footer-button-menu .pseudo-button:hover,
 #footer-button-menu .pseudo-button:focus{
   background-color: #90c695;
 }
+
 #footer-button-menu .pseudo-button:hover a,
 #footer-button-menu .pseudo-button:focus a{
   color: #000;
@@ -1130,7 +1141,9 @@ footer a:focus {
 #footer-button-menu ul {
   margin-left: 0;
 }
-/*************** right footer nav **************/
+/*/// END BUTTON-STYLED FOOTER MENU ///*/
+
+/*/// RIGHT FOOTER NAV ///*/
 #footer-menu{
   width: 80%;
   max-width: 752px; 
@@ -1151,12 +1164,13 @@ footer a:focus {
   padding-left:0;
 }
 
-#footer-menu ul:after{
+#footer-menu ul:after {
   content:"";
   clear:both;
   display:block;
 }
-#footer-menu ul li{
+
+#footer-menu ul li {
   list-style: none;
   text-decoration: none;
   float: left;
@@ -1164,24 +1178,29 @@ footer a:focus {
   margin-left:0;
   padding-left:0;
 }
+
 #footer-menu .gateway {
   font-size: 1.1em;
   padding-left: 1em;
 }
-#footer-menu .gateway:last-child{
+
+#footer-menu .gateway:last-child {
   padding-right: 0px;
 }
-#footer-menu ul li ul{
+
+#footer-menu ul li ul {
     list-style-position: inside; 
     display: list-item;
     list-style: none;
-  }
-#footer-menu ul li ul li{
+}
+  
+#footer-menu ul li ul li {
     display: block;
     float: none;
     margin: 0; padding: 0;
     text-align: left;
-  }
+}
+  
 #footer-menu ul li a{ 
     line-height: 2em;
     text-decoration: none;
@@ -1200,6 +1219,7 @@ footer a:focus {
 #footer-menu ul li ul li a{
   font-size: .8em;
 }
+
 #site-footer .copy{
   clear: both;
   color: #fff;
@@ -1207,19 +1227,18 @@ footer a:focus {
   font-size: .8em;
   padding-bottom: 20px;
 }
+
 .copy a:link,
 .copy a:visited {
   color: #FFF;
 }
+
 .copy a:hover,
 .copy a:focus {
   color: #90c695;
 }
-.hero-gateway-page h2 {
-  bottom: 15px;
-  font-size: 2.1em;
-  right: 20%;
-}
+/*/// END RIGHT FOOTER NAV ///*/
+/*///// END FOOTER STYLES /////*/
 
 /*///// WP Generated Selectors /////*/
 .alignleft {
@@ -1327,7 +1346,7 @@ footer a:focus {
 /* END COMMENTS */
 /*///// END WP Generated Selectors /////*/
 
-/* RESPONSIVE STYLES */
+/*///// RESPONSIVE STYLES /////*/
 @media all and (max-width: 1600px) {
   
   #hero-front-page h2 {
@@ -1371,7 +1390,7 @@ footer a:focus {
 
 @media all and (max-width: 800px) {
  
- /* Video Embed Styles */ 
+  /*/// VIDEO EMBED STYLES ///*/ 
   iframe {
     clear:both;
   }
@@ -1383,7 +1402,7 @@ footer a:focus {
   #player {
     margin-bottom:20px;
   }
-  /* End Video Embed Styles */ 
+  /*/// END VIDEO EMBED STYLES ///*/ 
   
   #hero-front-page  {
     background-image:url("images/starry-night-earthship-800x256px.jpg");
@@ -1405,38 +1424,53 @@ footer a:focus {
     padding-bottom: calc(100% * (200/800));
   }
   
-  /*///// NAV MAIN STYLES /////*/
+  /*/// NAV MAIN STYLES ///*/
+  #nav-main {
+      height: auto;
+  }
+  #nav-main ul {
+      width: 100%;
+      display: block;
+      height: auto;
+  }
+  #nav-main li {
+      width: 50%;
+      float: left;
+      position: relative;
+  }
 
-    #nav-main {
-        height: auto;
-    }
-    #nav-main ul {
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    #nav-main li {
-        width: 50%;
-        float: left;
-        position: relative;
-    }
+  #nav-main a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+  }
 
-    #nav-main a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-    }
+  #nav-main ul li:hover > ul{
+      width: 100%;
+  }
 
-    #nav-main ul li:hover > ul{
-        width: 100%;
-    }
-
-    /*moves the search bar above the nav*/
-    .search-bar{
-        top: -40px;
-    }
+  /*moves the search bar above the nav*/
+  .search-bar{
+      top: -40px;
+  }
   
-  /*///// END NAV MAIN STYLES /////*/
+  /* when exposed, make links lighter grey */
+  #nav-main ul ul a:link,
+  #nav-main ul ul a:visited {
+      background-color: #333;
+  }
+  
+  /* when hovered, make links darker grey */
+  #nav-main ul ul a:hover,
+  #nav-main ul ul a:focus {
+      background-color: #100F0D;
+  }
+  
+  /* make dropdown icon background same color as nav background */
+  #nav-main a#pull {
+      background-color: #100F0D;
+  }
+  /*/// END NAV MAIN STYLES ///*/
    
   #middle {
     background-image: url("images/bg-800px-grid-.png");
@@ -1537,28 +1571,11 @@ footer a:focus {
       width:calc(100% * (460/530));
   }
 
-  /*///// MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/
+  /*/// MODERN TRIBE EVENTS CALENDAR SETTINGS ///*/
   #tribe-events-content .tribe-events-page-title{
     margin-right: 0;
   }
-  /*///// END MODERN TRIBE EVENTS CALENDAR SETTINGS /////*/  
-
-  /* when exposed, make links lighter grey */
-  #nav-main ul ul a:link,
-  #nav-main ul ul a:visited {
-      background-color: #333;
-  }
-  
-  /* when hovered, make links darker grey */
-  #nav-main ul ul a:hover,
-  #nav-main ul ul a:focus {
-      background-color: #100F0D;
-  }
-  
-  /* make dropdown icon background same color as nav background */
-  #nav-main a#pull {
-      background-color: #100F0D;
-  }
+  /*/// END MODERN TRIBE EVENTS CALENDAR SETTINGS ///*/  
   
 }
 
@@ -1625,7 +1642,8 @@ footer a:focus {
     font-size:.9em;
     margin-top:.5em;
   }
-
+  
+  /*/// NAV-MAIN ///*/
   #nav-main {
     border-bottom: 0;
   }
@@ -1663,7 +1681,7 @@ footer a:focus {
     float: left;
     top: 0;
   }
-  
+  /*/// END NAV-MAIN ///*/
 }
 
 @media all and (max-width: 495px) {
@@ -1700,9 +1718,35 @@ footer a:focus {
       width:calc(100% * (450/460));
   }
   
-  /***** FRONT PAGE STYLES *****/
+  .archive hr:last-of-type {
+    display:block;
+  }
+  
+  #nav-main li {
+      display: block;
+      float: none;
+      width: 100%;
+  }
+
+  #nav-main ul ul li{
+      display: none;
+  }
+  
+  .hero-about-page h2 {
+    font-size:1em;
+    right:5%;
+    bottom:15%;
+  }
+  
+  /*/// FRONT PAGE STYLES ///*/
   #hero-front-page h2 {
     font-size:.7em;
+  }
+  
+  .hero-about-page h2 {
+    font-size:1em;
+    right:5%;
+    bottom:15%;
   }
   
   .main-content-fp h2 {
@@ -1759,9 +1803,9 @@ footer a:focus {
   #lower-div .widget:nth-child(even) {
     margin-left: 0;
   } 
-  /***** END FRONT PAGE STYLES *****/
+  /*/// END FRONT PAGE STYLES ///*/
   
-  /***** INDEX PAGE STYLES *****/
+  /*/// INDEX PAGE STYLES ///*/
   #main-content {
   max-width: 100%;
   width: calc(100% * (450/480));
@@ -1786,7 +1830,6 @@ footer a:focus {
     padding-right:5px;
   }
    
-
   #primary {
     max-width:480px;
     width: 100%;
@@ -1810,34 +1853,83 @@ footer a:focus {
   #categories-2 h3.widget-title {
     padding-left:10px;
   }
-  /***** END INDEX PAGE STYLES *****/
+  /*/// END INDEX PAGE STYLES ///*/
   
-  .hero-about-page h2 {
-    font-size:1em;
-    right:5%;
-    bottom:15%;
+  /***** phone *****/
+  body,
+  #main-content,
+  .main-content-fp,
+  #masthead,
+  #site-footer,
+  #wrapper {
+    width: 100%;
   }
   
-  .archive hr:last-of-type {
-    display:block;
+  /*** start phone form styles ***/
+  .wpcf7 p {
+    margin-bottom: .6em;
+    font-size: 1em;
   }
   
-  /*.author hr:last-of-type {
-    display:none;
-  }*/
-
-  #nav-main li {
-      display: block;
-      float: none;
-      width: 100%;
+  .wpcf7 textarea {
+    margin-bottom: .6em;
+    width: calc(100% * (490/500));
   }
-
- #nav-main ul ul li{
-      display: none;
+  
+  .wpcf7 input[type="text"],
+  input[type="email"] {
+    width: calc(100% * (490/500));
+    height: 32px;
   }
+  
+  .wpcf7-submit {
+    width: calc(100% * (490/500));
+    height: 40px;
+    font-size: 1em;
+    margin-top: .6em;
+  }
+  
+  .wpcf7-list-item-label {
+    padding-right: 5px;
+  }
+  /*** end phone form styles ***/
+  
+  /*** phone footer styles ***/
+  #site-footer {
+    padding: 0px 8px;
+  }
+  
+  #footer-button-menu {
+    width: 98%;
+    max-width: 480px;
+    padding-top: 20px;
+    background-color: #333;
+    float: none;
+    margin: 0 auto;
+  }
+  
+  #footer-menu {
+    display: none;
+  }
+  
+  #footer-button-menu .pseudo-button{
+    margin-top: 10px;
+  }
+  
+  #site-footer .copy {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    clear: both;
+  }
+  /*** end phone footer styles ***/
+  /***** end phone *****/
 }
 
 @media all and (max-width: 430px) {
+  
   .logo-header {
     max-width: 70px;
     display:inline-block;
@@ -1940,67 +2032,4 @@ width: 100%;
   padding-bottom: 20px;
   clear: both;
   }
-}
-/* Phone */
-@media all and (max-width: 480px) {
-  
-    body,
-    #main-content,
-    .main-content-fp,
-    #masthead,
-    #site-footer,
-    #wrapper {
-        width: 100%;
-    }   
-
-/********* start phone form styles ********/
-.wpcf7 p{
-  margin-bottom: .6em;
-  font-size: 1em;
-}
-.wpcf7 textarea{
-  margin-bottom: .6em;
-  width: calc(100% * (490/500));
-}
-.wpcf7 input[type="text"],
-input[type="email"]{
-  width: calc(100% * (490/500));
-  height: 32px;
-}
-.wpcf7-submit{
-  width: calc(100% * (490/500));
-  height: 40px;
-  font-size: 1em;
-  margin-top: .6em;
-}
-.wpcf7-list-item-label{
-  padding-right: 5px;
-}
-/********* end phone form styles ********/
- /********* phone footer styles ********/
- #site-footer{
-  padding: 0px 8px;
- }
- #footer-button-menu{
-  width: 98%;
-  max-width: 480px;
-  padding-top: 20px;
-  background-color: #333;
-  float: none;
-  margin: 0 auto;
-}
-  #footer-menu{
-    display: none;
-  } 
-  #footer-button-menu .pseudo-button{
-    margin-top: 10px;
-  }
-  #site-footer .copy{
-  color: #fff;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-left: 10px;
-  clear: both;
-  }  
 }
