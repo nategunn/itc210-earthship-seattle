@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141227
+Version: 141230
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -918,14 +918,14 @@ a.pis-title-link {
 }
 
 .menu-projects-menu-container, /* Projects Menu Widget */
-#pis_posts_in_sidebar-5 { /* Upcoming Events Menu Widget */
+.primary-pis { /* Upcoming Events Menu Widget */
   padding: 15px 0 15px 0;
   position:relative;
 }
 
 #primary .menu-events-menu-container:after, 
 #primary .menu-projects-menu-container:after,
-#primary #pis_posts_in_sidebar-5:after  {
+#primary .primary-pis:after  {
   content:""; 
   background: #a3a29e;  
   position: absolute;
@@ -1722,6 +1722,10 @@ footer a:focus {
     display:block;
   }
   
+  #main-content hr:last-of-type { 
+    display:block;
+  }
+  
   #nav-main li {
       display: block;
       float: none;
@@ -1829,12 +1833,14 @@ footer a:focus {
     float:left;
     padding-right:5px;
   }
-   
+
+  /*/// END INDEX PAGE STYLES ///*/
+  
+    /*/// PRIMARY SIDEBAR ///*/
   #primary {
     max-width:480px;
     width: 100%;
     border: none;
-    border-bottom: 2px #333333 solid;
     margin: 0 5px;
   }
   
@@ -1850,10 +1856,17 @@ footer a:focus {
     padding-left:10px;
   }
   
+  #primary .menu-events-menu-container:after,
+  #primary .menu-projects-menu-container:after,
+  #primary .primary-pis:after {
+    left: 10px;
+    right: 10px;
+  }
+  
   #categories-2 h3.widget-title {
     padding-left:10px;
   }
-  /*/// END INDEX PAGE STYLES ///*/
+  /*/// END PRIMARY SIDEBAR ///*/
   
   /***** phone *****/
   body,

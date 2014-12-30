@@ -86,7 +86,7 @@
     <?php get_sidebar();?>
 </div>
 
-<div id='delimiter'></div>
+<div class='delimiter'></div>
 
 <?php get_footer(); ?>
 
