@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 141230
+Version: 141231
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -198,6 +198,12 @@ hr {
 }
 /* End Posts In Sidebar - Read More */
 /*/// End Widget Styles ///*/
+
+/*/// START VIDEO EMBED ///*/
+.iframely-plus-headline {
+  margin-bottom:25px;
+}
+/*/// END VIDEO EMBED ///*/
 
 /*///// END GLOBAL STYLES /////*/
 
@@ -1767,10 +1773,6 @@ footer a:focus {
       width:calc(100% * (450/460));
   }
   
-  .archive hr:last-of-type {
-    display:block;
-  }
-  
   #main-content hr:last-of-type { 
     display:block;
   }
@@ -1891,10 +1893,6 @@ footer a:focus {
     width: 100%;
     border: none;
     margin: 0 5px;
-  }
-  
-  .page #primary {
-    border-top: 2px #333333 solid;
   }
   
   #primary li {
