@@ -18,7 +18,7 @@ Template Name: projects-current
 
     <div id="main-content" class="projects-current">
 
-    <?php query_posts( 'cat=projects&tag=current' ); ?>
+    <?php if (query_posts( 'cat=projects&tag=current' )); ?>
     
     <?php while (have_posts()) : the_post(); ?>
     <article>

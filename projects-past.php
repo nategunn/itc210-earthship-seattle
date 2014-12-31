@@ -17,7 +17,7 @@ Template Name: projects-past
 
     <div id="main-content" class="projects-past">
 
-    <?php query_posts( 'cat=projects&tag=past' ); ?>
+    <?php if(query_posts( 'cat=projects&tag=past' )); ?>
     
     <?php while (have_posts()) : the_post(); ?>
     <article>
