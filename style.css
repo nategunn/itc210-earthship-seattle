@@ -1011,7 +1011,26 @@ textarea#comment {
 }
 /*///// END SINGLE.PHP /////*/
 
-/*///// START CONTACT FORM STYLES /////*/
+/*///// START CONTACT PAGE STYLES /////*/
+.post-box .contact-page-icon {
+    width: 50px;
+    float: left;
+    margin-left: 0;
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+#main-content .social-icons-contact {
+  width: 155px;
+  margin-top: 50px;
+}
+
+#main-content .social-icons-contact img {
+  width: 50px;
+  margin-right:25px;
+}
+
+/*/// START CONTACT FORM STYLES ///*/
 .wpcf7 p {
   margin-bottom: .6em;
   font-size: 1.5em;
@@ -1038,7 +1057,8 @@ input[type="email"] {
 .wpcf7-list-item-label {
   padding-right: 10px;
 }
-/*///// END CONTACT FORM STYLES /////*/
+/*/// END CONTACT FORM STYLES ///*/
+/*///// END CONTACT PAGE STYLES /////*/
 
 /*///// FOOTER STYLES /////*/
 /*/// FOOTER A TAGS ///*/
@@ -1575,7 +1595,36 @@ footer a:focus {
   #tribe-events-content .tribe-events-page-title{
     margin-right: 0;
   }
-  /*/// END MODERN TRIBE EVENTS CALENDAR SETTINGS ///*/  
+  /*/// END MODERN TRIBE EVENTS CALENDAR SETTINGS ///*/
+  
+  /*/// START CONTACT FORM STYLES ///*/
+  .wpcf7 p{
+    margin-bottom: .6em;
+    font-size: 1em;
+  }
+  
+  .wpcf7 textarea{
+    margin-bottom: .6em;
+    width: 100%;
+  }
+  
+  .wpcf7 input[type="text"],
+  input[type="email"]{
+    width: 100%;
+    height: 32px;
+  }
+  
+  .wpcf7-submit{
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    margin-top: .6em;
+  }
+  
+  .wpcf7-list-item-label{
+    padding-right: 5px;
+  }
+  /*/// END CONTACT FORM STYLES ///*/
   
 }
 
@@ -1868,17 +1917,19 @@ footer a:focus {
   }
   /*/// END PRIMARY SIDEBAR ///*/
   
-  /***** phone *****/
-  body,
-  #main-content,
-  .main-content-fp,
-  #masthead,
-  #site-footer,
-  #wrapper {
-    width: 100%;
+  /*///// START CONTACT PAGE STYLES /////*/
+  #main-content .social-icons-contact {
+    width: 155px;
+    margin-top: 50px;
+    margin-bottom:50px;
+  }
+
+  #main-content .social-icons-contact img {
+    width: 50px;
+    margin-right:25px;
   }
   
-  /*** start phone form styles ***/
+  /*/// START CONTACT FORM STYLES ///*/
   .wpcf7 p {
     margin-bottom: .6em;
     font-size: 1em;
@@ -1905,7 +1956,18 @@ footer a:focus {
   .wpcf7-list-item-label {
     padding-right: 5px;
   }
-  /*** end phone form styles ***/
+  /*/// END CONTACT FORM STYLES ///*/
+  /*///// END CONTACT PAGE STYLES /////*/
+  
+  /***** phone *****/
+  body,
+  #main-content,
+  .main-content-fp,
+  #masthead,
+  #site-footer,
+  #wrapper {
+    width: 100%;
+  }
   
   /*** phone footer styles ***/
   #site-footer {
@@ -1984,30 +2046,6 @@ footer a:focus {
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
 
-/******START FORM STYLES**********/
-  .wpcf7 p{
-  margin-bottom: .6em;
-  font-size: 1em;
-}
-.wpcf7 textarea{
-  margin-bottom: .6em;
-  width: 100%;
-}
-.wpcf7 input[type="text"],
-input[type="email"]{
-  width: 100%;
-  height: 32px;
-}
-.wpcf7-submit{
-width: 100%;
-  height: 40px;
-  font-size: 1em;
-  margin-top: .6em;
-}
-.wpcf7-list-item-label{
-  padding-right: 5px;
-}
-/********END FORM STYLES**********/
 /********* footer styles *********/
   #site-footer{
     margin: 0 auto;
