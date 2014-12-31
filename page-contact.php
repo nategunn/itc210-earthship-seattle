@@ -43,8 +43,8 @@ Template Name: page-contact
         
         <div class="social-icons-contact">
              <h3>Join Us!</h3>
-            <a href="https://www.facebook.com/EarthshipSeattle"><img src="<?php bloginfo('template_url'); ?>/images/icon-facebook.png" alt="Icon: link to Facebook"></a></li>
-            <a href="http://www.meetup.com/Earthship-Seattle/"><img src="<?php bloginfo('template_url'); ?>/images/icon-meetup.png" alt="Icon: link to MeetUp"></a></li>
+            <a href="https://www.facebook.com/EarthshipSeattle" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/icon-facebook.png" alt="Icon: link to Facebook"></a></li>
+            <a href="http://www.meetup.com/Earthship-Seattle/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/icon-meetup.png" alt="Icon: link to MeetUp"></a></li>
         </div>
    
     </div><!-- #main-content -->
