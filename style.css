@@ -1207,7 +1207,7 @@ footer a:focus {
 
 #footer-menu .gateway {
   font-size: 1.1em;
-  padding-left: 1em;
+  padding-left: .8em;
 }
 
 #footer-menu .gateway:last-child {
