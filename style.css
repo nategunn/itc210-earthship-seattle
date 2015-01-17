@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 150102
+Version: 150116
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -218,6 +218,13 @@ hr {
 #tribe-events-content .tribe-events-page-title{
   margin-right: 400px;
 }
+
+.tribe-events-page-template .tribe-events-back {
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+}
 /*/// END MODERN TRIBE EVENTS CALENDAR ///*/
 
 /*/// WP Google Maps ///*/
@@ -387,8 +394,8 @@ first set of drop down items */
 }
 
 /* hover color of *currently selected* nav item */
-  #nav-main ul li.current_page_item a:hover {
-    background-color: #100F0D;
+#nav-main ul li.current_page_item a:hover {
+  background-color: #100F0D;
 }
 
 .search-bar {
@@ -404,17 +411,31 @@ first set of drop down items */
 }
 
 /*/// YOU ARE HERE STATES ///*/
-/* For Modern Tribe Events Calendar */
+/* For Modern Tribe Events Calendar */  
 #nav-main .cal.current-menu-item a:link,
 #nav-main .cal.current-menu-item a:visited {
   background-color:#333;
 }
 
+/* Bug: selects "News" when "Calendar" is selected */
+#nav-main li.current_page_parent a:visited {
+  background-color:#333;
+}
+/* End - Bug: selects "News" when "Calendar" is selected */
+
+/* Hack: selects backgrounnd color for "News" when "Calendar" is selected */
+/* .tribe-events-page-template is on the body tag of The Events Calendar */
+.tribe-events-page-template #nav-main li.current_page_parent.news a:link, 
+.tribe-events-page-template #nav-main li.current_page_parent.news a:visited {
+  background-color:#100F0D;
+}
+/* End - Hack: selects backgrounnd color for "News" when "Calendar" is selected */
+
 #nav-main .cal.current-menu-item a:hover,
 #nav-main .cal.current-menu-item a:focus {
   background-color:#333;
 }
-/* End For Modern Tribe Events Calendar */
+/* End - For Modern Tribe Events Calendar */
 
 #nav-main li.current_page_item a:link,
 #nav-main li.current_page_item a:visited {
@@ -425,10 +446,6 @@ background-color:#333;
 #nav-main li.current_page_item a:focus {
 	background-color:#333;
 }
-	
-/* selects "News" when "Calendar" is selected */
-/*#nav-main li.current_page_parent a:visited,*/
-/* end selects "News" when "Calendar" is selected */
 
 #nav-main li.current_page_parent a:link,
 #nav-main li.current-page-ancestor a:link,
@@ -1606,6 +1623,18 @@ footer a:focus {
   #tribe-events-content .tribe-events-page-title{
     margin-right: 0;
   }
+  
+  #tribe-events-content-wrapper {
+    /*padding:15px 10px 15px 10px;*/
+    /*max-width:960px;*/
+    /*margin: 0 auto;*/
+  }
+  
+  /*#tribe-events-pg-template {
+    padding-top: 0;
+  }*/
+  
+  /*/// END MODERN TRIBE EVENTS CALENDAR ///*/
   /*/// END MODERN TRIBE EVENTS CALENDAR SETTINGS ///*/
   
   /*/// START CONTACT FORM STYLES ///*/
@@ -2043,6 +2072,11 @@ footer a:focus {
   .hero-about-page h2 {
     font-size:.8em;
   }
+  
+/*  .tribe-events-page-template .tribe-events-back {
+      margin-top: 0;
+      padding-top: 0;
+  }*/
   
 }
 

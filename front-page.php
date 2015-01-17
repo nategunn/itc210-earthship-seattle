@@ -19,8 +19,11 @@ Template Name: Front Page
 <div id="middle" class="front-page wrapper940 main-content-fp">
 
     
-    <h2>Vision</h2>
-        <p class="xbig-p">Freedom, Community,  and Sustainability</p>
+    <!-- <h2>Vision</h2> -->
+     <!--   <p class="xbig-p">Freedom, Community,  and Sustainability</p> -->
+        
+    <h2>Earthships</h2>
+    	<p class="xbig-p">Sustainable homes made of recycled materials that provide comfort, food, and all of its utilities on-site, without using any fossil fuels.</p>
     
     
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
