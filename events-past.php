@@ -17,10 +17,9 @@ Template Name: events-past
 
     <div id="main-content" class="events-past">
 
-    <?php query_posts( 'cat=events&tag=past' ); ?>
-    
-    
-    <?php while (have_posts()) : the_post(); ?>
+	<?php
+	$pastQuery = new WP_Query('category_name=events&tag=past');
+	while ($pastQuery->have_posts()) : $pastQuery->the_post(); ?>
     <article>
     	<div class="post-box clear-fix">
 	    <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>

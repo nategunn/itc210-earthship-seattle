@@ -18,9 +18,9 @@ Template Name: projects-current
 
     <div id="main-content" class="projects-current">
 
-    <?php if (query_posts( 'cat=projects&tag=current' )); ?>
-    
-    <?php while (have_posts()) : the_post(); ?>
+	<?php
+	$pastQuery = new WP_Query('category_name=projects&tag=current');
+	while ($pastQuery->have_posts()) : $pastQuery->the_post(); ?>
     <article>
     	<div class="post-box clear-fix">
 	    <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
