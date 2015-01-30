@@ -15,8 +15,8 @@
     <h4 class="postmetadata">
     	<span class="date">Posted on <?php the_time('F jS, Y') ?></span> in 
 		<span class="cat"><?php the_category(', ') ?></span>
-		<span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
-		<span class="tags"><?php the_tags( 'Tags: ', ' , ', '.' ); ?></span>
+		<span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?>. </span><br>
+		<span class="tags"><?php the_tags( 'Tags: ', ', ', '.' ); ?></span>
     </h4>
         
     <?php the_content('More &raquo;'); ?>     

@@ -41,7 +41,7 @@
 				<span class="cat"><?php the_category(', ') ?></span>
 				<span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?>. </span><br>
 		
-				<span class="tags"><?php the_tags( 'Tags: ', ' , ', '.' ); ?></span>
+				<span class="tags"><?php the_tags( 'Tags: ', ', ', '.' ); ?></span>
 		
 				<span class="comments"><?php comments_popup_link('No Comments.', '1 Comment &#187;', '% Comments &#187;'); ?></span>
 			</h4>
