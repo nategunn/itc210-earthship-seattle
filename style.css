@@ -247,6 +247,15 @@ hr {
     padding-bottom: 0.45em;
 }
 /*/// END WP Google Maps ///*/
+
+/*/// START phpBB Forum Styles ///*/
+#wpucssmagic .wpucssmagic #wrap {
+    max-width: 960px;
+    padding-left:10px;
+    padding-right:10px;
+    margin: auto;
+}
+/*/// END phpBB Forum Styles ///*/
 /*///// END PLUGIN STYLES /////*/
 
 /*///// SOCIAL MEDIA ICONS /////*/
@@ -725,16 +734,7 @@ p.postmetadata {
   font-size:.9em;
 }
 /*///// END LOWER SIDEBAR /////*/
-
-/*/// START phpBB Forum Styles ///*/
-#wpucssmagic .wpucssmagic #wrap {
-    max-width: 960px;
-    padding-left:10px;
-    padding-right:10px;
-    margin: auto;
-}
-/*/// END phpBB Forum Styles ///*/
-/*///// END PLUGIN STYLES /////*/
+/*///// END FRONT PAGE STYLES /////*/
 
 /*///// INDEX.PHP STYLES ///*/
 #main-content {
