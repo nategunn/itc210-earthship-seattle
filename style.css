@@ -4,7 +4,7 @@ Theme URI:
 Author: Dan Mattwig, Lorraine Janzen, Nate Gunn, Troy Fleischauer
 Author URI:
 Description:
-Version: 150116
+Version: 150513
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, custom-theme
@@ -725,7 +725,16 @@ p.postmetadata {
   font-size:.9em;
 }
 /*///// END LOWER SIDEBAR /////*/
-/*///// END FRONT PAGE STYLES /////*/
+
+/*/// START phpBB Forum Styles ///*/
+#wpucssmagic .wpucssmagic #wrap {
+    max-width: 960px;
+    padding-left:10px;
+    padding-right:10px;
+    margin: auto;
+}
+/*/// END phpBB Forum Styles ///*/
+/*///// END PLUGIN STYLES /////*/
 
 /*///// INDEX.PHP STYLES ///*/
 #main-content {
