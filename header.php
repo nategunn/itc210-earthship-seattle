@@ -32,6 +32,10 @@
             }
         });
     </script>
+    
+    <!-- for social media icons -->
+    <script src="https://use.fontawesome.com/0a834741df.js"></script>
+
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <?php wp_head()?>
     
@@ -42,9 +46,6 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    
-    <!-- for social media icons -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
     <meta name="viewport" content="initial-scale=1">
     
@@ -69,7 +70,7 @@
 		    </a>-->
 		    
 		    <a href="http://www.meetup.com/Earthship-Seattle/" target="_blank">
-			<i class="meetup fa fa-users fa-1x"></i>
+			<i class="meetup fa fa-meetup fa-1x"></i>
 		    </a>
 		    
 		    <a href="https://www.facebook.com/EarthshipSeattle" target="_blank">
