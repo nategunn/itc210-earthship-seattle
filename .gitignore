@@ -2,4 +2,6 @@ node_modules/
 
 Gruntfile.js
 
-page-calendar.phppage-calendar.php
+page-calendar.php
+
+.DS_Store
